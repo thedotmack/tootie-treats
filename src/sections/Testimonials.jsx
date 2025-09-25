@@ -45,15 +45,26 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="px-4 py-20 sm:px-6 lg:px-8">
+    <section
+      id="testimonials"
+      className="relative border-b-4 border-border bg-gradient-to-r from-accent-pink/40 via-secondary-background to-accent-teal/40 px-4 py-20 sm:px-6 lg:px-8"
+    >
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10"
+        style={{
+          background:
+            'radial-gradient(circle at 20% 25%, rgba(251, 196, 255, 0.4), transparent 50%), radial-gradient(circle at 80% 80%, rgba(159, 247, 255, 0.45), transparent 55%)'
+        }}
+      />
       <div className="mx-auto max-w-6xl">
         <div className="max-w-3xl text-center">
-          <h2 className="font-display text-3xl text-white sm:text-4xl">What hosts and forms say about Tootie Treats</h2>
-          <p className="mt-4 text-base text-white/70 sm:text-lg">
+          <h2 className="font-heading text-3xl sm:text-4xl text-foreground">What hosts and forms say about Tootie Treats</h2>
+          <p className="mt-4 text-base text-foreground/80 sm:text-lg">
             These quotes come straight from current class listings and booking forms—no fabricated reviews, only verifiable Sacramento sources.
           </p>
         </div>
-        <div className="mt-12 overflow-hidden rounded-3xl border border-white/5 bg-white/5 p-4">
+        <div className="mt-12 overflow-hidden rounded-3xl border-4 border-border bg-secondary-background p-4 shadow-shadow">
           <CultCarousel
             slides={testimonials.map((testimonial) => ({
               ...testimonial,

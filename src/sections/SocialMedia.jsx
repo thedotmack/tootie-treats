@@ -2,7 +2,18 @@ import { Camera, Link as LinkIcon, Newspaper, Share2 } from 'lucide-react'
 
 export function SocialMedia() {
   return (
-    <section id="social" className="border-b-4 border-border bg-secondary-background px-4 py-20 sm:px-6">
+    <section
+      id="social"
+      className="relative border-b-4 border-border bg-gradient-to-br from-accent-lavender/40 via-secondary-background to-accent-coral/40 px-4 py-20 sm:px-6"
+    >
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10"
+        style={{
+          background:
+            'radial-gradient(circle at 20% 25%, rgba(159, 247, 255, 0.45), transparent 55%), radial-gradient(circle at 80% 70%, rgba(255, 228, 77, 0.4), transparent 60%)'
+        }}
+      />
       <div className="mx-auto w-container max-w-full">
         <div className="mb-12 text-center">
           <h2 className="font-heading text-3xl sm:text-4xl">Stay connected with Tootie Treats</h2>
@@ -12,7 +23,10 @@ export function SocialMedia() {
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-3">
-          <article className="rounded-base border-4 border-border bg-background p-6 text-left shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none">
+          <article
+            className="rounded-base border-4 border-border p-6 text-left shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
+            style={{ backgroundColor: 'var(--accent-pink)' }}
+          >
             <div className="mb-4 flex items-center gap-3 text-sm text-foreground/70">
               <span className="flex size-12 items-center justify-center rounded-base border-2 border-border bg-main text-main-foreground shadow-shadow">
                 📸
@@ -30,12 +44,15 @@ export function SocialMedia() {
               href="https://www.instagram.com/tootietreats"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center gap-2 rounded-base border-2 border-border bg-secondary-background px-4 py-2 text-sm font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:bg-main hover:text-main-foreground hover:shadow-none"
+              className="mt-4 inline-flex items-center gap-2 rounded-base border-2 border-border bg-secondary-background px-4 py-2 text-sm font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:bg-accent-teal hover:text-foreground hover:shadow-none"
             >
               Follow on Instagram <Share2 className="h-4 w-4" />
             </a>
           </article>
-          <article className="rounded-base border-4 border-border bg-background p-6 text-left shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none">
+          <article
+            className="rounded-base border-4 border-border p-6 text-left shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
+            style={{ backgroundColor: 'var(--accent-teal)' }}
+          >
             <div className="mb-4 flex items-center gap-3 text-sm text-foreground/70">
               <span className="flex size-12 items-center justify-center rounded-base border-2 border-border bg-main text-main-foreground shadow-shadow">
                 <LinkIcon className="h-6 w-6" />
@@ -53,12 +70,15 @@ export function SocialMedia() {
               href="https://linktr.ee/tootietreats"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center gap-2 rounded-base border-2 border-border bg-secondary-background px-4 py-2 text-sm font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:bg-main hover:text-main-foreground hover:shadow-none"
+              className="mt-4 inline-flex items-center gap-2 rounded-base border-2 border-border bg-secondary-background px-4 py-2 text-sm font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:bg-accent-lavender hover:text-foreground hover:shadow-none"
             >
               Open Linktree <Share2 className="h-4 w-4" />
             </a>
           </article>
-          <article className="rounded-base border-4 border-border bg-background p-6 text-left shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none">
+          <article
+            className="rounded-base border-4 border-border p-6 text-left shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
+            style={{ backgroundColor: 'var(--accent-green)' }}
+          >
             <div className="mb-4 flex items-center gap-3 text-sm text-foreground/70">
               <span className="flex size-12 items-center justify-center rounded-base border-2 border-border bg-main text-main-foreground shadow-shadow">
                 <Newspaper className="h-6 w-6" />
@@ -76,14 +96,14 @@ export function SocialMedia() {
               href="https://www.cbsnews.com/gooddaysacramento/video/get-creative-with-cake-molly-joins-a-custom-decorating-class-in-folsom/"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center gap-2 rounded-base border-2 border-border bg-secondary-background px-4 py-2 text-sm font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:bg-main hover:text-main-foreground hover:shadow-none"
+              className="mt-4 inline-flex items-center gap-2 rounded-base border-2 border-border bg-secondary-background px-4 py-2 text-sm font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:bg-accent-coral hover:text-foreground hover:shadow-none"
             >
               Watch the segment <Camera className="h-4 w-4" />
             </a>
           </article>
         </div>
 
-        <div className="mt-12 rounded-base border-4 border-border bg-background p-8 text-center shadow-shadow">
+        <div className="mt-12 rounded-base border-4 border-border bg-secondary-background/90 p-8 text-center shadow-shadow">
           <div className="mb-6 flex justify-center">
             <div className="flex -space-x-3">
               <span className="flex size-14 items-center justify-center rounded-full border-2 border-border bg-main text-main-foreground shadow-shadow">

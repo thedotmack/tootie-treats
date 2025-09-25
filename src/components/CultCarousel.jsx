@@ -35,17 +35,23 @@ export function CultCarousel({ slides, autoplayInterval = 6000 }) {
 
   return (
     <div className="relative overflow-hidden rounded-3xl">
-      <div className="aspect-[16/9] w-full overflow-hidden rounded-3xl bg-night/70">
+      <div
+        className="aspect-[16/9] w-full overflow-hidden rounded-3xl"
+        style={{ backgroundColor: 'rgba(23, 21, 31, 0.05)' }}
+      >
         <img
           src={current.imageUrl}
           alt={current.title}
           className="h-full w-full object-cover"
         />
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-night via-night/40 to-transparent p-6 text-left text-white">
-          <p className="text-xs uppercase tracking-wide text-white/60">{current.badge || 'Client highlight'}</p>
-          <h3 className="mt-2 font-display text-2xl">{current.title}</h3>
-          <p className="mt-3 text-sm text-white/80">{current.content}</p>
-          <p className="mt-4 text-xs text-white/60">
+        <div
+          className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-foreground via-foreground to-transparent p-6 text-left text-secondary-background"
+          style={{ background: 'linear-gradient(180deg, transparent 0%, rgba(23, 21, 31, 0.4) 35%, rgba(23, 21, 31, 0.9) 100%)' }}
+        >
+          <p className="text-xs uppercase tracking-wide opacity-80">{current.badge || 'Client highlight'}</p>
+          <h3 className="mt-2 font-heading text-2xl">{current.title}</h3>
+          <p className="mt-3 text-sm opacity-80">{current.content}</p>
+          <p className="mt-4 text-xs opacity-70">
             — {current.author}, {current.role}
           </p>
           {current.source && (
@@ -54,7 +60,7 @@ export function CultCarousel({ slides, autoplayInterval = 6000 }) {
                 href={current.source}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-lavender-200 hover:text-lavender-100"
+                className="inline-flex items-center gap-1 text-accent-teal hover:text-accent-pink"
               >
                 View source
               </a>
@@ -69,7 +75,12 @@ export function CultCarousel({ slides, autoplayInterval = 6000 }) {
             type="button"
             aria-label="Previous slide"
             onClick={() => goTo('prev')}
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-night/70 text-white transition hover:bg-white/10"
+            className="flex h-10 w-10 items-center justify-center rounded-full transition"
+            style={{
+              backgroundColor: 'rgba(23, 21, 31, 0.9)',
+              color: 'var(--secondary-background)',
+              border: '2px solid rgba(255, 255, 255, 0.65)'
+            }}
           >
             <ChevronLeft className="h-5 w-5" />
           </button>
@@ -77,7 +88,11 @@ export function CultCarousel({ slides, autoplayInterval = 6000 }) {
             {safeSlides.map((_, dotIndex) => (
               <span
                 key={dotIndex}
-                className={`h-2 w-6 rounded-full transition ${dotIndex === index ? 'bg-lavender-400' : 'bg-white/20'}`}
+                className="h-2 w-6 rounded-full transition"
+                style={{
+                  backgroundColor:
+                    dotIndex === index ? 'var(--accent-pink)' : 'rgba(255, 255, 255, 0.65)'
+                }}
               />
             ))}
           </div>
@@ -85,7 +100,12 @@ export function CultCarousel({ slides, autoplayInterval = 6000 }) {
             type="button"
             aria-label="Next slide"
             onClick={() => goTo('next')}
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-night/70 text-white transition hover:bg-white/10"
+            className="flex h-10 w-10 items-center justify-center rounded-full transition"
+            style={{
+              backgroundColor: 'rgba(23, 21, 31, 0.9)',
+              color: 'var(--secondary-background)',
+              border: '2px solid rgba(255, 255, 255, 0.65)'
+            }}
           >
             <ChevronRight className="h-5 w-5" />
           </button>

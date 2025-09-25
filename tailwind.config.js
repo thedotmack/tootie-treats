@@ -25,10 +25,17 @@ export default {
         "chart-3": "var(--chart-3)",
         "chart-4": "var(--chart-4)",
         "chart-5": "var(--chart-5)",
+        accent: {
+          pink: "var(--accent-pink)",
+          green: "var(--accent-green)",
+          teal: "var(--accent-teal)",
+          lavender: "var(--accent-lavender)",
+          coral: "var(--accent-coral)",
+        },
       },
       fontFamily: {
-        heading: ["DM Sans", ...fontFamily.sans],
-        base: ["DM Sans", ...fontFamily.sans],
+        heading: ["DM Serif Display", ...fontFamily.serif],
+        base: ["Manrope", ...fontFamily.sans],
       },
       fontWeight: {
         heading: "var(--font-weight-heading)",

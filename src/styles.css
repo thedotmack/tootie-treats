@@ -1,33 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&family=Manrope:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --border-radius: 12px;
-  --box-shadow-x: 6px;
-  --box-shadow-y: 6px;
-  --reverse-box-shadow-x: -6px;
-  --reverse-box-shadow-y: -6px;
+  --border-radius: 26px;
+  --box-shadow-x: 8px;
+  --box-shadow-y: 10px;
+  --reverse-box-shadow-x: -8px;
+  --reverse-box-shadow-y: -10px;
 
-  --heading-font-weight: 700;
+  --heading-font-weight: 400;
   --base-font-weight: 500;
 
-  --background: oklch(93.46% 0.0305 255.11);
-  --secondary-background: oklch(100% 0 0);
-  --foreground: oklch(0% 0 0);
-  --main-foreground: oklch(0% 0 0);
+  --background: #fff8f2;
+  --secondary-background: #ffffff;
+  --foreground: #17151f;
+  --main-foreground: #17151f;
 
-  --main: oklch(67.47% 0.1726 259.49);
-  --border: oklch(0% 0 0);
-  --ring: oklch(0% 0 0);
-  --overlay: rgba(0, 0, 0, 0.8);
+  --main: #ffe44d;
+  --accent-pink: #fbc4ff;
+  --accent-green: #cafd5a;
+  --accent-teal: #9ff7ff;
+  --accent-lavender: #d2d7ff;
+  --accent-coral: #ffb4c7;
+  --border: #17151f;
+  --ring: #17151f;
+  --overlay: rgba(23, 21, 31, 0.85);
 
-  --chart-1: #5294ff;
-  --chart-2: #ff4d50;
-  --chart-3: #facc00;
-  --chart-4: #05e17a;
-  --chart-5: #7a83ff;
-  --chart-active-dot: #000;
+  --chart-1: #9ff7ff;
+  --chart-2: #ffb4c7;
+  --chart-3: #ffe44d;
+  --chart-4: #cafd5a;
+  --chart-5: #d2d7ff;
+  --chart-active-dot: #17151f;
 
   --spacing-boxShadowX: var(--box-shadow-x);
   --spacing-boxShadowY: var(--box-shadow-y);
@@ -35,9 +42,9 @@
   --spacing-reverseBoxShadowY: var(--reverse-box-shadow-y);
 
   --radius-base: var(--border-radius);
-  --shadow-shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
-  --shadow-nav: 6px 6px 0px 0px var(--border);
-  --shadow-darkNav: 6px 6px 0px 0px var(--border);
+  --shadow-shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px rgba(23, 21, 31, 0.7);
+  --shadow-nav: 8px 10px 0px 0px rgba(23, 21, 31, 0.7);
+  --shadow-darkNav: 8px 10px 0px 0px rgba(14, 13, 20, 0.85);
 
   --font-weight-base: var(--base-font-weight);
   --font-weight-heading: var(--heading-font-weight);
@@ -46,26 +53,31 @@
   --animate-marquee-up: marquee-up 50s linear infinite;
   --animate-marquee2: marquee2 40s linear infinite;
 
-  --spacing-container: 1300px;
+  --spacing-container: 1280px;
 }
 
 .dark {
-  --background: oklch(29.12% 0.0633 270.86);
-  --secondary-background: oklch(23.93% 0 0);
-  --foreground: oklch(92.49% 0 0);
-  --main-foreground: oklch(0% 0 0);
+  --background: #1a1725;
+  --secondary-background: #211d33;
+  --foreground: #f7f7fb;
+  --main-foreground: #17151f;
 
-  --main: oklch(67.47% 0.1726 259.49);
-  --border: oklch(0% 0 0);
-  --ring: oklch(100% 0 0);
-  --overlay: rgba(0, 0, 0, 0.8);
+  --main: #ffe44d;
+  --accent-pink: #e5a9ff;
+  --accent-green: #aee63f;
+  --accent-teal: #6ed8f0;
+  --accent-lavender: #aeb6ff;
+  --accent-coral: #ff90ab;
+  --border: #f7f7fb;
+  --ring: #f7f7fb;
+  --overlay: rgba(10, 8, 18, 0.85);
 
-  --chart-1: #5294ff;
-  --chart-2: #ff6669;
-  --chart-3: #e0b700;
-  --chart-4: #04c86d;
-  --chart-5: #7a83ff;
-  --chart-active-dot: #fff;
+  --chart-1: #6ed8f0;
+  --chart-2: #ff90ab;
+  --chart-3: #ffe44d;
+  --chart-4: #aee63f;
+  --chart-5: #aeb6ff;
+  --chart-active-dot: #f7f7fb;
 }
 
 @layer base {
@@ -75,13 +87,10 @@
 
   body {
     @apply bg-background text-foreground font-base m-0 min-h-screen antialiased;
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.2) 1px,
-        transparent 1px
-      ),
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 1px, transparent 1px);
-    background-size: 70px 70px;
+    background-image: radial-gradient(circle at 0% 0%, #ffe1f7 0, rgba(255, 225, 247, 0) 50%),
+      radial-gradient(circle at 100% 20%, #d2d7ff 0, rgba(210, 215, 255, 0) 45%),
+      radial-gradient(circle at 50% 100%, #9ff7ff 0, rgba(159, 247, 255, 0) 45%),
+      linear-gradient(180deg, #fff8f2 0%, #fff0df 100%);
   }
 
   h1,

@@ -63,9 +63,28 @@ const publicClasses = [
   }
 ]
 
+const cardBackgrounds = [
+  'var(--accent-pink)',
+  'var(--accent-teal)',
+  'var(--accent-lavender)',
+  'var(--accent-green)',
+  'var(--accent-coral)'
+]
+
 export function Classes() {
   return (
-    <section id="classes" className="border-b-4 border-border bg-secondary-background px-4 py-20 sm:px-6">
+    <section
+      id="classes"
+      className="relative border-b-4 border-border bg-gradient-to-r from-accent-green/30 via-secondary-background to-accent-lavender/40 px-4 py-20 sm:px-6"
+    >
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10"
+        style={{
+          background:
+            'radial-gradient(circle at 15% 80%, rgba(255, 228, 77, 0.45), transparent 55%), radial-gradient(circle at 85% 20%, rgba(210, 215, 255, 0.35), transparent 50%)'
+        }}
+      />
       <div className="mx-auto grid w-container max-w-full gap-10 lg:grid-cols-[minmax(0,1fr)_380px]">
         <div className="flex flex-col gap-6">
           <header className="space-y-4">
@@ -81,10 +100,11 @@ export function Classes() {
             </p>
           </header>
           <div className="space-y-5">
-            {publicClasses.map((classItem) => (
+            {publicClasses.map((classItem, index) => (
               <article
                 key={classItem.name}
-                className="rounded-base border-4 border-border bg-background p-6 shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
+                className="rounded-base border-4 border-border p-6 shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
+                style={{ backgroundColor: cardBackgrounds[index % cardBackgrounds.length] }}
               >
                 <header className="flex flex-col gap-3 border-b-2 border-border pb-4">
                   <h3 className="font-heading text-xl text-foreground">{classItem.name}</h3>
@@ -95,7 +115,7 @@ export function Classes() {
                     <span className="inline-flex items-center gap-1">
                       <Clock className="h-4 w-4" /> {classItem.time}
                     </span>
-                    <span className="rounded-base border-2 border-border bg-main px-3 py-1 text-[0.7rem] font-semibold text-main-foreground">
+                    <span className="rounded-base border-2 border-border bg-secondary-background px-3 py-1 text-[0.7rem] font-semibold text-foreground">
                       {classItem.price}
                     </span>
                   </div>
@@ -116,7 +136,7 @@ export function Classes() {
                   href={classItem.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-5 inline-flex items-center gap-2 rounded-base border-2 border-border bg-secondary-background px-4 py-2 text-sm font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:bg-main hover:text-main-foreground hover:shadow-none"
+                  className="mt-5 inline-flex items-center gap-2 rounded-base border-2 border-border bg-secondary-background px-4 py-2 text-sm font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:bg-accent-teal hover:text-foreground hover:shadow-none"
                 >
                   Reserve via host site <ExternalLink className="h-4 w-4" />
                 </a>
@@ -124,15 +144,15 @@ export function Classes() {
             ))}
           </div>
         </div>
-        <aside className="flex h-full flex-col gap-5 rounded-base border-4 border-border bg-background p-6 shadow-shadow">
-          <div className="rounded-base border-2 border-border bg-secondary-background p-4">
+        <aside className="flex h-full flex-col gap-5 rounded-base border-4 border-border bg-secondary-background/90 p-6 shadow-shadow">
+          <div className="rounded-base border-2 border-border bg-accent-pink/50 p-4">
             <h3 className="font-heading text-xl text-foreground">Private group experiences</h3>
             <p className="mt-3 text-sm text-foreground/75">
               Birthdays, bachelorettes, or corporate teams welcome. Private sessions start at $175 for one decorator, $122 each
               for two, and $95 each for groups of three or more.
             </p>
           </div>
-          <div className="rounded-base border-2 border-border bg-secondary-background p-4">
+          <div className="rounded-base border-2 border-border bg-accent-teal/50 p-4">
             <h4 className="font-heading text-sm uppercase tracking-[0.2em] text-foreground/70">Travel & host details</h4>
             <p className="mt-2 text-sm text-foreground/75">
               Host in the Tootie Treats studio or have Alexa travel within ten miles of ZIP 95818 (flat $50 setup). Additional
@@ -144,7 +164,7 @@ export function Classes() {
               href="https://app.acuityscheduling.com/catalog.php?owner=32574148&action=addCart&clear=1&id=2037518"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-base border-2 border-border bg-main px-5 py-3 font-semibold text-main-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-base border-2 border-border bg-gradient-to-r from-accent-coral to-main px-5 py-3 font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
             >
               Book a private class
             </a>
@@ -152,7 +172,7 @@ export function Classes() {
               href="https://www.jotform.com/form/243365823386161"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-base border-2 border-border bg-secondary-background px-5 py-3 font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:bg-main hover:text-main-foreground hover:shadow-none"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-base border-2 border-border bg-secondary-background px-5 py-3 font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:bg-accent-teal hover:text-foreground hover:shadow-none"
             >
               Submit travel class request
             </a>

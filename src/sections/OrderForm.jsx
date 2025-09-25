@@ -118,19 +118,25 @@ export function OrderForm() {
     }
   };
 
+  const fieldClass = (hasError = false) =>
+    `mt-1 w-full rounded-base border-2 border-border bg-secondary-background px-4 py-3 text-sm text-foreground shadow-shadow focus:outline-none focus:ring-2 focus:ring-main focus:ring-offset-2 focus:ring-offset-secondary-background ${hasError ? 'ring-accent-coral' : ''}`;
+
+  const checkboxClass = 'h-4 w-4 rounded border-2 border-border bg-secondary-background text-main focus:ring-main';
+  const labelTone = 'text-xs uppercase tracking-[0.2em] text-foreground/60';
+
+  const fieldWithIconClass = (hasError = false) => `${fieldClass(hasError)} pl-12`;
+
   const renderStep = () => {
     switch (currentStep) {
       case 0:
         return (
           <div className="space-y-6">
             <div>
-              <label className="text-xs uppercase tracking-wide text-white/60">Cake size *</label>
+              <label className={labelTone}>Cake size *</label>
               <select
                 value={formData.size}
                 onChange={(event) => updateField('size', event.target.value)}
-                className={`mt-1 w-full rounded-2xl border bg-night/70 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-lavender-500 ${
-                  errors.size ? 'border-red-400/60' : 'border-white/10'
-                }`}
+                className={fieldClass(Boolean(errors.size))}
               >
                 {sizes.map((size) => (
                   <option key={size.value || 'placeholder'} value={size.value}>
@@ -138,16 +144,14 @@ export function OrderForm() {
                   </option>
                 ))}
               </select>
-              {errors.size && <p className="mt-1 text-xs text-red-300">{errors.size}</p>}
+              {errors.size && <p className="mt-1 text-xs text-accent-coral">{errors.size}</p>}
             </div>
             <div>
-              <label className="text-xs uppercase tracking-wide text-white/60">Flavor *</label>
+              <label className={labelTone}>Flavor *</label>
               <select
                 value={formData.flavor}
                 onChange={(event) => updateField('flavor', event.target.value)}
-                className={`mt-1 w-full rounded-2xl border bg-night/70 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-lavender-500 ${
-                  errors.flavor ? 'border-red-400/60' : 'border-white/10'
-                }`}
+                className={fieldClass(Boolean(errors.flavor))}
               >
                 <option value="">Choose flavor</option>
                 {flavors.map((flavor) => (
@@ -156,14 +160,14 @@ export function OrderForm() {
                   </option>
                 ))}
               </select>
-              {errors.flavor && <p className="mt-1 text-xs text-red-300">{errors.flavor}</p>}
+              {errors.flavor && <p className="mt-1 text-xs text-accent-coral">{errors.flavor}</p>}
             </div>
             <div>
-              <label className="text-xs uppercase tracking-wide text-white/60">Filling</label>
+              <label className={labelTone}>Filling</label>
               <select
                 value={formData.filling}
                 onChange={(event) => updateField('filling', event.target.value)}
-                className="mt-1 w-full rounded-2xl border border-white/10 bg-night/70 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-lavender-500"
+                className={fieldClass()}
               >
                 <option value="">None</option>
                 {fillings.map((filling) => (
@@ -174,15 +178,17 @@ export function OrderForm() {
               </select>
             </div>
             <div>
-              <label className="text-xs uppercase tracking-wide text-white/60">How many cakes or dozens?</label>
+              <label className={labelTone}>How many cakes or dozens?</label>
               <input
                 type="number"
                 min="1"
                 value={formData.quantity}
                 onChange={(event) => updateField('quantity', parseInt(event.target.value, 10) || 1)}
-                className="mt-1 w-full rounded-2xl border border-white/10 bg-night/70 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-lavender-500"
+                className={fieldClass()}
               />
-              <p className="mt-1 text-xs text-white/50">Use this for sheet cakes, tiered cakes, or cupcake dozens.</p>
+              <p className="mt-1 text-xs text-foreground/60">
+                Use this for sheet cakes, tiered cakes, or cupcake dozens.
+              </p>
             </div>
           </div>
         );
@@ -190,13 +196,11 @@ export function OrderForm() {
         return (
           <div className="space-y-6">
             <div>
-              <label className="text-xs uppercase tracking-wide text-white/60">Style *</label>
+              <label className={labelTone}>Style *</label>
               <select
                 value={formData.style}
                 onChange={(event) => updateField('style', event.target.value)}
-                className={`mt-1 w-full rounded-2xl border bg-night/70 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-lavender-500 ${
-                  errors.style ? 'border-red-400/60' : 'border-white/10'
-                }`}
+                className={fieldClass(Boolean(errors.style))}
               >
                 {styles.map((style) => (
                   <option key={style.value || 'style-placeholder'} value={style.value}>
@@ -204,18 +208,18 @@ export function OrderForm() {
                   </option>
                 ))}
               </select>
-              {errors.style && <p className="mt-1 text-xs text-red-300">{errors.style}</p>}
+              {errors.style && <p className="mt-1 text-xs text-accent-coral">{errors.style}</p>}
             </div>
             <div>
-              <label className="text-xs uppercase tracking-wide text-white/60">Icing colors</label>
-              <div className="mt-2 flex flex-wrap gap-3">
+              <label className={labelTone}>Icing colors</label>
+              <div className="mt-2 flex flex-wrap gap-3 text-xs text-foreground/70">
                 {['color1', 'color2', 'color3'].map((colorKey) => (
-                  <div key={colorKey} className="flex items-center gap-2 text-xs text-white/60">
+                  <div key={colorKey} className="flex items-center gap-2">
                     <input
                       type="color"
                       value={formData[colorKey]}
                       onChange={(event) => updateField(colorKey, event.target.value)}
-                      className="h-12 w-16 cursor-pointer rounded-2xl border border-white/20 bg-night/70"
+                      className="h-12 w-16 cursor-pointer rounded-base border-2 border-border bg-secondary-background shadow-shadow"
                     />
                     <span>{colorKey.replace('color', 'Accent ')}</span>
                   </div>
@@ -223,43 +227,43 @@ export function OrderForm() {
               </div>
             </div>
             <div>
-              <label className="text-xs uppercase tracking-wide text-white/60">Design theme or vibe</label>
+              <label className={labelTone}>Design theme or vibe</label>
               <input
                 type="text"
                 value={formData.theme}
                 onChange={(event) => updateField('theme', event.target.value)}
                 placeholder="e.g., Cottagecore mushrooms, Golden birthday, 90s throwback"
-                className="mt-1 w-full rounded-2xl border border-white/10 bg-night/70 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-lavender-500"
+                className={fieldClass()}
               />
             </div>
             <div>
-              <label className="text-xs uppercase tracking-wide text-white/60">Inspiration link</label>
+              <label className={labelTone}>Inspiration link</label>
               <input
                 type="url"
                 value={formData.reference_link}
                 onChange={(event) => updateField('reference_link', event.target.value)}
                 placeholder="Pinterest, Instagram, or Google Drive link"
-                className="mt-1 w-full rounded-2xl border border-white/10 bg-night/70 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-lavender-500"
+                className={fieldClass()}
               />
             </div>
             <div>
-              <label className="text-xs uppercase tracking-wide text-white/60">Inscription</label>
+              <label className={labelTone}>Inscription</label>
               <input
                 type="text"
                 value={formData.inscription}
                 maxLength={40}
                 placeholder="Optional message on the cake"
                 onChange={(event) => updateField('inscription', event.target.value)}
-                className="mt-1 w-full rounded-2xl border border-white/10 bg-night/70 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-lavender-500"
+                className={fieldClass()}
               />
             </div>
-            <div className="space-y-2 text-sm text-white/80">
+            <div className="space-y-2 text-sm text-foreground/75">
               <label className="flex items-center gap-3">
                 <input
                   type="checkbox"
                   checked={formData.gluten_free}
                   onChange={(event) => updateField('gluten_free', event.target.checked)}
-                  className="h-4 w-4 rounded border-white/20 bg-night"
+                  className={checkboxClass}
                 />
                 Gluten-free (adds cost)
               </label>
@@ -268,7 +272,7 @@ export function OrderForm() {
                   type="checkbox"
                   checked={formData.vegan}
                   onChange={(event) => updateField('vegan', event.target.checked)}
-                  className="h-4 w-4 rounded border-white/20 bg-night"
+                  className={checkboxClass}
                 />
                 Vegan (adds cost)
               </label>
@@ -279,33 +283,33 @@ export function OrderForm() {
         return (
           <div className="space-y-6">
             <div>
-              <label className="text-xs uppercase tracking-wide text-white/60">What are we celebrating?</label>
+              <label className={labelTone}>What are we celebrating?</label>
               <input
                 type="text"
                 value={formData.event_type}
                 onChange={(event) => updateField('event_type', event.target.value)}
                 placeholder="Birthday, baby shower, pop-up, corporate drop, etc."
-                className="mt-1 w-full rounded-2xl border border-white/10 bg-night/70 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-lavender-500"
+                className={fieldClass()}
               />
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
               <div>
-                <label className="text-xs uppercase tracking-wide text-white/60">Estimated guest count</label>
+                <label className={labelTone}>Estimated guest count</label>
                 <input
                   type="number"
                   min="0"
                   value={formData.guest_count}
                   onChange={(event) => updateField('guest_count', event.target.value)}
                   placeholder="Optional"
-                  className="mt-1 w-full rounded-2xl border border-white/10 bg-night/70 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-lavender-500"
+                  className={fieldClass()}
                 />
               </div>
               <div>
-                <label className="text-xs uppercase tracking-wide text-white/60">Budget comfort zone</label>
+                <label className={labelTone}>Budget comfort zone</label>
                 <select
                   value={formData.budget}
                   onChange={(event) => updateField('budget', event.target.value)}
-                  className="mt-1 w-full rounded-2xl border border-white/10 bg-night/70 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-lavender-500"
+                  className={fieldClass()}
                 >
                   {budgetRanges.map((option) => (
                     <option key={option || 'budget-empty'} value={option}>
@@ -317,36 +321,34 @@ export function OrderForm() {
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
               <div>
-                <label className="text-xs uppercase tracking-wide text-white/60">Desired pickup date *</label>
+                <label className={labelTone}>Desired pickup date *</label>
                 <input
                   type="date"
                   value={formData.pickup_date}
                   onChange={(event) => updateField('pickup_date', event.target.value)}
-                  className={`mt-1 w-full rounded-2xl border bg-night/70 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-lavender-500 ${
-                    errors.pickup_date ? 'border-red-400/60' : 'border-white/10'
-                  }`}
+                  className={fieldClass(Boolean(errors.pickup_date))}
                 />
-                {errors.pickup_date && <p className="mt-1 text-xs text-red-300">{errors.pickup_date}</p>}
+                {errors.pickup_date && <p className="mt-1 text-xs text-accent-coral">{errors.pickup_date}</p>}
               </div>
               <div>
-                <label className="text-xs uppercase tracking-wide text-white/60">Pickup time window</label>
+                <label className={labelTone}>Pickup time window</label>
                 <input
                   type="text"
                   value={formData.pickup_time}
                   onChange={(event) => updateField('pickup_time', event.target.value)}
                   placeholder="e.g., Afternoon, 1–3 PM, after class"
-                  className="mt-1 w-full rounded-2xl border border-white/10 bg-night/70 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-lavender-500"
+                  className={fieldClass()}
                 />
               </div>
             </div>
             <div>
-              <label className="text-xs uppercase tracking-wide text-white/60">Notes for Alexa</label>
+              <label className={labelTone}>Notes for Alexa</label>
               <textarea
                 value={formData.notes}
                 onChange={(event) => updateField('notes', event.target.value)}
                 rows={4}
                 placeholder="Allergies, flavor swaps, keepsake toppers, delivery questions, etc."
-                className="mt-1 w-full resize-none rounded-2xl border border-white/10 bg-night/70 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-lavender-500"
+                className={`${fieldClass()} resize-none`}
               />
             </div>
           </div>
@@ -355,59 +357,62 @@ export function OrderForm() {
         return (
           <div className="space-y-6">
             <div>
-              <label className="text-xs uppercase tracking-wide text-white/60">Your name *</label>
+              <label className={labelTone}>Your name *</label>
               <div className="relative mt-1">
-                <User className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-white/40" size={18} />
+                <User
+                  className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-foreground/40"
+                  size={18}
+                />
                 <input
                   type="text"
                   value={formData.name}
                   onChange={(event) => updateField('name', event.target.value)}
-                  className={`w-full rounded-2xl border bg-night/70 py-3 pl-12 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-lavender-500 ${
-                    errors.name ? 'border-red-400/60' : 'border-white/10'
-                  }`}
+                  className={fieldWithIconClass(Boolean(errors.name))}
                   placeholder="First & last name"
                 />
               </div>
-              {errors.name && <p className="mt-1 text-xs text-red-300">{errors.name}</p>}
+              {errors.name && <p className="mt-1 text-xs text-accent-coral">{errors.name}</p>}
             </div>
             <div>
-              <label className="text-xs uppercase tracking-wide text-white/60">Email *</label>
+              <label className={labelTone}>Email *</label>
               <div className="relative mt-1">
-                <Mail className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-white/40" size={18} />
+                <Mail
+                  className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-foreground/40"
+                  size={18}
+                />
                 <input
                   type="email"
                   value={formData.email}
                   onChange={(event) => updateField('email', event.target.value)}
-                  className={`w-full rounded-2xl border bg-night/70 py-3 pl-12 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-lavender-500 ${
-                    errors.email ? 'border-red-400/60' : 'border-white/10'
-                  }`}
+                  className={fieldWithIconClass(Boolean(errors.email))}
                   placeholder="you@example.com"
                 />
               </div>
-              {errors.email && <p className="mt-1 text-xs text-red-300">{errors.email}</p>}
+              {errors.email && <p className="mt-1 text-xs text-accent-coral">{errors.email}</p>}
             </div>
             <div>
-              <label className="text-xs uppercase tracking-wide text-white/60">Phone *</label>
+              <label className={labelTone}>Phone *</label>
               <div className="relative mt-1">
-                <Phone className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-white/40" size={18} />
+                <Phone
+                  className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-foreground/40"
+                  size={18}
+                />
                 <input
                   type="tel"
                   value={formData.phone}
                   onChange={(event) => updateField('phone', event.target.value)}
-                  className={`w-full rounded-2xl border bg-night/70 py-3 pl-12 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-lavender-500 ${
-                    errors.phone ? 'border-red-400/60' : 'border-white/10'
-                  }`}
+                  className={fieldWithIconClass(Boolean(errors.phone))}
                   placeholder="(916) 555-1234"
                 />
               </div>
-              {errors.phone && <p className="mt-1 text-xs text-red-300">{errors.phone}</p>}
+              {errors.phone && <p className="mt-1 text-xs text-accent-coral">{errors.phone}</p>}
             </div>
             <div>
-              <label className="text-xs uppercase tracking-wide text-white/60">How did you hear about Tootie Treats?</label>
+              <label className={labelTone}>How did you hear about Tootie Treats?</label>
               <select
                 value={formData.heard_about}
                 onChange={(event) => updateField('heard_about', event.target.value)}
-                className="mt-1 w-full rounded-2xl border border-white/10 bg-night/70 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-lavender-500"
+                className={fieldClass()}
               >
                 <option value="">Select an option</option>
                 <option value="instagram">Instagram (@tootietreats)</option>
@@ -418,16 +423,16 @@ export function OrderForm() {
                 <option value="other">Other</option>
               </select>
             </div>
-            <label className="flex items-start gap-3 text-xs text-white/70">
+            <label className="flex items-start gap-3 text-xs text-foreground/70">
               <input
                 type="checkbox"
                 checked={formData.consent}
                 onChange={(event) => updateField('consent', event.target.checked)}
-                className="mt-1 h-4 w-4 rounded border-white/20 bg-night"
+                className={`${checkboxClass} mt-1`}
               />
               I understand this is a request and the bakery will confirm availability & final pricing.*
             </label>
-            {errors.consent && <p className="text-xs text-red-300">{errors.consent}</p>}
+            {errors.consent && <p className="text-xs text-accent-coral">{errors.consent}</p>}
           </div>
         );
       default:
@@ -436,11 +441,22 @@ export function OrderForm() {
   };
 
   return (
-    <section id="order" className="px-4 py-20 sm:px-6 lg:px-8">
+    <section
+      id="order"
+      className="relative border-b-4 border-border bg-gradient-to-br from-accent-lavender/40 via-secondary-background to-accent-pink/40 px-4 py-20 sm:px-6 lg:px-8"
+    >
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10"
+        style={{
+          background:
+            'radial-gradient(circle at 15% 25%, rgba(159, 247, 255, 0.45), transparent 55%), radial-gradient(circle at 85% 70%, rgba(255, 228, 77, 0.4), transparent 55%)'
+        }}
+      />
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-display text-3xl text-white sm:text-4xl">Build your Tootie Treats cake request</h2>
-          <p className="mt-4 text-base text-white/70 sm:text-lg">
+          <h2 className="font-heading text-3xl sm:text-4xl text-foreground">Build your Tootie Treats cake request</h2>
+          <p className="mt-4 text-base text-foreground/75 sm:text-lg">
             Tootie Treats bakes custom cakes in Sacramento alongside the viral classes you see on social media. Use this wizard to plan your cake, then send the summary straight to Alexa.
           </p>
         </div>
@@ -448,49 +464,51 @@ export function OrderForm() {
         <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_minmax(320px,380px)]">
           <form
             onSubmit={submitOrder}
-            className="space-y-6 rounded-3xl border border-white/5 bg-white/5 p-6 backdrop-blur"
+            className="space-y-6 rounded-base border-4 border-border bg-secondary-background/95 p-6 shadow-shadow"
             noValidate
           >
-            <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-night/60 px-4 py-3 text-xs text-white/60">
+            <div className="flex items-center justify-between rounded-base border-2 border-border bg-accent-lavender/60 px-4 py-3 text-xs text-foreground/70">
               <div className="flex items-center gap-2">
-                <Cake className="h-4 w-4 text-lavender-200" />
+                <Cake className="h-4 w-4 text-foreground" />
                 <span>Step {currentStep + 1} of {stepConfig.length}</span>
               </div>
-              <div className="hidden text-white/50 sm:flex">
+              <div className="hidden text-foreground/50 sm:flex">
                 {stepConfig.map((step, index) => (
                   <span
                     key={step.id}
-                    className={`mx-1 h-2 w-6 rounded-full ${
-                      index === currentStep ? 'bg-lavender-300' : 'bg-white/15'
-                    }`}
+                    className="mx-1 h-2 w-6 rounded-full"
+                    style={{
+                      backgroundColor:
+                        index === currentStep ? 'var(--foreground)' : 'rgba(23, 21, 31, 0.25)'
+                    }}
                   />
                 ))}
               </div>
             </div>
 
-            <div className="rounded-3xl border border-white/10 bg-night/60 p-6">
+            <div className="rounded-base border-2 border-border bg-secondary-background p-6 shadow-shadow">
               <div className="mb-6 flex items-start gap-3 text-left">
-                <div className="rounded-full bg-lavender-500/15 p-2 text-lavender-100">
+                <div className="rounded-full bg-accent-teal/50 p-2 text-foreground">
                   {currentStep === 0 && <Cake className="h-5 w-5" />}
                   {currentStep === 1 && <Palette className="h-5 w-5" />}
                   {currentStep === 2 && <Calendar className="h-5 w-5" />}
                   {currentStep === 3 && <Sparkles className="h-5 w-5" />}
                 </div>
                 <div>
-                  <h3 className="font-display text-lg text-white">{stepConfig[currentStep].title}</h3>
-                  <p className="mt-1 text-sm text-white/60">{stepConfig[currentStep].description}</p>
+                  <h3 className="font-heading text-lg text-foreground">{stepConfig[currentStep].title}</h3>
+                  <p className="mt-1 text-sm text-foreground/70">{stepConfig[currentStep].description}</p>
                 </div>
               </div>
 
               {renderStep()}
 
-              <div className="mt-8 flex flex-col gap-3 border-t border-white/10 pt-6 sm:flex-row sm:justify-between">
+              <div className="mt-8 flex flex-col gap-3 border-t border-border pt-6 sm:flex-row sm:justify-between">
                 <div className="flex gap-3 sm:order-1">
                   {currentStep > 0 && (
                     <button
                       type="button"
                       onClick={handleBack}
-                      className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white/70 transition hover:border-white/40 hover:text-white"
+                      className="inline-flex items-center gap-2 rounded-full border-2 border-border bg-secondary-background px-5 py-3 text-sm font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
                     >
                       <ArrowLeft className="h-4 w-4" /> Back
                     </button>
@@ -499,7 +517,7 @@ export function OrderForm() {
                     <button
                       type="button"
                       onClick={handleNext}
-                      className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-lavender-500 to-lavender-600 px-5 py-3 text-sm font-semibold text-night shadow-lavender-500/40 transition hover:shadow-glow"
+                      className="inline-flex items-center gap-2 rounded-full border-2 border-border bg-gradient-to-r from-accent-coral to-main px-5 py-3 text-sm font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
                     >
                       Continue <ArrowRight className="h-4 w-4" />
                     </button>
@@ -507,7 +525,7 @@ export function OrderForm() {
                   {currentStep === stepConfig.length - 1 && (
                     <button
                       type="submit"
-                      className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-lavender-500 to-lavender-600 px-5 py-3 text-sm font-semibold text-night shadow-lavender-500/40 transition hover:shadow-glow"
+                      className="inline-flex items-center gap-2 rounded-full border-2 border-border bg-gradient-to-r from-accent-coral to-main px-5 py-3 text-sm font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
                     >
                       <Send className="h-4 w-4" /> Email my request
                     </button>
@@ -516,76 +534,84 @@ export function OrderForm() {
                 <button
                   type="button"
                   onClick={saveDraft}
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white/80 transition hover:border-white/40 hover:text-white sm:order-2"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-border bg-secondary-background px-5 py-3 text-sm font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none sm:order-2"
                 >
                   <Save className="h-4 w-4" /> Save draft
                 </button>
               </div>
             </div>
 
-            <div className="rounded-3xl border border-white/10 bg-night/60 p-6 text-white/80">
+            <div className="rounded-base border-2 border-border bg-secondary-background/90 p-6 text-foreground">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-xs uppercase tracking-wide text-white/50">Estimated investment</p>
-                  <p className="font-display text-3xl text-white">${estimatedPrice || 0}</p>
-                  <p className="text-xs text-white/50">Estimate updates as you design.</p>
+                  <p className="text-xs uppercase tracking-wide text-foreground/60">Estimated investment</p>
+                  <p className="font-heading text-3xl text-foreground">${estimatedPrice || 0}</p>
+                  <p className="text-xs text-foreground/60">Estimate updates as you design.</p>
                 </div>
                 {currentStep === stepConfig.length - 1 && (
                   <button
                     type="button"
                     onClick={handleCopySummary}
-                    className="inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-xs font-semibold text-white/80 transition hover:border-white/40 hover:text-white"
+                    className="inline-flex items-center gap-2 rounded-full border-2 border-border bg-secondary-background px-4 py-2 text-xs font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
                   >
                     <Clipboard className="h-4 w-4" /> {copied ? 'Copied!' : 'Copy summary'}
                   </button>
                 )}
               </div>
               {currentStep === stepConfig.length - 1 && (
-                <div className="mt-4 rounded-2xl border border-white/10 bg-night/70 p-4 text-xs leading-relaxed text-white/70">
-                  <p className="mb-2 font-semibold text-white">Summary preview</p>
+                <div className="mt-4 rounded-base border-2 border-border bg-secondary-background p-4 text-xs leading-relaxed text-foreground/75">
+                  <p className="mb-2 font-semibold text-foreground">Summary preview</p>
                   <pre className="whitespace-pre-wrap text-left">{buildSummary()}</pre>
-                  <p className="mt-3 text-white/60">
-                    Copy the summary and share it via <a className="text-lavender-200 hover:text-lavender-100" href="https://www.instagram.com/tootietreats" target="_blank" rel="noopener noreferrer">@tootietreats</a> or the contact buttons on{' '}
-                    <a className="text-lavender-200 hover:text-lavender-100" href="https://linktr.ee/tootietreats" target="_blank" rel="noopener noreferrer">linktr.ee/tootietreats</a>.
+                  <p className="mt-3 text-foreground/60">
+                    Copy the summary and share it via{' '}
+                    <a
+                      className="font-semibold text-foreground underline decoration-accent-coral decoration-2 underline-offset-4"
+                      href="https://www.instagram.com/tootietreats"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      @tootietreats
+                    </a>{' '}
+                    or the contact buttons on{' '}
+                    <a
+                      className="font-semibold text-foreground underline decoration-accent-teal decoration-2 underline-offset-4"
+                      href="https://linktr.ee/tootietreats"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      linktr.ee/tootietreats
+                    </a>.
                   </p>
                 </div>
               )}
             </div>
 
             {status && (
-              <div
-                className={`flex items-start gap-3 rounded-2xl border p-4 text-sm ${
-                  status.toLowerCase().includes('complete') || status.toLowerCase().includes('error')
-                    ? 'border-red-400/50 bg-red-400/10 text-red-100'
-                    : status.toLowerCase().includes('thanks')
-                      ? 'border-emerald-400/50 bg-emerald-400/10 text-emerald-100'
-                      : 'border-lavender-400/40 bg-lavender-400/10 text-lavender-100'
-                }`}
-              >
+              <div className="flex items-start gap-3 rounded-base border-2 border-border bg-accent-lavender/50 p-4 text-sm text-foreground">
                 <AlertCircle className="mt-0.5 h-5 w-5 flex-shrink-0" />
                 <span>{status}</span>
               </div>
             )}
-            {draftSaved && <p className="text-xs text-lavender-200">Draft saved to this device.</p>}
+            {draftSaved && <p className="text-xs text-foreground/60">Draft saved to this device.</p>}
           </form>
 
-          <aside className="flex flex-col gap-6 rounded-3xl border border-white/10 bg-white/5 p-6 text-sm text-white/70">
+          <aside className="flex flex-col gap-6 rounded-base border-4 border-border bg-secondary-background/90 p-6 text-sm text-foreground/75 shadow-shadow">
             <div className="text-center">
               <CakePreview formData={formData} />
-              <p className="mt-3 text-xs text-white/60">
+              <p className="mt-3 text-xs text-foreground/60">
                 Use the palette and inscription fields to shape the live preview. Styles like vintage piping and mushroom cottage core mirror popular Tootie Treats looks.
               </p>
             </div>
-            <div className="space-y-3 rounded-2xl border border-white/10 bg-night/70 p-4">
-              <p className="text-xs uppercase tracking-wide text-white/50">Need-to-knows</p>
-              <ul className="space-y-2 text-left text-xs leading-relaxed">
+            <div className="space-y-3 rounded-base border-2 border-border bg-accent-teal/40 p-4">
+              <p className="text-xs uppercase tracking-wide text-foreground/60">Need-to-knows</p>
+              <ul className="space-y-2 text-left text-xs leading-relaxed text-foreground/75">
                 <li>• Tootie Treats is a Sacramento custom cake studio and class host. The Linktree lists current offerings and booking forms.</li>
                 <li>• Private two-hour lessons: $175 for one person, $122 each for two students, or $95 each for groups of three or more.</li>
                 <li>• Travelling classes include a $50 setup fee within 10 miles of ZIP 95818. Longer distances are quoted after you inquire.</li>
               </ul>
             </div>
-            <div className="space-y-2 rounded-2xl border border-white/10 bg-night/70 p-4 text-xs leading-relaxed text-white/60">
-              <p className="font-semibold text-white">Tip</p>
+            <div className="space-y-2 rounded-base border-2 border-border bg-accent-pink/40 p-4 text-xs leading-relaxed text-foreground/75">
+              <p className="font-semibold text-foreground">Tip</p>
               <p>
                 After you message Alexa through Linktree or Instagram, watch for a reply confirming availability and pickup arrangements in Curtis Park. For public classes, monitor the host links for ticket updates.
               </p>

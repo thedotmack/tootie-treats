@@ -33,11 +33,22 @@ const faqs = [
 
 export function FAQ() {
   return (
-    <section id="faq" className="px-4 py-20 sm:px-6 lg:px-8">
+    <section
+      id="faq"
+      className="relative border-b-4 border-border bg-secondary-background px-4 py-20 sm:px-6 lg:px-8"
+    >
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10"
+        style={{
+          background:
+            'radial-gradient(circle at 15% 30%, rgba(202, 253, 90, 0.45), transparent 55%), radial-gradient(circle at 80% 70%, rgba(210, 215, 255, 0.4), transparent 55%)'
+        }}
+      />
       <div className="mx-auto max-w-4xl">
         <div className="text-center">
-          <h2 className="font-display text-3xl text-white sm:text-4xl">Frequently asked questions</h2>
-          <p className="mt-4 text-base text-white/70 sm:text-lg">
+          <h2 className="font-heading text-3xl sm:text-4xl text-foreground">Frequently asked questions</h2>
+          <p className="mt-4 text-base text-foreground/75 sm:text-lg">
             Answers are pulled directly from current registration pages and booking forms so you can plan with confidence.
           </p>
         </div>
@@ -45,14 +56,14 @@ export function FAQ() {
           {faqs.map((faq) => (
             <details
               key={faq.question}
-              className="group overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 text-left backdrop-blur transition focus:outline-none focus:ring-2 focus:ring-lavender-500"
+              className="group overflow-hidden rounded-base border-4 border-border bg-secondary-background/90 p-6 text-left shadow-shadow transition focus:outline-none focus-visible:-translate-x-1 focus-visible:-translate-y-1 focus-visible:shadow-none"
             >
-              <summary className="flex cursor-pointer items-center justify-between text-lg font-semibold text-white">
+              <summary className="flex cursor-pointer items-center justify-between text-lg font-semibold text-foreground">
                 <span>{faq.question}</span>
-                <span className="ml-4 text-sm text-lavender-200 group-open:hidden">Open</span>
-                <span className="ml-4 text-sm text-lavender-200 hidden group-open:inline">Close</span>
+                <span className="ml-4 text-sm text-foreground/60 group-open:hidden">Open</span>
+                <span className="ml-4 hidden text-sm text-foreground/60 group-open:inline">Close</span>
               </summary>
-              <p className="mt-4 text-sm leading-relaxed text-white/70">{faq.answer}</p>
+              <p className="mt-4 text-sm leading-relaxed text-foreground/75">{faq.answer}</p>
             </details>
           ))}
         </div>
