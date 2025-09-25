@@ -1,23 +1,33 @@
 const faqs = [
   {
-    question: 'How far in advance should I order?',
+    question: 'How far in advance should I book?',
     answer:
-      'Most celebrations are secured 2–3 weeks out. For weddings or elaborate sculpted cakes, reach out 6–8 weeks ahead so we can reserve tasting time.'
+      'Classes typically fill up 1–2 weeks in advance, especially weekends. Popular classes like "Viral Buttercream Basics" book up fast, so reserve your spot early!'
   },
   {
-    question: 'Do you deliver?',
+    question: 'What should I bring to class?',
     answer:
-      'We offer delivery within the Houston metro for an additional fee starting at $35. We also provide transport instructions for pickups.'
+      'Nothing! We provide all materials, tools, aprons, and ingredients. Just bring yourself and get ready to have fun learning. Comfortable clothes recommended.'
   },
   {
-    question: 'Can you accommodate allergies?',
+    question: 'Can you accommodate dietary restrictions?',
     answer:
-      'We bake vegan and gluten-friendly cakes. While our kitchen handles nuts and dairy, we sanitize tools and prep surfaces carefully—please note all allergies in the form.'
+      'Absolutely! We offer vegan and gluten-free options for most classes. Please note any allergies or dietary needs when booking so we can prepare accordingly.'
   },
   {
-    question: 'What is your payment policy?',
+    question: 'What is your cancellation policy?',
     answer:
-      'A 30% retainer confirms your date. The remaining balance is due 48 hours before pickup or delivery. We accept credit card, Zelle, and Apple Pay.'
+      'We require 48 hours notice for a full refund. Cancellations within 48 hours receive a class credit valid for 6 months. No-shows forfeit the class fee.'
+  },
+  {
+    question: 'Can beginners join advanced classes?',
+    answer:
+      'We recommend starting with "Beginner Cake Decorating" first. Our instructors assess each student\'s skill level and can provide extra guidance as needed.'
+  },
+  {
+    question: 'Do you offer private group classes?',
+    answer:
+      'Yes! Private classes for birthdays, bachelorette parties, or team building start at $600 for up to 8 people. Contact us to customize your experience.'
   }
 ];
 
@@ -28,7 +38,7 @@ export function FAQ() {
         <div className="text-center">
           <h2 className="font-display text-3xl text-white sm:text-4xl">Frequently asked questions</h2>
           <p className="mt-4 text-base text-white/70 sm:text-lg">
-            Everything you need to know before we whisk up your dream cake.
+            Everything you need to know before joining our viral cake decorating classes.
           </p>
         </div>
         <div className="mt-10 space-y-4">
