@@ -10,22 +10,22 @@ export function Contact() {
         </p>
         <div className="mt-8 grid gap-6 sm:grid-cols-3">
           <a
-            href="mailto:orders@tootietreats.example"
+            href="mailto:classes@sacramentocakeclasses.com"
             className="flex flex-col items-center gap-3 rounded-2xl border border-white/10 bg-night/60 p-6 text-sm text-white/70 transition hover:border-white/40 hover:text-white"
           >
             <Mail className="h-6 w-6 text-lavender-200" />
-            orders@tootietreats.example
+            classes@sacramentocakeclasses.com
           </a>
           <a
-            href="tel:15551234567"
+            href="tel:19165551234"
             className="flex flex-col items-center gap-3 rounded-2xl border border-white/10 bg-night/60 p-6 text-sm text-white/70 transition hover:border-white/40 hover:text-white"
           >
             <Phone className="h-6 w-6 text-lavender-200" />
-            (555) 123-4567
+            (916) 555-1234
           </a>
           <div className="flex flex-col items-center gap-3 rounded-2xl border border-white/10 bg-night/60 p-6 text-sm text-white/70">
             <MapPin className="h-6 w-6 text-lavender-200" />
-            Montrose, Houston
+            Sacramento, CA
           </div>
         </div>
       </div>

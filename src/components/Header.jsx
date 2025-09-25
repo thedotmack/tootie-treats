@@ -2,10 +2,10 @@ import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 const navItems = [
-  { href: '#order', label: 'Order' },
-  { href: '#menu', label: 'Menu' },
-  { href: '#process', label: 'Process' },
-  { href: '#love', label: 'Love notes' },
+  { href: '#classes', label: 'Classes' },
+  { href: '#book-class', label: 'Book Now' },
+  { href: '#techniques', label: 'Techniques' },
+  { href: '#testimonials', label: 'Reviews' },
   { href: '#faq', label: 'FAQ' },
   { href: '#contact', label: 'Contact' }
 ];
@@ -18,7 +18,7 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <a href="#home" className="flex items-center gap-3 text-white">
           <span className="text-2xl">🎂</span>
-          <span className="font-display text-lg">Tootie Treats</span>
+          <span className="font-display text-lg">Sacramento Cake Classes</span>
         </a>
         <nav className="hidden items-center gap-6 text-sm text-white/70 md:flex">
           {navItems.map((item) => (
@@ -31,10 +31,10 @@ export function Header() {
             </a>
           ))}
           <a
-            href="#order"
+            href="#book-class"
             className="rounded-full bg-gradient-to-r from-lavender-500 to-lavender-600 px-4 py-2 text-sm font-semibold text-night shadow-lavender-500/40 transition hover:shadow-glow"
           >
-            Start an order
+            Book a Class
           </a>
         </nav>
         <button
@@ -60,11 +60,11 @@ export function Header() {
               </a>
             ))}
             <a
-              href="#order"
+              href="#book-class"
               className="mt-2 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-lavender-500 to-lavender-600 px-4 py-3 font-semibold text-night"
               onClick={() => setOpen(false)}
             >
-              Start an order
+              Book a Class
             </a>
           </nav>
         </div>

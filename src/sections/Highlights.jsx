@@ -1,29 +1,29 @@
-import { CalendarCheck, Leaf, Sparkles, Truck } from 'lucide-react';
+import { Video, Users, Trophy, Heart } from 'lucide-react';
 
 const highlights = [
   {
-    title: 'Custom flavors, zero stress',
+    title: 'TikTok viral techniques',
     description:
-      'Mix-and-match cake, filling, and frosting combos. We guide you through crowd-pleasing picks and daring flavors alike.',
-    icon: Sparkles
+      'Learn the exact methods from our most popular videos with 2M+ views. Master trending cake decorating that breaks the internet.',
+    icon: Video
   },
   {
-    title: 'Dietary-inclusive bakes',
+    title: 'Small class sizes',
     description:
-      'Need vegan, gluten-friendly, or nut-aware treats? We have curated recipes ready for your celebrations.',
-    icon: Leaf
+      'Maximum 8 students per class means personalized attention and hands-on guidance for every technique you learn.',
+    icon: Users
   },
   {
-    title: 'Reliable scheduling',
+    title: 'Award-winning instructor',
     description:
-      'Reserve pickup windows up to 6 weeks out. Friendly reminders make sure your cake is ready when you are.',
-    icon: CalendarCheck
+      'Our lead instructor has won 3 Sacramento Baking Championships and trained over 2,500 successful cake artists.',
+    icon: Trophy
   },
   {
-    title: 'Seamless pickup or delivery',
+    title: 'Instagram-worthy results',
     description:
-      'Grab it from our Montrose studio or book white-glove delivery right to the party door.',
-    icon: Truck
+      'Every student leaves with a professional-quality cake perfect for social media and guaranteed to impress friends.',
+    icon: Heart
   }
 ];
 
@@ -32,9 +32,9 @@ export function Highlights() {
     <section id="why" className="px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-display text-3xl text-white sm:text-4xl">Reasons our clients keep celebrating with us</h2>
+          <h2 className="font-display text-3xl text-white sm:text-4xl">Why Sacramento loves our cake classes</h2>
           <p className="mt-4 text-base text-white/70 sm:text-lg">
-            We obsess over the details so you can focus on the memories. From tasting notes to transport, every step feels easy.
+            From TikTok beginners to future cake artists - our classes deliver results that get shared, liked, and remembered.
           </p>
         </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
