@@ -1,29 +1,29 @@
-import { Video, Users, Trophy, Heart } from 'lucide-react';
+import { Calendar, GraduationCap, Home, Link } from 'lucide-react';
 
 const highlights = [
   {
-    title: 'TikTok viral techniques',
+    title: 'Curtis Park pickup',
     description:
-      'Learn the exact methods from our most popular videos with 2M+ views. Master trending cake decorating that breaks the internet.',
-    icon: Video
+      'Custom cakes are prepared from Alexa Melhado’s Sacramento kitchen near ZIP 95818, the same hub noted in her private class request form.',
+    icon: Home
   },
   {
-    title: 'Small class sizes',
+    title: 'Community classes',
     description:
-      'Maximum 8 students per class means personalized attention and hands-on guidance for every technique you learn.',
-    icon: Users
+      'Sierra 2 Center workshops teach stacking, filling, crumb-coating, and vintage piping—with every student leaving with a boxed cake.',
+    icon: Calendar
   },
   {
-    title: 'Award-winning instructor',
+    title: 'Private coaching',
     description:
-      'Our lead instructor has won 3 Sacramento Baking Championships and trained over 2,500 successful cake artists.',
-    icon: Trophy
+      'One-on-one lessons start at $175, two-student sessions at $122 each, and groups of three or more at $95 each, with a $50 travel and setup fee inside 10 miles of 95818.',
+    icon: GraduationCap
   },
   {
-    title: 'Instagram-worthy results',
+    title: 'Link-in-bio hub',
     description:
-      'Every student leaves with a professional-quality cake perfect for social media and guaranteed to impress friends.',
-    icon: Heart
+      'The Linktree lists Sacramento class tickets, private lesson catalog, Jotform travel request, gift certificates, and the Good Day Sacramento feature.',
+    icon: Link
   }
 ];
 
@@ -32,9 +32,9 @@ export function Highlights() {
     <section id="why" className="px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-display text-3xl text-white sm:text-4xl">Why Sacramento loves our cake classes</h2>
+          <h2 className="font-display text-3xl text-white sm:text-4xl">Sacramento details that set Tootie Treats apart</h2>
           <p className="mt-4 text-base text-white/70 sm:text-lg">
-            From TikTok beginners to future cake artists - our classes deliver results that get shared, liked, and remembered.
+            Real workshops, local pickup, and verified links—everything on this page ties back to the classes and forms Alexa shares with her community.
           </p>
         </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

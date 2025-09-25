@@ -1,28 +1,28 @@
-import { Calendar, Video, Palette, Camera } from 'lucide-react';
+import { Palette, Mail, MapPin, Sparkles } from 'lucide-react';
 
 const steps = [
   {
-    title: 'Choose your class',
-    detail: 'Browse our trending cake decorating classes and pick the perfect time slot for your schedule.',
-    icon: Calendar,
+    title: 'Design your cake',
+    detail: 'Use the custom cake builder to choose sizes, flavors, colors, and the story you want the cake to tell.',
+    icon: Palette,
     badge: 'Step 1'
   },
   {
-    title: 'Learn viral techniques',
-    detail: 'Master the TikTok-famous methods with hands-on instruction from our award-winning cake artists.',
-    icon: Video,
+    title: 'Send the summary',
+    detail: 'Copy the wizard summary and send it through the Linktree contact options—email, Instagram DM, or the private-class request forms Alexa maintains.',
+    icon: Mail,
     badge: 'Step 2'
   },
   {
-    title: 'Create your masterpiece',
-    detail: 'Build your own stunning cake using professional tools and premium ingredients we provide.',
-    icon: Palette,
+    title: 'Confirm pickup logistics',
+    detail: 'Alexa replies with availability, pricing, and pickup details from her Curtis Park kitchen or your reserved class venue.',
+    icon: MapPin,
     badge: 'Step 3'
   },
   {
-    title: 'Share & take home',
-    detail: 'Get perfect photos for social media, then take your beautiful finished cake home to enjoy!',
-    icon: Camera,
+    title: 'Celebrate in style',
+    detail: 'Collect your finished cake, or attend a scheduled class to decorate alongside other Sacramento creatives.',
+    icon: Sparkles,
     badge: 'Step 4'
   }
 ];
@@ -32,9 +32,9 @@ export function Process() {
     <section id="process" className="px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="mb-12 max-w-2xl">
-          <h2 className="font-display text-3xl text-white sm:text-4xl">How our classes work</h2>
+          <h2 className="font-display text-3xl text-white sm:text-4xl">How the custom order process works</h2>
           <p className="mt-4 text-base text-white/70 sm:text-lg">
-            From booking to taking home your masterpiece, we've designed the most fun and educational cake decorating experience in Sacramento.
+            Sacramento locals love Tootie Treats because the bakery keeps custom cakes collaborative—Alexa guides you from inspiration through pickup or class day.
           </p>
         </div>
         <div className="grid gap-6 lg:grid-cols-2">

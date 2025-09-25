@@ -48,6 +48,18 @@ export function CultCarousel({ slides, autoplayInterval = 6000 }) {
           <p className="mt-4 text-xs text-white/60">
             — {current.author}, {current.role}
           </p>
+          {current.source && (
+            <p className="mt-2 text-xs">
+              <a
+                href={current.source}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-lavender-200 hover:text-lavender-100"
+              >
+                View source
+              </a>
+            </p>
+          )}
         </div>
       </div>
 
@@ -91,7 +103,8 @@ CultCarousel.propTypes = {
       author: PropTypes.string.isRequired,
       role: PropTypes.string.isRequired,
       imageUrl: PropTypes.string.isRequired,
-      badge: PropTypes.string
+      badge: PropTypes.string,
+      source: PropTypes.string
     })
   ),
   autoplayInterval: PropTypes.number

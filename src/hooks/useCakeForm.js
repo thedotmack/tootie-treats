@@ -34,12 +34,19 @@ const defaultForm = {
   inscription: '',
   gluten_free: false,
   vegan: false,
+  theme: '',
+  reference_link: '',
   pickup_date: '',
+  pickup_time: '',
   quantity: 1,
+  event_type: '',
+  guest_count: '',
+  budget: '',
   name: '',
   email: '',
   phone: '',
   notes: '',
+  heard_about: '',
   consent: false
 };
 
@@ -48,6 +55,8 @@ export function useCakeForm() {
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState('');
   const [draftSaved, setDraftSaved] = useState(false);
+
+  const requiredFields = ['size', 'flavor', 'style', 'pickup_date', 'name', 'email', 'phone'];
 
   useEffect(() => {
     try {
@@ -83,26 +92,31 @@ export function useCakeForm() {
     }
   };
 
-  const validate = () => {
-    const required = ['size', 'flavor', 'style', 'pickup_date', 'name', 'email', 'phone'];
-    const newErrors = {};
+  const validate = (fields) => {
+    const fieldsToCheck = fields ?? requiredFields;
+    const updatedErrors = { ...errors };
 
-    required.forEach((field) => {
+    fieldsToCheck.forEach((field) => {
+      if (updatedErrors[field]) {
+        delete updatedErrors[field];
+      }
+
       if (!formData[field]) {
-        newErrors[field] = `${field.replace('_', ' ')} is required.`;
+        updatedErrors[field] = `${field.replace('_', ' ')} is required.`;
       }
     });
 
-    if (formData.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = 'Please enter a valid email address.';
+    if ((fieldsToCheck.includes('email') || (!fields && formData.email)) &&
+      formData.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      updatedErrors.email = 'Please enter a valid email address.';
     }
 
-    if (!formData.consent) {
-      newErrors.consent = 'Please confirm you understand this is a request.';
+    if ((!fields || fieldsToCheck.includes('consent')) && !formData.consent) {
+      updatedErrors.consent = 'Please confirm you understand this is a request.';
     }
 
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
+    setErrors(updatedErrors);
+    return Object.keys(updatedErrors).length === 0;
   };
 
   const saveDraft = () => {
@@ -115,50 +129,67 @@ export function useCakeForm() {
     }, 3000);
   };
 
-  const resetForm = () => {
-    setFormData(defaultForm);
+  const buildSummary = () => {
+    const summaryLines = [
+      `Name: ${formData.name || '—'}`,
+      `Email: ${formData.email || '—'}`,
+      `Phone: ${formData.phone || '—'}`,
+      `Pickup Date: ${formData.pickup_date || '—'}`,
+      formData.pickup_time ? `Preferred Pickup Time: ${formData.pickup_time}` : null,
+      formData.event_type ? `Occasion: ${formData.event_type}` : null,
+      formData.guest_count ? `Approximate Guests: ${formData.guest_count}` : null,
+      formData.budget ? `Budget Comfort Zone: ${formData.budget}` : null,
+      '',
+      `Size: ${formData.size || '—'}`,
+      `Flavor: ${formData.flavor || '—'}`,
+      `Filling: ${formData.filling || 'None'}`,
+      `Style: ${formData.style || '—'}`,
+      `Colors: ${formData.color1}, ${formData.color2}, ${formData.color3}`,
+      formData.theme ? `Design Theme: ${formData.theme}` : null,
+      formData.reference_link ? `Inspiration Link: ${formData.reference_link}` : null,
+      `Inscription: ${formData.inscription || 'None'}`,
+      `Gluten-free: ${formData.gluten_free ? 'Yes' : 'No'}`,
+      `Vegan: ${formData.vegan ? 'Yes' : 'No'}`,
+      `Quantity: ${formData.quantity}`,
+      '',
+      formData.notes ? `Notes: ${formData.notes}` : 'Notes: None provided',
+      formData.heard_about ? `Heard about Tootie Treats via: ${formData.heard_about}` : null,
+      `Estimated Price: $${estimatedPrice}`,
+      `Submitted: ${new Date().toLocaleString()}`
+    ].filter(Boolean);
+
+    return summaryLines.join('\n');
   };
 
   const submitOrder = async (event) => {
-    event.preventDefault();
+    event?.preventDefault?.();
 
     if (!validate()) {
       setStatus('Please complete the highlighted fields.');
       return;
     }
 
+    const summary = buildSummary();
+    let clipboardCopied = false;
+
     try {
-      const subject = encodeURIComponent(`Cake Order Request – ${formData.name}`);
-      const body = encodeURIComponent(`Hi Tootie Treats,%0D%0A%0D%0AI'd like to order a custom cake. Here are the details:%0D%0A%0D%0A` +
-        `Name: ${formData.name}%0D%0A` +
-        `Email: ${formData.email}%0D%0A` +
-        `Phone: ${formData.phone}%0D%0A` +
-        `Pickup Date: ${formData.pickup_date}%0D%0A%0D%0A` +
-        `Size: ${formData.size}%0D%0A` +
-        `Flavor: ${formData.flavor}%0D%0A` +
-        `Filling: ${formData.filling || 'None'}%0D%0A` +
-        `Style: ${formData.style}%0D%0A` +
-        `Colors: ${formData.color1}, ${formData.color2}, ${formData.color3}%0D%0A` +
-        `Inscription: ${formData.inscription || 'None'}%0D%0A` +
-        `Gluten-free: ${formData.gluten_free ? 'Yes' : 'No'}%0D%0A` +
-        `Vegan: ${formData.vegan ? 'Yes' : 'No'}%0D%0A` +
-        `Quantity: ${formData.quantity}%0D%0A%0D%0A` +
-        `Notes: ${formData.notes || 'None'}%0D%0A%0D%0A` +
-        `Estimated Price: $${estimatedPrice}%0D%0A%0D%0ASubmitted: ${new Date().toLocaleString()}`);
-
-      if (typeof window !== 'undefined') {
-        const link = document.createElement('a');
-        link.href = `mailto:orders@tootietreats.example?subject=${subject}&body=${body}`;
-        link.click();
+      if (typeof navigator !== 'undefined' && navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(summary);
+        clipboardCopied = true;
       }
-
-      setStatus('Thanks! Your order request is ready to send via email.');
-      localStorage.removeItem(STORAGE_KEY);
-      resetForm();
     } catch (error) {
-      console.error('Failed to submit order', error);
-      setStatus('We could not launch your email client. Please email us directly.');
+      console.warn('Clipboard copy failed', error);
     }
+
+    if (typeof window !== 'undefined') {
+      window.open('https://linktr.ee/tootietreats', '_blank', 'noopener');
+    }
+
+    setStatus(
+      clipboardCopied
+        ? 'Summary copied! Paste it into the Linktree contact options or DM @tootietreats to finish your request.'
+        : 'Open the Linktree contact options or DM @tootietreats, then paste the summary above.'
+    );
   };
 
   return {
@@ -169,6 +200,9 @@ export function useCakeForm() {
     estimatedPrice,
     updateField,
     saveDraft,
-    submitOrder
+    submitOrder,
+    validate,
+    buildSummary,
+    setStatus
   };
 }

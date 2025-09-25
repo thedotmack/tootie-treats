@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from 'lucide-react';
+import { Instagram, Link as LinkIcon, MapPin } from 'lucide-react';
 
 export function Contact() {
   return (
@@ -6,28 +6,43 @@ export function Contact() {
       <div className="mx-auto max-w-4xl rounded-3xl border border-white/5 bg-gradient-to-br from-white/5 to-white/10 p-10 text-center">
         <h2 className="font-display text-3xl text-white sm:text-4xl">Let’s plan dessert</h2>
         <p className="mx-auto mt-4 max-w-2xl text-base text-white/70 sm:text-lg">
-          Ready to reserve your date or have a question about design possibilities? Reach out and we’ll reply within one business day.
+          Build your cake summary with the wizard, then share it through the official Tootie Treats channels below. Every link routes to a real booking tool Alexa uses.
         </p>
         <div className="mt-8 grid gap-6 sm:grid-cols-3">
           <a
-            href="mailto:classes@sacramentocakeclasses.com"
+            href="https://linktr.ee/tootietreats"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex flex-col items-center gap-3 rounded-2xl border border-white/10 bg-night/60 p-6 text-sm text-white/70 transition hover:border-white/40 hover:text-white"
           >
-            <Mail className="h-6 w-6 text-lavender-200" />
-            classes@sacramentocakeclasses.com
+            <LinkIcon className="h-6 w-6 text-lavender-200" />
+            linktr.ee/tootietreats
+            <span className="text-xs text-white/50">Custom cake & class links</span>
           </a>
           <a
-            href="tel:19165551234"
+            href="https://www.instagram.com/tootietreats"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex flex-col items-center gap-3 rounded-2xl border border-white/10 bg-night/60 p-6 text-sm text-white/70 transition hover:border-white/40 hover:text-white"
           >
-            <Phone className="h-6 w-6 text-lavender-200" />
-            (916) 555-1234
+            <Instagram className="h-6 w-6 text-lavender-200" />
+            @tootietreats
+            <span className="text-xs text-white/50">Class drops & direct messages</span>
           </a>
-          <div className="flex flex-col items-center gap-3 rounded-2xl border border-white/10 bg-night/60 p-6 text-sm text-white/70">
+          <a
+            href="https://www.jotform.com/form/243365823386161"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center gap-3 rounded-2xl border border-white/10 bg-night/60 p-6 text-sm text-white/70 transition hover:border-white/40 hover:text-white"
+          >
             <MapPin className="h-6 w-6 text-lavender-200" />
-            Sacramento, CA
-          </div>
+            Curtis Park travel request
+            <span className="text-xs text-white/50">Includes $50 setup fee inside 95818</span>
+          </a>
         </div>
+        <p className="mt-6 text-xs text-white/50">
+          Prefer email? Use the Linktree “Custom Cake Request” button to open Alexa’s latest form or contact address, then paste your copied summary.
+        </p>
       </div>
     </section>
   );
