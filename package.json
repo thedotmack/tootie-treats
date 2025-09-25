@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy:cf": "wrangler deploy"
+    "deploy:cf": "wrangler deploy",
+    "generate:og": "node scripts/build-og-image.mjs",
+    "postinstall": "npm run generate:og",
+    "prebuild": "npm run generate:og"
   },
   "dependencies": {
     "lucide-react": "^0.378.0",
@@ -25,6 +28,7 @@
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.7",
     "postcss": "^8.4.39",
+    "sharp": "^0.34.4",
     "tailwindcss": "^3.4.9",
     "vite": "^5.4.3",
     "wrangler": "^3.71.0"

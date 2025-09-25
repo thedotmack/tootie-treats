@@ -23,6 +23,16 @@ Preview the built output:
 npm run preview
 ```
 
+## Generated social sharing image
+
+The Open Graph preview is authored as `assets/og-image.svg` and rendered to `public/og-image.png` via [`sharp`](https://sharp.pixelplumbing.com/).
+The PNG is ignored by git and re-generated automatically when you run `npm install` or `npm run build`.
+If you need to refresh it manually during development, execute:
+
+```bash
+npm run generate:og
+```
+
 ## Deploy to Cloudflare Workers
 
 This project is ready to deploy as a static asset Worker. Install dependencies, build the site, and publish with Wrangler:

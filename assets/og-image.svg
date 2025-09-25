@@ -1,0 +1,93 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B0F19" />
+      <stop offset="1" stop-color="#12172A" />
+    </linearGradient>
+    <radialGradient id="lavenderGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(300 160) rotate(20) scale(420 320)">
+      <stop offset="0" stop-color="#C49CFF" stop-opacity="0.7" />
+      <stop offset="1" stop-color="#C49CFF" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="blushGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(960 120) rotate(15) scale(360 260)">
+      <stop offset="0" stop-color="#FFD1DC" stop-opacity="0.75" />
+      <stop offset="1" stop-color="#FFD1DC" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="skyGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(880 520) rotate(15) scale(420 320)">
+      <stop offset="0" stop-color="#C6E2FF" stop-opacity="0.6" />
+      <stop offset="1" stop-color="#C6E2FF" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="badgeGradient" x1="0" y1="0" x2="220" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A978FF" />
+      <stop offset="1" stop-color="#FFD1DC" />
+    </linearGradient>
+    <filter id="softBlur" x="-100" y="-100" width="1400" height="830" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="50" />
+    </filter>
+    <filter id="glow" x="0" y="0" width="1200" height="630" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="18" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <linearGradient id="underline" x1="0" y1="0" x2="460" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFD1DC" stop-opacity="0" />
+      <stop offset="0.25" stop-color="#FFD1DC" stop-opacity="0.6" />
+      <stop offset="0.75" stop-color="#A978FF" stop-opacity="0.8" />
+      <stop offset="1" stop-color="#C6E2FF" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGradient)" />
+  <g filter="url(#softBlur)">
+    <ellipse cx="320" cy="140" rx="320" ry="220" fill="url(#lavenderGlow)" />
+    <ellipse cx="940" cy="140" rx="320" ry="220" fill="url(#blushGlow)" />
+    <ellipse cx="900" cy="520" rx="360" ry="260" fill="url(#skyGlow)" />
+  </g>
+
+  <g opacity="0.15">
+    <path d="M180 120h840" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1" stroke-dasharray="6 18" />
+    <path d="M180 210h840" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="8 16" />
+    <path d="M180 300h840" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="10 20" />
+    <path d="M180 390h840" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1" stroke-dasharray="12 20" />
+    <path d="M180 480h840" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="14 22" />
+    <path d="M300 60v510" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="8 14" />
+    <path d="M600 60v510" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1" stroke-dasharray="10 18" />
+    <path d="M900 60v510" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="12 22" />
+  </g>
+
+  <g filter="url(#glow)">
+    <text x="150" y="250" fill="#FFFFFF" font-size="108" font-family="'DM Sans', 'Inter', 'Segoe UI', sans-serif" font-weight="700" letter-spacing="1.5">
+      Tootie Treats
+    </text>
+  </g>
+
+  <path d="M150 270h460" stroke="url(#underline)" stroke-width="6" stroke-linecap="round" />
+
+  <text x="150" y="340" fill="#E3CCFF" font-size="42" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="600" letter-spacing="1">
+    Sacramento cake studio &amp; viral decorating classes
+  </text>
+  <text x="150" y="408" fill="#FFFFFF" fill-opacity="0.85" font-size="30" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="400" letter-spacing="0.5">
+    Custom buttercream showstoppers · Private parties · Team workshops
+  </text>
+
+  <g transform="translate(150 450)">
+    <rect width="320" height="96" rx="48" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" />
+    <text x="160" y="61" text-anchor="middle" fill="#FFFFFF" font-size="34" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="600">
+      Learn · Bake · Celebrate
+    </text>
+  </g>
+
+  <g transform="translate(860 420)">
+    <rect width="220" height="80" rx="40" fill="url(#badgeGradient)" opacity="0.95" />
+    <text x="110" y="52" text-anchor="middle" fill="#0B0F19" font-size="30" font-family="'DM Sans', 'Segoe UI', sans-serif" font-weight="700">
+      Sacramento, CA
+    </text>
+  </g>
+
+  <g transform="translate(860 160)">
+    <circle cx="80" cy="80" r="78" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.18)" stroke-width="2" />
+    <path d="M80 38c20 0 36 16 36 36s-28 42-36 54c-8-12-36-34-36-54s16-36 36-36z" fill="url(#badgeGradient)" />
+    <path d="M80 72c6 0 10 4 10 10s-4 10-10 10-10-4-10-10 4-10 10-10z" fill="#0B0F19" opacity="0.85" />
+  </g>
+</svg>
