@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Clock, ExternalLink } from 'lucide-react';
+import { Calendar, MapPin, Clock, ExternalLink } from 'lucide-react'
 
 const publicClasses = [
   {
@@ -61,93 +61,104 @@ const publicClasses = [
     ],
     link: 'https://secure.qgiv.com/for/101for101years/event/halloweencakedecoratingclass/'
   }
-];
+]
 
 export function Classes() {
   return (
-    <section id="classes" className="px-4 py-20 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-6xl">
-        <div className="grid gap-12 lg:grid-cols-[1fr_minmax(320px,420px)]">
-          <div className="space-y-6">
-            <div className="space-y-4">
-              <h2 className="font-display text-3xl text-white sm:text-4xl">Upcoming Sacramento classes</h2>
-              <p className="text-base text-white/70 sm:text-lg">
-                Alexa Melhado teaches hands-on decorating workshops around the Sacramento area—from Curtis Park’s Sierra 2 Center to creative partners like Panama Pottery and The Crafted Canvas. Every class includes ingredients, tools, and a box to carry your cake home.
-              </p>
-              <p className="text-sm text-white/50">
-                Tickets are limited and sold through the host venues. Use the links below or visit the Tootie Treats Linktree for the latest calendar.
-              </p>
-            </div>
-            <div className="space-y-4">
-              {publicClasses.map((classItem) => (
-                <article key={classItem.name} className="rounded-3xl border border-white/5 bg-white/5 p-6">
-                  <header className="flex flex-col gap-2 border-b border-white/10 pb-4 text-left">
-                    <h3 className="font-display text-xl text-white">{classItem.name}</h3>
-                    <div className="flex flex-wrap items-center gap-3 text-xs text-white/60">
-                      <span className="inline-flex items-center gap-1">
-                        <Calendar className="h-3.5 w-3.5" /> {classItem.date}
-                      </span>
-                      <span className="inline-flex items-center gap-1">
-                        <Clock className="h-3.5 w-3.5" /> {classItem.time}
-                      </span>
-                      <span className="rounded-full bg-lavender-500/15 px-3 py-1 text-xs text-lavender-100">{classItem.price}</span>
-                    </div>
-                    <div className="inline-flex items-center gap-2 text-xs text-white/60">
-                      <MapPin className="h-3.5 w-3.5" />
-                      <span>{classItem.location}</span>
-                    </div>
-                  </header>
-                  <ul className="mt-4 space-y-2 text-sm text-white/70">
-                    {classItem.details.map((detail) => (
-                      <li key={detail}>• {detail}</li>
-                    ))}
-                  </ul>
-                  <a
-                    href={classItem.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-4 inline-flex items-center gap-2 rounded-full border border-lavender-400/40 px-4 py-2 text-sm font-semibold text-lavender-200 transition hover:border-lavender-200 hover:text-white"
-                  >
-                    Reserve through host site <ExternalLink className="h-4 w-4" />
-                  </a>
-                </article>
-              ))}
-            </div>
+    <section id="classes" className="border-b-4 border-border bg-secondary-background px-4 py-20 sm:px-6">
+      <div className="mx-auto grid w-container max-w-full gap-10 lg:grid-cols-[minmax(0,1fr)_380px]">
+        <div className="flex flex-col gap-6">
+          <header className="space-y-4">
+            <h2 className="font-heading text-3xl sm:text-4xl">Upcoming Sacramento classes</h2>
+            <p className="text-base text-foreground/80 sm:text-lg">
+              Alexa Melhado teaches hands-on decorating workshops across Sacramento—from Curtis Park’s Sierra 2 Center to
+              partners like Panama Pottery and The Crafted Canvas. Every ticket includes tools, buttercream, and a neon-bright
+              cake box.
+            </p>
+            <p className="text-sm text-foreground/70">
+              Ticketing lives with each host venue. Use the verified links below or visit the Tootie Treats Linktree for the
+              newest schedule.
+            </p>
+          </header>
+          <div className="space-y-5">
+            {publicClasses.map((classItem) => (
+              <article
+                key={classItem.name}
+                className="rounded-base border-4 border-border bg-background p-6 shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
+              >
+                <header className="flex flex-col gap-3 border-b-2 border-border pb-4">
+                  <h3 className="font-heading text-xl text-foreground">{classItem.name}</h3>
+                  <div className="flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-foreground/70">
+                    <span className="inline-flex items-center gap-1">
+                      <Calendar className="h-4 w-4" /> {classItem.date}
+                    </span>
+                    <span className="inline-flex items-center gap-1">
+                      <Clock className="h-4 w-4" /> {classItem.time}
+                    </span>
+                    <span className="rounded-base border-2 border-border bg-main px-3 py-1 text-[0.7rem] font-semibold text-main-foreground">
+                      {classItem.price}
+                    </span>
+                  </div>
+                  <div className="inline-flex items-center gap-2 text-xs text-foreground/70">
+                    <MapPin className="h-4 w-4" />
+                    <span>{classItem.location}</span>
+                  </div>
+                </header>
+                <ul className="mt-4 space-y-2 text-sm text-foreground/75">
+                  {classItem.details.map((detail) => (
+                    <li key={detail} className="flex items-start gap-2">
+                      <span className="mt-1 inline-block size-2 rounded-full bg-foreground" />
+                      <span>{detail}</span>
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href={classItem.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-flex items-center gap-2 rounded-base border-2 border-border bg-secondary-background px-4 py-2 text-sm font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:bg-main hover:text-main-foreground hover:shadow-none"
+                >
+                  Reserve via host site <ExternalLink className="h-4 w-4" />
+                </a>
+              </article>
+            ))}
           </div>
-          <aside className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-6 text-sm text-white/70">
-            <div className="space-y-2">
-              <h3 className="font-display text-xl text-white">Private group experiences</h3>
-              <p>
-                Want a birthday, bachelorette, or team-building cake class? Private sessions start at $175 for one person, $122 each for two students, and $95 each for groups of three or more.
-              </p>
-            </div>
-            <div className="space-y-2">
-              <h4 className="text-sm font-semibold text-white">Travel & host details</h4>
-              <p>
-                Host at the Tootie Treats studio in Sacramento or have Alexa travel to you. There’s a $50 travel and setup fee within ten miles of ZIP 95818; additional distance is quoted after you submit the request form.
-              </p>
-            </div>
-            <div className="space-y-3">
-              <a
-                href="https://app.acuityscheduling.com/catalog.php?owner=32574148&action=addCart&clear=1&id=2037518"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-lavender-500 to-lavender-600 px-5 py-3 text-sm font-semibold text-night shadow-lavender-500/40 transition hover:shadow-glow"
-              >
-                Book a private class
-              </a>
-              <a
-                href="https://www.jotform.com/form/243365823386161"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white/80 transition hover:border-white/40 hover:text-white"
-              >
-                Submit travel class request
-              </a>
-            </div>
-          </aside>
         </div>
+        <aside className="flex h-full flex-col gap-5 rounded-base border-4 border-border bg-background p-6 shadow-shadow">
+          <div className="rounded-base border-2 border-border bg-secondary-background p-4">
+            <h3 className="font-heading text-xl text-foreground">Private group experiences</h3>
+            <p className="mt-3 text-sm text-foreground/75">
+              Birthdays, bachelorettes, or corporate teams welcome. Private sessions start at $175 for one decorator, $122 each
+              for two, and $95 each for groups of three or more.
+            </p>
+          </div>
+          <div className="rounded-base border-2 border-border bg-secondary-background p-4">
+            <h4 className="font-heading text-sm uppercase tracking-[0.2em] text-foreground/70">Travel & host details</h4>
+            <p className="mt-2 text-sm text-foreground/75">
+              Host in the Tootie Treats studio or have Alexa travel within ten miles of ZIP 95818 (flat $50 setup). Additional
+              distance is quoted after you submit the travel form.
+            </p>
+          </div>
+          <div className="mt-auto grid gap-3">
+            <a
+              href="https://app.acuityscheduling.com/catalog.php?owner=32574148&action=addCart&clear=1&id=2037518"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-base border-2 border-border bg-main px-5 py-3 font-semibold text-main-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
+            >
+              Book a private class
+            </a>
+            <a
+              href="https://www.jotform.com/form/243365823386161"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-base border-2 border-border bg-secondary-background px-5 py-3 font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:bg-main hover:text-main-foreground hover:shadow-none"
+            >
+              Submit travel class request
+            </a>
+          </div>
+        </aside>
       </div>
     </section>
-  );
+  )
 }

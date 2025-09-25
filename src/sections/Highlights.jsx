@@ -1,4 +1,4 @@
-import { Calendar, GraduationCap, Home, Link } from 'lucide-react';
+import { Calendar, GraduationCap, Home, Link } from 'lucide-react'
 
 const highlights = [
   {
@@ -25,34 +25,45 @@ const highlights = [
       'The Linktree lists Sacramento class tickets, private lesson catalog, Jotform travel request, gift certificates, and the Good Day Sacramento feature.',
     icon: Link
   }
-];
+]
 
 export function Highlights() {
   return (
-    <section id="why" className="px-4 py-20 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-6xl">
+    <section id="why" className="border-b-4 border-border bg-background px-4 py-20 sm:px-6">
+      <div className="mx-auto flex w-container max-w-full flex-col gap-12">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-display text-3xl text-white sm:text-4xl">Sacramento details that set Tootie Treats apart</h2>
-          <p className="mt-4 text-base text-white/70 sm:text-lg">
-            Real workshops, local pickup, and verified links—everything on this page ties back to the classes and forms Alexa shares with her community.
+          <p className="inline-flex items-center rounded-base border-2 border-border bg-secondary-background px-4 py-2 font-heading text-xs uppercase tracking-[0.2em] text-foreground shadow-shadow">
+            Sacramento Provenance
+          </p>
+          <h2 className="mt-5 font-heading text-3xl sm:text-4xl">
+            Sacramento details that set Tootie Treats apart
+          </h2>
+          <p className="mt-4 text-base text-foreground/80 sm:text-lg">
+            Real workshops, local pickup, and verified links—every highlight connects to the official Linktree, booking forms,
+            or Good Day Sacramento feature.
           </p>
         </div>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {highlights.map(({ title, description, icon: Icon }) => (
-            <div
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {highlights.map(({ title, description, icon: Icon }, index) => (
+            <article
               key={title}
-              className="group relative overflow-hidden rounded-3xl border border-white/5 bg-white/5 p-6 text-left shadow-xl shadow-black/20 transition hover:-translate-y-1 hover:shadow-glow"
+              className="group relative flex h-full flex-col gap-4 rounded-base border-4 border-border bg-secondary-background p-6 text-left shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
             >
-              <div className="absolute -right-12 -top-12 h-24 w-24 rounded-full bg-lavender-500/20 blur-2xl" aria-hidden />
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-lavender-500/80 to-blush/60 text-night">
+              <span className="absolute -right-6 -top-6 size-14 rotate-6 rounded-[35%] border-4 border-border bg-main/30 blur-lg" aria-hidden />
+              <div className="flex size-12 items-center justify-center rounded-base border-2 border-border bg-main text-main-foreground shadow-shadow">
                 <Icon className="h-6 w-6" />
               </div>
-              <h3 className="mt-6 font-display text-xl text-white">{title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-white/70">{description}</p>
-            </div>
+              <h3 className="font-heading text-xl text-foreground">{title}</h3>
+              <p className="text-sm leading-relaxed text-foreground/75">
+                {description}
+              </p>
+              <span className="mt-auto inline-flex w-max items-center gap-2 rounded-base border-2 border-border bg-background px-3 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-foreground shadow-shadow">
+                {String(index + 1).padStart(2, '0')}
+              </span>
+            </article>
           ))}
         </div>
       </div>
     </section>
-  );
+  )
 }

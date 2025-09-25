@@ -1,35 +1,66 @@
+import { fontFamily } from "tailwindcss/defaultTheme"
+import typography from "@tailwindcss/typography"
+
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    './index.html',
-    './src/**/*.{js,jsx,ts,tsx}'
-  ],
+  darkMode: ["class"],
+  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    container: {
+      center: true,
+      padding: "1.5rem",
+    },
     extend: {
-      fontFamily: {
-        display: ['"DM Sans"', 'sans-serif'],
-        body: ['"Inter"', 'sans-serif']
-      },
       colors: {
-        night: '#0b0f19',
-        lavender: {
-          100: '#F4E8FF',
-          200: '#E3CCFF',
-          400: '#C49CFF',
-          500: '#A978FF',
-          600: '#7D4FE7'
-        },
-        blush: '#FFD1DC',
-        sky: '#C6E2FF',
-        mint: '#D9FFDB'
+        background: "var(--background)",
+        "secondary-background": "var(--secondary-background)",
+        foreground: "var(--foreground)",
+        main: "var(--main)",
+        "main-foreground": "var(--main-foreground)",
+        border: "var(--border)",
+        overlay: "var(--overlay)",
+        ring: "var(--ring)",
+        "chart-1": "var(--chart-1)",
+        "chart-2": "var(--chart-2)",
+        "chart-3": "var(--chart-3)",
+        "chart-4": "var(--chart-4)",
+        "chart-5": "var(--chart-5)",
+      },
+      fontFamily: {
+        heading: ["DM Sans", ...fontFamily.sans],
+        base: ["DM Sans", ...fontFamily.sans],
+      },
+      fontWeight: {
+        heading: "var(--font-weight-heading)",
+        base: "var(--font-weight-base)",
+      },
+      borderRadius: {
+        base: "var(--radius-base)",
+      },
+      translate: {
+        boxShadowX: "var(--spacing-boxShadowX)",
+        boxShadowY: "var(--spacing-boxShadowY)",
+        reverseBoxShadowX: "var(--spacing-reverseBoxShadowX)",
+        reverseBoxShadowY: "var(--spacing-reverseBoxShadowY)",
       },
       boxShadow: {
-        glow: '0 0 35px rgba(164, 123, 255, 0.45)'
+        shadow: "var(--shadow-shadow)",
+        nav: "var(--shadow-nav)",
+        "dark-nav": "var(--shadow-darkNav)",
+      },
+      maxWidth: {
+        container: "var(--spacing-container)",
+      },
+      animation: {
+        marquee: "var(--animate-marquee)",
+        "marquee-vertical": "var(--animate-marquee-up)",
+        "marquee-secondary": "var(--animate-marquee2)",
       },
       backgroundImage: {
-        'grid-glow': "radial-gradient(circle at 20% 20%, rgba(196, 156, 255, 0.25), transparent 60%), radial-gradient(circle at 80% 0%, rgba(255, 209, 220, 0.2), transparent 55%), radial-gradient(circle at 70% 65%, rgba(198, 226, 255, 0.12), transparent 70%)"
-      }
-    }
+        "grid-70":
+          "linear-gradient(to_right,#80808033_1px,transparent_1px), linear-gradient(to_bottom,#80808033_1px,transparent_1px)",
+      },
+    },
   },
-  plugins: []
-};
+  plugins: [typography],
+}
