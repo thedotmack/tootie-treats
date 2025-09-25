@@ -3,7 +3,6 @@ import { Footer } from './components/Footer.jsx';
 import { Hero } from './sections/Hero.jsx';
 import { Highlights } from './sections/Highlights.jsx';
 import { Classes } from './sections/Classes.jsx';
-import { ClassBooking } from './sections/ClassBooking.jsx';
 import { Process } from './sections/Process.jsx';
 import { SocialMedia } from './sections/SocialMedia.jsx';
 import { Testimonials } from './sections/Testimonials.jsx';
@@ -19,7 +18,6 @@ export default function App() {
         <Highlights />
         <Classes />
         <Process />
-        <ClassBooking />
         <SocialMedia />
         <Testimonials />
         <FAQ />

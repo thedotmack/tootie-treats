@@ -1,33 +1,33 @@
 const faqs = [
   {
-    question: 'How far in advance should I book?',
+    question: 'Where do classes take place?',
     answer:
-      'Classes typically fill up 1–2 weeks in advance, especially weekends. Popular classes like "Viral Buttercream Basics" book up fast, so reserve your spot early!'
+      'Most public workshops run through the Sierra Curtis Neighborhood Association at the Sierra 2 Center (2791 24th Street, Sacramento). Pop-ups like the Magic Mushroom class are hosted at partner spaces listed on the Tootie Treats Linktree.'
   },
   {
     question: 'What should I bring to class?',
     answer:
-      'Nothing! We provide all materials, tools, aprons, and ingredients. Just bring yourself and get ready to have fun learning. Comfortable clothes recommended.'
+      'Sierra 2 Center listings confirm that all materials, buttercream, and a take-home box are provided—just arrive ready to decorate. Beginner-friendly instruction is included in every session.'
   },
   {
-    question: 'Can you accommodate dietary restrictions?',
+    question: 'How quickly do classes sell out?',
     answer:
-      'Absolutely! We offer vegan and gluten-free options for most classes. Please note any allergies or dietary needs when booking so we can prepare accordingly.'
+      'Recent Sierra 2 Center events such as the Blueberry Pie and Fall Cake Decorating classes show only five to six tickets left, so it’s best to reserve as soon as you know your date.'
   },
   {
-    question: 'What is your cancellation policy?',
+    question: 'How are private lessons priced?',
     answer:
-      'We require 48 hours notice for a full refund. Cancellations within 48 hours receive a class credit valid for 6 months. No-shows forfeit the class fee.'
+      'The Acuity Scheduling catalog lists one-on-one sessions with Alexa at $175, two-student lessons at $122 per person, and groups of three or more at $95 each.'
   },
   {
-    question: 'Can beginners join advanced classes?',
+    question: 'Do you travel for private classes?',
     answer:
-      'We recommend starting with "Beginner Cake Decorating" first. Our instructors assess each student\'s skill level and can provide extra guidance as needed.'
+      'Yes. The private class request form notes a $50 travel and setup fee for locations within ten miles of ZIP 95818, with additional distance quoted after submission.'
   },
   {
-    question: 'Do you offer private group classes?',
+    question: 'How do I request a custom cake?',
     answer:
-      'Yes! Private classes for birthdays, bachelorette parties, or team building start at $600 for up to 8 people. Contact us to customize your experience.'
+      'Use the wizard on this page to build your cake summary, copy it, and send it via the contact options on linktr.ee/tootietreats (email, DM, or request forms). Alexa will confirm availability and pickup logistics.'
   }
 ];
 
@@ -38,7 +38,7 @@ export function FAQ() {
         <div className="text-center">
           <h2 className="font-display text-3xl text-white sm:text-4xl">Frequently asked questions</h2>
           <p className="mt-4 text-base text-white/70 sm:text-lg">
-            Everything you need to know before joining our viral cake decorating classes.
+            Answers are pulled directly from current registration pages and booking forms so you can plan with confidence.
           </p>
         </div>
         <div className="mt-10 space-y-4">
