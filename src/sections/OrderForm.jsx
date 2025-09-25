@@ -457,7 +457,7 @@ export function OrderForm() {
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-heading text-3xl sm:text-4xl text-foreground">Build your Tootie Treats cake request</h2>
           <p className="mt-4 text-base text-foreground/75 sm:text-lg">
-            Tootie Treats bakes custom cakes in Sacramento alongside the viral classes you see on social media. Use this wizard to plan your cake, then send the summary straight to Alexa.
+            Tootie Treats bakes custom cakes in Sacramento alongside the pastel-perfect classes you see on social media. Use this wizard to plan your cake, then send the summary straight to Alexa.
           </p>
         </div>
 

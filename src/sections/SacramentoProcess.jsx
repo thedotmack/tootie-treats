@@ -8,8 +8,8 @@ const steps = [
     badge: 'Step 1'
   },
   {
-    title: 'Learn viral techniques',
-    detail: 'Master the TikTok-famous methods with hands-on instruction from our award-winning cake artists.',
+    title: 'Learn signature techniques',
+    detail: 'Master the crowd-favorite methods with hands-on instruction from our award-winning cake artists.',
     icon: Video,
     badge: 'Step 2'
   },

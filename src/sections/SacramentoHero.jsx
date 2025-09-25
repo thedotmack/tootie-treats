@@ -20,7 +20,7 @@ export function Hero() {
               </span>
             </h1>
             <p className="mx-auto max-w-2xl text-lg text-white/70 sm:text-xl">
-              Join Sacramento's most viral cake decorating classes! Learn trending techniques, master buttercream art, 
+              Join Sacramento's most celebrated cake decorating classes! Learn trending techniques, master buttercream art,
               and create Instagram-worthy masterpieces in our fun, energetic studio environment.
             </p>
           </div>
@@ -72,7 +72,7 @@ export function Hero() {
                 <span className="rounded-full bg-lavender-500/20 px-3 py-1 text-xs text-lavender-100">This Weekend</span>
               </p>
               <p className="mt-2 text-xs leading-relaxed text-white/60">
-                🔥 Trending techniques! Join our viral buttercream class - spots filling fast!
+                🔥 Trending techniques! Join our signature buttercream class - spots filling fast!
               </p>
             </div>
           </div>
