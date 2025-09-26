@@ -6,6 +6,7 @@ import { Classes } from '../src/sections/Classes'
 import { PrivateEvents } from '../src/sections/PrivateEvents'
 import { Process } from '../src/sections/Process'
 import { CustomCakes } from '../src/sections/CustomCakes'
+import { InstagramGallery } from '../src/sections/InstagramGallery'
 import { SocialMedia } from '../src/sections/SocialMedia'
 import { Testimonials } from '../src/sections/Testimonials'
 import { FAQ } from '../src/sections/FAQ'
@@ -29,6 +30,7 @@ export default async function HomePage() {
       <main className="pt-24">
         <Hero content={heroContent} />
         <Highlights content={highlightsContent} />
+        <InstagramGallery />
         <Classes content={classesContent} />
         <PrivateEvents />
         <Process />

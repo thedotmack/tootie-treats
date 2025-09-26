@@ -82,7 +82,7 @@ export function Classes({ content }) {
   return (
     <section
       id="classes"
-      className="relative border-b-4 border-border bg-gradient-to-r from-accent-green/30 via-secondary-background to-accent-lavender/40 px-4 py-20 sm:px-6"
+      className="relative border-b-4 border-border bg-gradient-to-r from-accent-green/30 via-secondary-background to-accent-lavender/40 overflow-hidden px-4 py-20 sm:px-6"
     >
       <div
         aria-hidden
@@ -147,39 +147,33 @@ export function Classes({ content }) {
         </div>
 
         {/* Embedded Acuity Scheduling with Enhanced Integration */}
-        <div className="mt-12 rounded-base border-4 border-border bg-gradient-to-br from-accent-pink/20 via-white to-accent-lavender/20 p-8 shadow-shadow">
-          <h3 className="mb-2 text-center font-heading text-3xl text-foreground">🎂 Book Your Class Right Here! 🎂</h3>
-          <p className="mb-6 text-center text-foreground/80">Pick your date, pay online, and get ready to create something amazing!</p>
-          <div className="relative w-full overflow-hidden rounded-base border-4 border-border bg-white shadow-shadow">
+        </div>
+        <div className="mt-12 -mx-4 sm:mx-auto sm:max-w-full">
+          <div className="sm:rounded-base sm:border-4 sm:border-border sm:bg-gradient-to-br sm:from-accent-pink/20 sm:via-white sm:to-accent-lavender/20 sm:p-8 sm:shadow-shadow">
+            <h3 className="mb-2 px-4 sm:px-0 text-center font-heading text-2xl sm:text-3xl text-foreground">🎂 Book Your Class Right Here! 🎂</h3>
+            <p className="mb-4 sm:mb-6 px-4 sm:px-0 text-center text-sm sm:text-base text-foreground/80">Pick your date, pay online, and get ready to create something amazing!</p>
+            <div className="relative w-full overflow-hidden sm:rounded-base sm:border-4 sm:border-border bg-gradient-to-br from-accent-pink/20 via-white to-accent-lavender/20 sm:bg-white sm:shadow-shadow">
             <iframe
               src="https://tootietreatsclasses.as.me/schedule.php?appointmentType=83772956&embed=1&noHeader=1"
               width="100%"
               height="800"
               frameBorder="0"
               className="acuity-scheduling-iframe min-h-[800px] w-full sm:min-h-[900px]"
-              style={{ border: 'none' }}
+              style={{ border: 'none', display: 'block' }}
               title="Schedule Your Cake Class"
               loading="lazy"
             />
-          </div>
-          <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:justify-center">
-            <a
-              href={bookingUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-base border-2 border-border bg-secondary-background px-6 py-3 text-sm font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:bg-accent-lavender hover:shadow-none"
-            >
-              Having trouble? Book on Linktree →
-            </a>
+            </div>
+            <div className="mt-4 sm:mt-6 px-4 sm:px-0 flex justify-center">
             <a
               href="#private-events"
               className="inline-flex items-center justify-center gap-2 rounded-base border-2 border-border bg-gradient-to-r from-accent-coral via-main to-accent-pink px-6 py-3 font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
             >
               Book a Private Class
             </a>
+            </div>
           </div>
         </div>
-      </div>
     </section>
   )
 }

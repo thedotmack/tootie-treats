@@ -2961,3 +2961,112 @@
 2025-09-26T20:50:44: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
 2025-09-26T20:50:44:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
 2025-09-26T20:50:44: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:13:19:  ⚠ Cross origin request detected from preview.tootie.space to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+2025-09-26T22:13:19: Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+2025-09-26T22:13:19:  ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+2025-09-26T22:13:19:  ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+2025-09-26T22:13:20:  ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+2025-09-26T22:13:20:  ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+2025-09-26T22:13:21:  ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+2025-09-26T22:13:23:  ⨯ ./src/sections/InstagramGallery.jsx
+2025-09-26T22:13:23: Error:   [31mx[0m You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+2025-09-26T22:13:23:   [31m|[0m
+2025-09-26T22:13:23:   [31m|[0m  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+2025-09-26T22:13:23:   [31m|[0m
+2025-09-26T22:13:23: 
+2025-09-26T22:13:23:    ,-[[36;1;4m/root/Projects/tootie-treats/src/sections/InstagramGallery.jsx[0m:1:1]
+2025-09-26T22:13:23:  [2m1[0m | import { useState } from 'react'
+2025-09-26T22:13:23:    : [35;1m         ^^^^^^^^[0m
+2025-09-26T22:13:23:  [2m2[0m | import Image from 'next/image'
+2025-09-26T22:13:23:  [2m3[0m | import { ChevronLeft, ChevronRight, X } from 'lucide-react'
+2025-09-26T22:13:23:    `----
+2025-09-26T22:13:23: 
+2025-09-26T22:13:23: Import trace for requested module:
+2025-09-26T22:13:23: ./src/sections/InstagramGallery.jsx
+2025-09-26T22:13:23: ./app/page.js
+2025-09-26T22:13:23:  ⨯ ./src/sections/InstagramGallery.jsx
+2025-09-26T22:13:23: Error:   [31mx[0m You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+2025-09-26T22:13:23:   [31m|[0m
+2025-09-26T22:13:23:   [31m|[0m  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+2025-09-26T22:13:23:   [31m|[0m
+2025-09-26T22:13:23: 
+2025-09-26T22:13:23:    ,-[[36;1;4m/root/Projects/tootie-treats/src/sections/InstagramGallery.jsx[0m:1:1]
+2025-09-26T22:13:23:  [2m1[0m | import { useState } from 'react'
+2025-09-26T22:13:23:    : [35;1m         ^^^^^^^^[0m
+2025-09-26T22:13:23:  [2m2[0m | import Image from 'next/image'
+2025-09-26T22:13:23:  [2m3[0m | import { ChevronLeft, ChevronRight, X } from 'lucide-react'
+2025-09-26T22:13:23:    `----
+2025-09-26T22:13:23: 
+2025-09-26T22:13:23: Import trace for requested module:
+2025-09-26T22:13:23: ./src/sections/InstagramGallery.jsx
+2025-09-26T22:13:23: ./app/page.js
+2025-09-26T22:13:40:  ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+2025-09-26T22:13:44:  ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+2025-09-26T22:13:45:  ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+2025-09-26T22:13:45:  ⨯ ./src/sections/InstagramGallery.jsx
+2025-09-26T22:13:45: Error:   [31mx[0m You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+2025-09-26T22:13:45:   [31m|[0m
+2025-09-26T22:13:45:   [31m|[0m  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+2025-09-26T22:13:45:   [31m|[0m
+2025-09-26T22:13:45: 
+2025-09-26T22:13:45:    ,-[[36;1;4m/root/Projects/tootie-treats/src/sections/InstagramGallery.jsx[0m:1:1]
+2025-09-26T22:13:45:  [2m1[0m | import { useState } from 'react'
+2025-09-26T22:13:45:    : [35;1m         ^^^^^^^^[0m
+2025-09-26T22:13:45:  [2m2[0m | import Image from 'next/image'
+2025-09-26T22:13:45:  [2m3[0m | import { ChevronLeft, ChevronRight, X } from 'lucide-react'
+2025-09-26T22:13:45:    `----
+2025-09-26T22:13:45: 
+2025-09-26T22:13:45: Import trace for requested module:
+2025-09-26T22:13:45: ./src/sections/InstagramGallery.jsx
+2025-09-26T22:13:45: ./app/page.js
+2025-09-26T22:13:47: <w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/root/Projects/tootie-treats/.next/cache/webpack/client-development-fallback/1.pack.gz_' -> '/root/Projects/tootie-treats/.next/cache/webpack/client-development-fallback/1.pack.gz'
+2025-09-26T22:13:47: <w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/root/Projects/tootie-treats/.next/cache/webpack/client-development-fallback/1.pack.gz_' -> '/root/Projects/tootie-treats/.next/cache/webpack/client-development-fallback/1.pack.gz'
+2025-09-26T22:13:47: <w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/root/Projects/tootie-treats/.next/cache/webpack/client-development-fallback/1.pack.gz_' -> '/root/Projects/tootie-treats/.next/cache/webpack/client-development-fallback/1.pack.gz'
+2025-09-26T22:13:47: <w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/root/Projects/tootie-treats/.next/cache/webpack/client-development-fallback/1.pack.gz_' -> '/root/Projects/tootie-treats/.next/cache/webpack/client-development-fallback/1.pack.gz'
+2025-09-26T22:13:47: <w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/root/Projects/tootie-treats/.next/cache/webpack/client-development-fallback/1.pack.gz_' -> '/root/Projects/tootie-treats/.next/cache/webpack/client-development-fallback/1.pack.gz'
+2025-09-26T22:13:47: <w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/root/Projects/tootie-treats/.next/cache/webpack/client-development-fallback/1.pack.gz_' -> '/root/Projects/tootie-treats/.next/cache/webpack/client-development-fallback/1.pack.gz'
+2025-09-26T22:14:11:  ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+2025-09-26T22:14:11:  ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+2025-09-26T22:14:11:  ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+2025-09-26T22:14:11:  ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+2025-09-26T22:14:12:  ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+2025-09-26T22:14:12:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:14:12: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:14:12:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:14:12: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:14:12:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:14:12: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:14:12:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:14:12: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:14:12:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:14:12: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:14:12:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:14:12: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:14:13:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:14:13: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:14:13:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:14:13: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:14:13:  ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+2025-09-26T22:14:22:  ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+2025-09-26T22:14:22:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:14:22: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:14:22:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:14:22: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:14:23:  ⚠ Cross origin request detected from preview.tootie.space to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+2025-09-26T22:14:23: Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+2025-09-26T22:14:26:  ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+2025-09-26T22:16:49:  ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+2025-09-26T22:16:49:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:16:49: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:16:49:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:16:49: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:18:30:  ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+2025-09-26T22:18:30:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:18:30: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:18:30:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:18:30: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:19:23:  ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+2025-09-26T22:19:23:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:19:23: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:19:23:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:19:23: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport

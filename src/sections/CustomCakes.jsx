@@ -1,4 +1,5 @@
 import { Cake, Instagram, MapPin, ArrowRight } from 'lucide-react'
+import Image from 'next/image'
 
 const cakeTypes = [
   'Elegant wedding designs',
@@ -10,6 +11,14 @@ const cakeTypes = [
 ]
 
 export function CustomCakes() {
+  // Showcase custom cake images from Instagram
+  const customCakeImages = [
+    '26180553_1988356574767326_7525060011450433536_n.jpg',
+    '25010205_2051552728188550_1250457450235035648_n.jpg',
+    '23668366_166505900754854_4053745805054443520_n.jpg',
+    '24126997_175543646405920_6160386195265159168_n.jpg',
+  ]
+
   return (
     <section id="custom-cakes" className="relative border-b-4 border-border bg-gradient-to-bl from-accent-green/30 via-secondary-background to-accent-coral/30 px-4 py-20 sm:px-6">
       <div
@@ -100,6 +109,27 @@ export function CustomCakes() {
                 <span className="text-sm text-foreground/85">Pickup from Curtis Park, Sacramento 95818</span>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Custom Cake Gallery */}
+        <div className="mt-16">
+          <h3 className="mb-8 text-center font-heading text-2xl text-foreground">Recent Custom Creations</h3>
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+            {customCakeImages.map((image, index) => (
+              <div
+                key={image}
+                className="group relative aspect-square overflow-hidden rounded-base border-2 border-border bg-white shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
+              >
+                <Image
+                  src={`/instagram-images/${image}`}
+                  alt={`Custom cake design ${index + 1}`}
+                  fill
+                  className="object-cover transition-transform group-hover:scale-110"
+                  sizes="(max-width: 640px) 50vw, 25vw"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>

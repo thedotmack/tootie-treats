@@ -1,4 +1,5 @@
 import { ArrowRight, Star, Users } from 'lucide-react'
+import Image from 'next/image'
 
 export function Hero({ content }) {
   // Use default values if content is not available
@@ -15,6 +16,14 @@ export function Hero({ content }) {
     badge2 = "Join 7,900+ Happy Creators"
   } = content || {}
 
+  // Featured Instagram images for hero
+  const heroImages = [
+    '25010028_1556556137713159_1011648992175456256_n.jpg',
+    '24332359_163149614285805_1997413217185300480_n.jpg',
+    '25005932_377180272752295_2985600276196491264_n.jpg',
+    '26267475_2047093122188366_6963455971930669056_n.jpg',
+  ]
+
   return (
     <section
       id="home"
@@ -28,7 +37,40 @@ export function Hero({ content }) {
             'radial-gradient(circle at 0% 0%, rgba(251, 196, 255, 0.55), transparent 55%), radial-gradient(circle at 85% 15%, rgba(159, 247, 255, 0.55), transparent 50%), radial-gradient(circle at 50% 100%, rgba(202, 253, 90, 0.45), transparent 55%)'
         }}
       />
-      <div className="pointer-events-none absolute -top-32 right-10 hidden size-64 rotate-6 rounded-[38%] border-4 border-border bg-main blur-3xl lg:block" />
+
+      {/* Floating Instagram Images */}
+      <div className="pointer-events-none absolute left-10 top-32 hidden size-48 rotate-[-5deg] overflow-hidden rounded-base border-4 border-border shadow-shadow lg:block">
+        <Image
+          src={`/instagram-images/${heroImages[0]}`}
+          alt="Beautiful cake"
+          fill
+          className="object-cover"
+        />
+      </div>
+      <div className="pointer-events-none absolute right-10 top-48 hidden size-56 rotate-[8deg] overflow-hidden rounded-base border-4 border-border shadow-shadow lg:block">
+        <Image
+          src={`/instagram-images/${heroImages[1]}`}
+          alt="Custom cake design"
+          fill
+          className="object-cover"
+        />
+      </div>
+      <div className="pointer-events-none absolute bottom-20 left-20 hidden size-52 rotate-[-8deg] overflow-hidden rounded-base border-4 border-border shadow-shadow lg:block">
+        <Image
+          src={`/instagram-images/${heroImages[2]}`}
+          alt="Cake decoration"
+          fill
+          className="object-cover"
+        />
+      </div>
+      <div className="pointer-events-none absolute bottom-32 right-32 hidden size-44 rotate-[5deg] overflow-hidden rounded-base border-4 border-border shadow-shadow lg:block">
+        <Image
+          src={`/instagram-images/${heroImages[3]}`}
+          alt="Cake class creation"
+          fill
+          className="object-cover"
+        />
+      </div>
       <div className="mx-auto w-container max-w-full px-4 sm:px-6">
         <div className="flex flex-col items-center gap-6 text-center">
           <span className="inline-flex w-max items-center gap-2 rounded-base border-2 border-border bg-accent-teal px-6 py-3 font-heading text-sm uppercase tracking-[0.15em] text-foreground shadow-shadow">
