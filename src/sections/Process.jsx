@@ -1,40 +1,9 @@
-import { Palette, Mail, MapPin, Sparkles } from 'lucide-react'
-
-const steps = [
-  {
-    title: 'Design your cake',
-    detail: 'Use the custom cake builder to choose sizes, flavors, colors, and the story you want the cake to tell.',
-    icon: Palette,
-    badge: 'Step 1',
-    accent: 'var(--accent-pink)'
-  },
-  {
-    title: 'Send the summary',
-    detail: 'Copy the wizard summary and send it through the Linktree contact options—email, Instagram DM, or the private-class request forms Alexa maintains.',
-    icon: Mail,
-    badge: 'Step 2',
-    accent: 'var(--accent-teal)'
-  },
-  {
-    title: 'Confirm pickup logistics',
-    detail: 'Alexa replies with availability, pricing, and pickup details from her Curtis Park kitchen or your reserved class venue.',
-    icon: MapPin,
-    badge: 'Step 3',
-    accent: 'var(--accent-lavender)'
-  },
-  {
-    title: 'Celebrate in style',
-    detail: 'Collect your finished cake, or attend a scheduled class to decorate alongside other Sacramento creatives.',
-    icon: Sparkles,
-    badge: 'Step 4',
-    accent: 'var(--accent-green)'
-  }
-]
+import { Heart, Sparkles, Star, Quote } from 'lucide-react'
 
 export function Process() {
   return (
     <section
-      id="process"
+      id="alexa-method"
       className="relative border-b-4 border-border bg-secondary-background px-4 py-20 sm:px-6"
     >
       <div
@@ -46,34 +15,76 @@ export function Process() {
         }}
       />
       <div className="mx-auto w-container max-w-full">
-        <div className="mb-12 max-w-2xl space-y-4">
-          <h2 className="font-heading text-3xl sm:text-4xl">How the custom order process works</h2>
-          <p className="text-base text-foreground/80 sm:text-lg">
-            Sacramento locals love Tootie Treats because the bakery keeps custom cakes collaborative—Alexa guides you from
-            inspiration through pickup or class day.
-          </p>
-        </div>
-        <div className="grid gap-6 lg:grid-cols-2">
-          {steps.map(({ title, detail, icon: Icon, badge, accent }) => (
-            <article
-              key={title}
-              className="group flex flex-col gap-4 rounded-base border-4 border-border p-6 shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
-              style={{ backgroundColor: accent }}
-            >
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <span className="flex size-12 items-center justify-center rounded-base border-2 border-border bg-main text-main-foreground shadow-shadow">
-                    <Icon className="h-6 w-6" />
-                  </span>
-                  <h3 className="font-heading text-xl text-foreground">{title}</h3>
+        <div className="mx-auto max-w-4xl">
+          <div className="text-center">
+            <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl">Meet Your Cake Cheerleader</h2>
+          </div>
+
+          <div className="mt-12 grid gap-8 lg:grid-cols-2">
+            <div className="space-y-6">
+              <div className="rounded-base border-4 border-border bg-gradient-to-br from-accent-pink/60 to-accent-lavender/60 p-6 shadow-shadow">
+                <div className="flex items-start gap-4">
+                  <Heart className="mt-1 h-6 w-6 shrink-0 text-foreground" />
+                  <div>
+                    <h3 className="mb-2 font-heading text-xl text-foreground">The Beginning</h3>
+                    <p className="text-foreground/85">
+                      Alexa Melhado started baking at age 4 with her grandmother and a box of Jiffy corn muffins. She loved it so much, she wrote the company a fan letter and they sent her a giant box of mixes!
+                    </p>
+                  </div>
                 </div>
-                <span className="rounded-base border-2 border-border bg-background px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-foreground shadow-shadow">
-                  {badge}
-                </span>
               </div>
-              <p className="text-sm leading-relaxed text-foreground/75">{detail}</p>
-            </article>
-          ))}
+
+              <div className="rounded-base border-4 border-border bg-gradient-to-br from-accent-teal/60 to-accent-green/60 p-6 shadow-shadow">
+                <div className="flex items-start gap-4">
+                  <Sparkles className="mt-1 h-6 w-6 shrink-0 text-foreground" />
+                  <div>
+                    <h3 className="mb-2 font-heading text-xl text-foreground">The Journey</h3>
+                    <p className="text-foreground/85">
+                      Today, she's Sacramento's queen of making cake decorating approachable, fun, and totally doable for everyone. After flying across the country to learn from cake heroes and perfecting her craft, Alexa developed a teaching style that's all her own.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-base border-4 border-border bg-gradient-to-br from-accent-coral/60 to-accent-pink/60 p-6 shadow-shadow">
+                <div className="flex items-start gap-4">
+                  <Star className="mt-1 h-6 w-6 shrink-0 text-foreground" />
+                  <div>
+                    <h3 className="mb-2 font-heading text-xl text-foreground">The Magic</h3>
+                    <p className="text-foreground/85">
+                      After teaching hundreds of Sacramento locals that yes, they CAN decorate cakes, Alexa knows exactly how to make you feel confident, creative, and accomplished - even if you think you have "two left hands" or a "black thumb."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col justify-center">
+              <div className="rounded-base border-4 border-border bg-accent-lavender/30 p-8 shadow-shadow">
+                <Quote className="mb-4 h-8 w-8 text-foreground/50" />
+                <h3 className="mb-6 font-heading text-2xl text-foreground">Alexa's Philosophy:</h3>
+                <blockquote className="space-y-4 text-lg italic text-foreground/90">
+                  <p>
+                    "I want my students to have fun, color OUTSIDE the lines, and let their artistic intuition run the show. If I can do this, you can do this. It's really just about learning a simple formula and then making it your own."
+                  </p>
+                </blockquote>
+                <p className="mt-6 text-sm font-semibold uppercase tracking-wider text-foreground/70">
+                  - Alexa Melhado, Founder
+                </p>
+              </div>
+
+              <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                <div className="rounded-base border-2 border-border bg-secondary-background p-4 text-center shadow-shadow">
+                  <p className="font-heading text-2xl text-foreground">7,900+</p>
+                  <p className="text-sm text-foreground/75">Happy Creators</p>
+                </div>
+                <div className="rounded-base border-2 border-border bg-secondary-background p-4 text-center shadow-shadow">
+                  <p className="font-heading text-2xl text-foreground">100%</p>
+                  <p className="text-sm text-foreground/75">Success Rate</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

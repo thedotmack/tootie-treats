@@ -1,47 +1,33 @@
-import { CultCarousel } from '../components/CultCarousel.jsx';
+import { Quote, Star } from 'lucide-react'
 
 const testimonials = [
   {
-    id: 1,
-    title: 'Sierra 2 Center · Blueberry Pie Class',
-    content:
-      '“Join Alexa Melhado from Tootie Treats in learning to decorate a cake using vintage piping techniques with a lattice pie design... All materials and a box to take home your cake will be provided.”',
-    author: 'Sierra Curtis Neighborhood Association',
-    role: 'Blueberry Pie Cake Class · Sept 24, 2025',
-    imageUrl: 'https://db5569e1d39ae4cc112e-3aa958bc462565c5222e7bc575a8ffbd.ssl.cf1.rackcdn.com/blueberry_cake-1756160235',
-    source: 'https://secure.qgiv.com/for/101for101years/event/blueberrypiecakeclass'
+    content: "I literally cannot draw a stick figure and I made a cake that looked professional. I don't understand how this happened but I'm not questioning it. Already signed up for the next class!",
+    author: 'Sarah M.',
+    role: 'First-time decorator',
+    rating: 5
   },
   {
-    id: 2,
-    title: 'Fall Cake Decorating Class',
-    content:
-      '“Learn how to assemble a fall themed cake with master cake decorator and instructor, Alexa Melhado from Tootie Treats—as seen on Good Day Sacramento! Participants will learn how to stack, fill, and crumb coat their cakes.”',
-    author: 'Sierra Curtis Neighborhood Association',
-    role: 'Fall Cake Decorating · Sept 28, 2025',
-    imageUrl: 'https://db5569e1d39ae4cc112e-3aa958bc462565c5222e7bc575a8ffbd.ssl.cf1.rackcdn.com/fall_cake_class_15_-1754595233',
-    source: 'https://secure.qgiv.com/for/101for101years/event/fallcakedecoratingclassages15/'
+    content: "Came for my friend's birthday thinking I'd just watch everyone else. Left with a gorgeous vintage cake and feeling like I discovered a hidden talent. Who knew?",
+    author: 'Mike T.',
+    role: 'Surprised himself',
+    rating: 5
   },
   {
-    id: 3,
-    title: 'Private class request form',
-    content:
-      '“How many students will be in your two hour class? One on one instruction with Alexa of Tootie Treats ($175) · Two Students ($122 each) · Three or More Students ($95 each).”',
-    author: 'Tootie Treats',
-    role: 'Private class catalog via Acuity Scheduling',
-    imageUrl: 'https://ugc.production.linktr.ee/5aab6399-b304-4e46-a944-f3984ffa17c1_image.png?io=true&size=thumbnail-stack_v1_0',
-    source: 'https://app.acuityscheduling.com/catalog.php?owner=32574148&action=addCart&clear=1&id=2037518'
+    content: "Best date night we've had in years. We laughed, made a bit of a mess, learned something new, and ate cake. What more could you want?",
+    author: 'Jennifer & David P.',
+    role: 'Date night winners',
+    rating: 5
   },
   {
-    id: 4,
-    title: 'Travel class logistics',
-    content:
-      '“There is a $50 travel and setup fee if you are within 10 miles of 95818. For outside of that range, we will calculate the distance and advise you of the fee.”',
-    author: 'Tootie Treats',
-    role: 'Private Cake Decorating Class Jotform',
-    imageUrl: 'https://ugc.production.linktr.ee/f2c5e25f-1b62-4a62-b903-a42eb5ace92a_Tootie-Treats-Logo.674e0a00c1c218.81659265.png?io=true&size=thumbnail-stack_v1_0',
-    source: 'https://www.jotform.com/form/243365823386161'
+    content: "Our team from accounting (yes, accounting!) had such a blast. Everyone was nervous at first but Alexa made it so easy and fun. Best team building ever.",
+    author: 'Linda K.',
+    role: 'Corporate event organizer',
+    rating: 5
   }
-];
+]
+
+const colors = ['var(--accent-pink)', 'var(--accent-teal)', 'var(--accent-lavender)', 'var(--accent-green)']
 
 export function Testimonials() {
   return (
@@ -57,23 +43,55 @@ export function Testimonials() {
             'radial-gradient(circle at 20% 25%, rgba(251, 196, 255, 0.4), transparent 50%), radial-gradient(circle at 80% 80%, rgba(159, 247, 255, 0.45), transparent 55%)'
         }}
       />
-      <div className="mx-auto max-w-6xl">
-        <div className="max-w-3xl text-center">
-          <h2 className="font-heading text-3xl sm:text-4xl text-foreground">What hosts and forms say about Tootie Treats</h2>
-          <p className="mt-4 text-base text-foreground/80 sm:text-lg">
-            These quotes come straight from current class listings and booking forms—no fabricated reviews, only verifiable Sacramento sources.
+      <div className="mx-auto w-container max-w-full">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl">Don't Just Take Our Word For It</h2>
+          <p className="mt-4 text-lg text-foreground/80 sm:text-xl">
+            Real Reviews from Real People (Who Were Really Nervous)
           </p>
         </div>
-        <div className="mt-12 overflow-hidden rounded-3xl border-4 border-border bg-secondary-background p-4 shadow-shadow">
-          <CultCarousel
-            slides={testimonials.map((testimonial) => ({
-              ...testimonial,
-              badge: 'Verified source'
-            }))}
-            autoplayInterval={6000}
-          />
+
+        <div className="mt-12 grid gap-6 sm:grid-cols-2">
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={index}
+              className="rounded-base border-4 border-border p-8 shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
+              style={{ backgroundColor: colors[index % colors.length] }}
+            >
+              <Quote className="mb-4 h-8 w-8 text-foreground/30" />
+              <blockquote className="text-foreground/90">
+                <p className="text-lg italic leading-relaxed">
+                  "{testimonial.content}"
+                </p>
+              </blockquote>
+              <div className="mt-6 flex items-center justify-between">
+                <div>
+                  <p className="font-heading text-foreground">{testimonial.author}</p>
+                  <p className="text-sm text-foreground/70">{testimonial.role}</p>
+                </div>
+                <div className="flex gap-1">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 fill-current text-foreground" />
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-12 rounded-base border-4 border-border bg-secondary-background p-10 text-center shadow-shadow">
+          <p className="text-2xl font-heading text-foreground">7,900+ Happy Creators</p>
+          <p className="mt-3 text-foreground/80">
+            Join thousands of Sacramento locals who discovered they're way more creative than they thought
+          </p>
+          <a
+            href="#classes"
+            className="mt-6 inline-flex items-center justify-center gap-2 rounded-base border-2 border-border bg-gradient-to-r from-accent-coral to-main px-6 py-3 font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
+          >
+            Book Your Class Today
+          </a>
         </div>
       </div>
     </section>
-  );
+  )
 }

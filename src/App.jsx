@@ -3,7 +3,9 @@ import { Footer } from './components/Footer.jsx'
 import { Hero } from './sections/Hero.jsx'
 import { Highlights } from './sections/Highlights.jsx'
 import { Classes } from './sections/Classes.jsx'
+import { PrivateEvents } from './sections/PrivateEvents.jsx'
 import { Process } from './sections/Process.jsx'
+import { CustomCakes } from './sections/CustomCakes.jsx'
 import { SocialMedia } from './sections/SocialMedia.jsx'
 import { Testimonials } from './sections/Testimonials.jsx'
 import { FAQ } from './sections/FAQ.jsx'
@@ -17,7 +19,9 @@ export default function App() {
         <Hero />
         <Highlights />
         <Classes />
+        <PrivateEvents />
         <Process />
+        <CustomCakes />
         <SocialMedia />
         <Testimonials />
         <FAQ />

@@ -1,0 +1,970 @@
+2025-09-25T20:36:34: 
+2025-09-25T20:36:34: > tootie-treats@1.0.0 dev
+2025-09-25T20:36:34: > vite
+2025-09-25T20:36:34: 
+2025-09-25T20:36:35: 
+2025-09-25T20:36:35:   VITE v5.4.20  ready in 252 ms
+2025-09-25T20:36:35: 
+2025-09-25T20:36:35:   ➜  Local:   http://localhost:5173/
+2025-09-25T20:36:35:   ➜  Network: http://148.230.95.162:5173/
+2025-09-25T20:36:35:   ➜  Network: http://10.0.1.1:5173/
+2025-09-25T20:36:35:   ➜  Network: http://10.0.5.1:5173/
+2025-09-25T20:36:35:   ➜  Network: http://10.0.6.1:5173/
+2025-09-25T20:36:35:   ➜  Network: http://10.0.3.1:5173/
+2025-09-25T20:36:35:   ➜  Network: http://10.0.4.1:5173/
+2025-09-25T20:36:35:   ➜  Network: http://10.0.0.1:5173/
+2025-09-25T21:36:09: 9:36:09 PM [vite] hmr update /src/sections/Hero.jsx, /src/styles.css
+2025-09-25T21:36:51: 9:36:51 PM [vite] hmr update /src/sections/Highlights.jsx, /src/styles.css
+2025-09-25T21:37:46: 9:37:46 PM [vite] hmr update /src/sections/Classes.jsx, /src/styles.css
+2025-09-25T21:39:30: 9:39:30 PM [vite] hmr update /src/sections/Process.jsx, /src/styles.css
+2025-09-25T21:41:42: 9:41:42 PM [vite] hmr update /src/sections/FAQ.jsx, /src/styles.css
+2025-09-25T21:42:38: 9:42:38 PM [vite] hmr update /src/sections/Contact.jsx, /src/styles.css
+2025-09-25T21:42:52: 9:42:52 PM [vite] hmr update /src/components/Footer.jsx, /src/styles.css
+2025-09-25T21:43:08: 9:43:08 PM [vite] hmr update /src/App.jsx, /src/styles.css
+2025-09-25T21:43:33: 9:43:33 PM [vite] hmr update /src/sections/Testimonials.jsx, /src/styles.css
+2025-09-26T05:13:15: 
+2025-09-26T05:13:15: > tootie-treats@1.0.0 dev
+2025-09-26T05:13:15: > vite
+2025-09-26T05:13:15: 
+2025-09-26T05:13:16: 
+2025-09-26T05:13:16:   VITE v5.4.20  ready in 595 ms
+2025-09-26T05:13:16: 
+2025-09-26T05:13:16:   ➜  Local:   http://localhost:5173/
+2025-09-26T05:13:16:   ➜  Network: http://148.230.95.162:5173/
+2025-09-26T05:13:16:   ➜  Network: http://10.0.1.1:5173/
+2025-09-26T05:13:16:   ➜  Network: http://10.0.5.1:5173/
+2025-09-26T05:13:16:   ➜  Network: http://10.0.6.1:5173/
+2025-09-26T05:13:16:   ➜  Network: http://10.0.3.1:5173/
+2025-09-26T05:13:16:   ➜  Network: http://10.0.4.1:5173/
+2025-09-26T05:13:16:   ➜  Network: http://10.0.0.1:5173/
+2025-09-26T07:20:17: 7:20:17 AM [vite] page reload src/main.jsx
+2025-09-26T07:20:33: 7:20:33 AM [vite] hmr update /src/App.jsx, /src/styles.css
+2025-09-26T07:20:55: 7:20:55 AM [vite] hmr update /src/sections/Hero.jsx, /src/styles.css
+2025-09-26T07:21:28: 7:21:28 AM [vite] hmr update /src/sections/Hero.jsx, /src/styles.css
+2025-09-26T07:21:49: 7:21:49 AM [vite] hmr update /src/sections/Highlights.jsx, /src/styles.css
+2025-09-26T07:22:08: 7:22:08 AM [vite] hmr update /src/sections/Contact.jsx, /src/styles.css
+2025-09-26T07:22:33: 7:22:33 AM [vite] Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:22:33: 7:22:33 AM [vite] Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:22:33: 7:22:33 AM [vite] Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:22:33: 7:22:33 AM [vite] Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:23:51: 7:23:51 AM [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:23:51:   Plugin: vite:import-analysis
+2025-09-26T07:23:51:   File: /root/Projects/tootie-treats/src/lib/cms.js:179:27
+2025-09-26T07:23:51:   177|      }}>
+2025-09-26T07:23:51:   178|        {children}
+2025-09-26T07:23:51:   179|      </CMSContext.Provider>
+2025-09-26T07:23:51:      |                            ^
+2025-09-26T07:23:51:   180|    );
+2025-09-26T07:23:51:   181|  }
+2025-09-26T07:23:51:       at TransformPluginContext._formatError (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+2025-09-26T07:23:51:       at TransformPluginContext.error (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+2025-09-26T07:23:51:       at TransformPluginContext.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64258:14)
+2025-09-26T07:23:51:       at async PluginContainer.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+2025-09-26T07:23:51:       at async loadAndTransform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+2025-09-26T07:23:51:       at async viteTransformMiddleware (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
+2025-09-26T07:23:51: 7:23:51 AM [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:23:51:   Plugin: vite:import-analysis
+2025-09-26T07:23:51:   File: /root/Projects/tootie-treats/src/lib/cms.js:179:27
+2025-09-26T07:23:51:   177|      }}>
+2025-09-26T07:23:51:   178|        {children}
+2025-09-26T07:23:51:   179|      </CMSContext.Provider>
+2025-09-26T07:23:51:      |                            ^
+2025-09-26T07:23:51:   180|    );
+2025-09-26T07:23:51:   181|  }
+2025-09-26T07:23:51:       at TransformPluginContext._formatError (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+2025-09-26T07:23:51:       at TransformPluginContext.error (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+2025-09-26T07:23:51:       at TransformPluginContext.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64258:14)
+2025-09-26T07:23:51:       at async PluginContainer.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+2025-09-26T07:23:51:       at async loadAndTransform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+2025-09-26T07:23:51:       at async viteTransformMiddleware (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
+2025-09-26T07:23:51: 7:23:51 AM [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:23:51:   Plugin: vite:import-analysis
+2025-09-26T07:23:51:   File: /root/Projects/tootie-treats/src/lib/cms.js:179:27
+2025-09-26T07:23:51:   177|      }}>
+2025-09-26T07:23:51:   178|        {children}
+2025-09-26T07:23:51:   179|      </CMSContext.Provider>
+2025-09-26T07:23:51:      |                            ^
+2025-09-26T07:23:51:   180|    );
+2025-09-26T07:23:51:   181|  }
+2025-09-26T07:23:51:       at TransformPluginContext._formatError (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+2025-09-26T07:23:51:       at TransformPluginContext.error (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+2025-09-26T07:23:51:       at TransformPluginContext.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64258:14)
+2025-09-26T07:23:51:       at async PluginContainer.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+2025-09-26T07:23:51:       at async loadAndTransform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+2025-09-26T07:23:51:       at async viteTransformMiddleware (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
+2025-09-26T07:23:56: 7:23:56 AM [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:23:56:   Plugin: vite:import-analysis
+2025-09-26T07:23:56:   File: /root/Projects/tootie-treats/src/lib/cms.js:179:27
+2025-09-26T07:23:56:   177|      }}>
+2025-09-26T07:23:56:   178|        {children}
+2025-09-26T07:23:56:   179|      </CMSContext.Provider>
+2025-09-26T07:23:56:      |                            ^
+2025-09-26T07:23:56:   180|    );
+2025-09-26T07:23:56:   181|  }
+2025-09-26T07:23:56:       at TransformPluginContext._formatError (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+2025-09-26T07:23:56:       at TransformPluginContext.error (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+2025-09-26T07:23:56:       at TransformPluginContext.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64258:14)
+2025-09-26T07:23:56:       at async PluginContainer.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+2025-09-26T07:23:56:       at async loadAndTransform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+2025-09-26T07:23:56:       at async viteTransformMiddleware (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
+2025-09-26T07:23:56: 7:23:56 AM [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:23:56:   Plugin: vite:import-analysis
+2025-09-26T07:23:56:   File: /root/Projects/tootie-treats/src/lib/cms.js:179:27
+2025-09-26T07:23:56:   177|      }}>
+2025-09-26T07:23:56:   178|        {children}
+2025-09-26T07:23:56:   179|      </CMSContext.Provider>
+2025-09-26T07:23:56:      |                            ^
+2025-09-26T07:23:56:   180|    );
+2025-09-26T07:23:56:   181|  }
+2025-09-26T07:23:56:       at TransformPluginContext._formatError (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+2025-09-26T07:23:56:       at TransformPluginContext.error (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+2025-09-26T07:23:56:       at TransformPluginContext.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64258:14)
+2025-09-26T07:23:56:       at async PluginContainer.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+2025-09-26T07:23:56:       at async loadAndTransform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+2025-09-26T07:23:56:       at async viteTransformMiddleware (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
+2025-09-26T07:23:56: 7:23:56 AM [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:23:56:   Plugin: vite:import-analysis
+2025-09-26T07:23:56:   File: /root/Projects/tootie-treats/src/lib/cms.js:179:27
+2025-09-26T07:23:56:   177|      }}>
+2025-09-26T07:23:56:   178|        {children}
+2025-09-26T07:23:56:   179|      </CMSContext.Provider>
+2025-09-26T07:23:56:      |                            ^
+2025-09-26T07:23:56:   180|    );
+2025-09-26T07:23:56:   181|  }
+2025-09-26T07:23:56:       at TransformPluginContext._formatError (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+2025-09-26T07:23:56:       at TransformPluginContext.error (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+2025-09-26T07:23:56:       at TransformPluginContext.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64258:14)
+2025-09-26T07:23:56:       at async PluginContainer.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+2025-09-26T07:23:56:       at async loadAndTransform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+2025-09-26T07:23:56:       at async viteTransformMiddleware (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
+2025-09-26T07:24:19: 7:24:19 AM [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:24:19:   Plugin: vite:import-analysis
+2025-09-26T07:24:19:   File: /root/Projects/tootie-treats/src/lib/cms.js:179:27
+2025-09-26T07:24:19:   177|      }}>
+2025-09-26T07:24:19:   178|        {children}
+2025-09-26T07:24:19:   179|      </CMSContext.Provider>
+2025-09-26T07:24:19:      |                            ^
+2025-09-26T07:24:19:   180|    );
+2025-09-26T07:24:19:   181|  }
+2025-09-26T07:24:19:       at TransformPluginContext._formatError (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+2025-09-26T07:24:19:       at TransformPluginContext.error (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+2025-09-26T07:24:19:       at TransformPluginContext.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64258:14)
+2025-09-26T07:24:19:       at async PluginContainer.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+2025-09-26T07:24:19:       at async loadAndTransform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+2025-09-26T07:24:19:       at async viteTransformMiddleware (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
+2025-09-26T07:24:19: 7:24:19 AM [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:24:19:   Plugin: vite:import-analysis
+2025-09-26T07:24:19:   File: /root/Projects/tootie-treats/src/lib/cms.js:179:27
+2025-09-26T07:24:19:   177|      }}>
+2025-09-26T07:24:19:   178|        {children}
+2025-09-26T07:24:19:   179|      </CMSContext.Provider>
+2025-09-26T07:24:19:      |                            ^
+2025-09-26T07:24:19:   180|    );
+2025-09-26T07:24:19:   181|  }
+2025-09-26T07:24:19:       at TransformPluginContext._formatError (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+2025-09-26T07:24:19:       at TransformPluginContext.error (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+2025-09-26T07:24:19:       at TransformPluginContext.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64258:14)
+2025-09-26T07:24:19:       at async PluginContainer.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+2025-09-26T07:24:19:       at async loadAndTransform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+2025-09-26T07:24:19:       at async viteTransformMiddleware (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
+2025-09-26T07:24:19: 7:24:19 AM [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:24:19:   Plugin: vite:import-analysis
+2025-09-26T07:24:19:   File: /root/Projects/tootie-treats/src/lib/cms.js:179:27
+2025-09-26T07:24:19:   177|      }}>
+2025-09-26T07:24:19:   178|        {children}
+2025-09-26T07:24:19:   179|      </CMSContext.Provider>
+2025-09-26T07:24:19:      |                            ^
+2025-09-26T07:24:19:   180|    );
+2025-09-26T07:24:19:   181|  }
+2025-09-26T07:24:19:       at TransformPluginContext._formatError (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+2025-09-26T07:24:19:       at TransformPluginContext.error (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+2025-09-26T07:24:19:       at TransformPluginContext.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64258:14)
+2025-09-26T07:24:19:       at async PluginContainer.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+2025-09-26T07:24:19:       at async loadAndTransform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+2025-09-26T07:24:19:       at async viteTransformMiddleware (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
+2025-09-26T07:24:21: 
+2025-09-26T07:24:21: > tootie-treats@1.0.0 dev
+2025-09-26T07:24:21: > vite
+2025-09-26T07:24:21: 
+2025-09-26T07:24:22: 
+2025-09-26T07:24:22:   VITE v5.4.20  ready in 380 ms
+2025-09-26T07:24:22: 
+2025-09-26T07:24:22:   ➜  Local:   http://localhost:5173/
+2025-09-26T07:24:22:   ➜  Network: http://148.230.95.162:5173/
+2025-09-26T07:24:22:   ➜  Network: http://10.0.1.1:5173/
+2025-09-26T07:24:22:   ➜  Network: http://10.0.5.1:5173/
+2025-09-26T07:24:22:   ➜  Network: http://10.0.6.1:5173/
+2025-09-26T07:24:22:   ➜  Network: http://10.0.3.1:5173/
+2025-09-26T07:24:22:   ➜  Network: http://10.0.4.1:5173/
+2025-09-26T07:24:22:   ➜  Network: http://10.0.0.1:5173/
+2025-09-26T07:24:22: Error:   Failed to scan for dependencies from entries:
+2025-09-26T07:24:22:   /root/Projects/tootie-treats/index.html
+2025-09-26T07:24:22: 
+2025-09-26T07:24:22:   [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mThe JSX syntax extension is not currently enabled[0m
+2025-09-26T07:24:22: 
+2025-09-26T07:24:22:     src/lib/cms.js:168:4:
+2025-09-26T07:24:22: [37m      168 │     [32m<[37mCMSContext.Provider value={{
+2025-09-26T07:24:22:           ╵     [32m^[0m
+2025-09-26T07:24:22: 
+2025-09-26T07:24:22:   The esbuild loader for this file is currently set to "js" but it must be set to "jsx" to be able to parse JSX syntax. You can use "loader: { '.js': 'jsx' }" to do that.
+2025-09-26T07:24:22: 
+2025-09-26T07:24:22: 
+2025-09-26T07:24:22:     at failureErrorWithLog (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1472:15)
+2025-09-26T07:24:22:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:945:25
+2025-09-26T07:24:22:     at runOnEndCallbacks (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1315:45)
+2025-09-26T07:24:22:     at buildResponseToResult (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:943:7)
+2025-09-26T07:24:22:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:955:9
+2025-09-26T07:24:22:     at new Promise (<anonymous>)
+2025-09-26T07:24:22:     at requestCallbacks.on-end (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:954:54)
+2025-09-26T07:24:22:     at handleRequest (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:647:17)
+2025-09-26T07:24:22:     at handleIncomingPacket (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:672:7)
+2025-09-26T07:24:22:     at Socket.readFromStdout (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:600:7)
+2025-09-26T07:24:33: 7:24:33 AM [vite] Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:24:33: 7:24:33 AM [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:24:33:   Plugin: vite:import-analysis
+2025-09-26T07:24:33:   File: /root/Projects/tootie-treats/src/lib/cms.js:179:27
+2025-09-26T07:24:33:   177|      }}>
+2025-09-26T07:24:33:   178|        {children}
+2025-09-26T07:24:33:   179|      </CMSContext.Provider>
+2025-09-26T07:24:33:      |                            ^
+2025-09-26T07:24:33:   180|    );
+2025-09-26T07:24:33:   181|  }
+2025-09-26T07:24:33:       at TransformPluginContext._formatError (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+2025-09-26T07:24:33:       at TransformPluginContext.error (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+2025-09-26T07:24:33:       at TransformPluginContext.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64258:14)
+2025-09-26T07:24:33:       at async PluginContainer.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+2025-09-26T07:24:33:       at async loadAndTransform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+2025-09-26T07:24:33:       at async viteTransformMiddleware (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
+2025-09-26T07:24:33: 7:24:33 AM [vite] Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:24:34: 7:24:34 AM [vite] Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:24:34: 7:24:34 AM [vite] Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:24:34: 7:24:34 AM [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:24:34:   Plugin: vite:import-analysis
+2025-09-26T07:24:34:   File: /root/Projects/tootie-treats/src/lib/cms.js:179:27
+2025-09-26T07:24:34:   177|      }}>
+2025-09-26T07:24:34:   178|        {children}
+2025-09-26T07:24:34:   179|      </CMSContext.Provider>
+2025-09-26T07:24:34:      |                            ^
+2025-09-26T07:24:34:   180|    );
+2025-09-26T07:24:34:   181|  }
+2025-09-26T07:24:34:       at TransformPluginContext._formatError (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+2025-09-26T07:24:34:       at TransformPluginContext.error (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+2025-09-26T07:24:34:       at TransformPluginContext.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64258:14)
+2025-09-26T07:24:34:       at async PluginContainer.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+2025-09-26T07:24:34:       at async loadAndTransform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+2025-09-26T07:24:34:       at async viteTransformMiddleware (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
+2025-09-26T07:24:34: 7:24:34 AM [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:24:34:   Plugin: vite:import-analysis
+2025-09-26T07:24:34:   File: /root/Projects/tootie-treats/src/lib/cms.js:179:27
+2025-09-26T07:24:34:   177|      }}>
+2025-09-26T07:24:34:   178|        {children}
+2025-09-26T07:24:34:   179|      </CMSContext.Provider>
+2025-09-26T07:24:34:      |                            ^
+2025-09-26T07:24:34:   180|    );
+2025-09-26T07:24:34:   181|  }
+2025-09-26T07:24:34:       at TransformPluginContext._formatError (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+2025-09-26T07:24:34:       at TransformPluginContext.error (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+2025-09-26T07:24:34:       at TransformPluginContext.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64258:14)
+2025-09-26T07:24:34:       at async PluginContainer.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+2025-09-26T07:24:34:       at async loadAndTransform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+2025-09-26T07:24:34:       at async viteTransformMiddleware (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
+2025-09-26T07:25:15: 7:25:15 AM [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:25:15:   Plugin: vite:import-analysis
+2025-09-26T07:25:15:   File: /root/Projects/tootie-treats/src/lib/cms.js:179:27
+2025-09-26T07:25:15:   177|      }}>
+2025-09-26T07:25:15:   178|        {children}
+2025-09-26T07:25:15:   179|      </CMSContext.Provider>
+2025-09-26T07:25:15:      |                            ^
+2025-09-26T07:25:15:   180|    );
+2025-09-26T07:25:15:   181|  }
+2025-09-26T07:25:15:       at TransformPluginContext._formatError (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+2025-09-26T07:25:15:       at TransformPluginContext.error (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+2025-09-26T07:25:15:       at TransformPluginContext.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64258:14)
+2025-09-26T07:25:15:       at async PluginContainer.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+2025-09-26T07:25:15:       at async loadAndTransform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+2025-09-26T07:25:15:       at async viteTransformMiddleware (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
+2025-09-26T07:25:15: 7:25:15 AM [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:25:15:   Plugin: vite:import-analysis
+2025-09-26T07:25:15:   File: /root/Projects/tootie-treats/src/lib/cms.js:179:27
+2025-09-26T07:25:15:   177|      }}>
+2025-09-26T07:25:15:   178|        {children}
+2025-09-26T07:25:15:   179|      </CMSContext.Provider>
+2025-09-26T07:25:15:      |                            ^
+2025-09-26T07:25:15:   180|    );
+2025-09-26T07:25:15:   181|  }
+2025-09-26T07:25:15:       at TransformPluginContext._formatError (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+2025-09-26T07:25:15:       at TransformPluginContext.error (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+2025-09-26T07:25:15:       at TransformPluginContext.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64258:14)
+2025-09-26T07:25:15:       at async PluginContainer.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+2025-09-26T07:25:15:       at async loadAndTransform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+2025-09-26T07:25:15:       at async viteTransformMiddleware (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
+2025-09-26T07:25:15: 7:25:15 AM [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:25:15:   Plugin: vite:import-analysis
+2025-09-26T07:25:15:   File: /root/Projects/tootie-treats/src/lib/cms.js:179:27
+2025-09-26T07:25:15:   177|      }}>
+2025-09-26T07:25:15:   178|        {children}
+2025-09-26T07:25:15:   179|      </CMSContext.Provider>
+2025-09-26T07:25:15:      |                            ^
+2025-09-26T07:25:15:   180|    );
+2025-09-26T07:25:15:   181|  }
+2025-09-26T07:25:15:       at TransformPluginContext._formatError (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+2025-09-26T07:25:15:       at TransformPluginContext.error (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+2025-09-26T07:25:15:       at TransformPluginContext.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64258:14)
+2025-09-26T07:25:15:       at async PluginContainer.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+2025-09-26T07:25:15:       at async loadAndTransform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+2025-09-26T07:25:15:       at async viteTransformMiddleware (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
+2025-09-26T07:25:15: 7:25:15 AM [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+2025-09-26T07:25:15:   Plugin: vite:import-analysis
+2025-09-26T07:25:15:   File: /root/Projects/tootie-treats/src/lib/cms.js:179:27
+2025-09-26T07:25:15:   177|      }}>
+2025-09-26T07:25:15:   178|        {children}
+2025-09-26T07:25:15:   179|      </CMSContext.Provider>
+2025-09-26T07:25:15:      |                            ^
+2025-09-26T07:25:15:   180|    );
+2025-09-26T07:25:15:   181|  }
+2025-09-26T07:25:15:       at TransformPluginContext._formatError (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+2025-09-26T07:25:15:       at TransformPluginContext.error (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+2025-09-26T07:25:15:       at TransformPluginContext.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64258:14)
+2025-09-26T07:25:15:       at async PluginContainer.transform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+2025-09-26T07:25:15:       at async loadAndTransform (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+2025-09-26T07:25:15:       at async viteTransformMiddleware (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
+2025-09-26T07:25:38: 7:25:38 AM [vite] hmr update /src/components/CMSToolbar.jsx, /src/styles.css
+2025-09-26T07:25:38: 7:25:38 AM [vite] hmr update /src/components/EditableText.jsx, /src/styles.css
+2025-09-26T07:25:38: 7:25:38 AM [vite] hmr update /src/components/EditableList.jsx, /src/styles.css
+2025-09-26T07:25:52: 7:25:52 AM [vite] hmr update /src/App.jsx, /src/styles.css
+2025-09-26T07:25:58: 7:25:58 AM [vite] hmr update /src/App.jsx, /src/styles.css
+2025-09-26T07:26:14: 7:26:14 AM [vite] page reload src/main.jsx
+2025-09-26T07:26:37: 7:26:37 AM [vite] hmr update /src/sections/Hero.jsx, /src/styles.css
+2025-09-26T07:26:52: 7:26:52 AM [vite] hmr update /src/sections/Highlights.jsx, /src/styles.css
+2025-09-26T07:27:14: 7:27:14 AM [vite] hmr update /src/sections/Contact.jsx, /src/styles.css
+2025-09-26T07:27:48: 
+2025-09-26T07:27:48: > tootie-treats@1.0.0 dev
+2025-09-26T07:27:48: > vite
+2025-09-26T07:27:48: 
+2025-09-26T07:27:48: Re-optimizing dependencies because lockfile has changed
+2025-09-26T07:27:48: 
+2025-09-26T07:27:48:   VITE v5.4.20  ready in 278 ms
+2025-09-26T07:27:48: 
+2025-09-26T07:27:48:   ➜  Local:   http://localhost:5173/
+2025-09-26T07:27:48:   ➜  Network: http://148.230.95.162:5173/
+2025-09-26T07:27:48:   ➜  Network: http://10.0.1.1:5173/
+2025-09-26T07:27:48:   ➜  Network: http://10.0.5.1:5173/
+2025-09-26T07:27:48:   ➜  Network: http://10.0.6.1:5173/
+2025-09-26T07:27:48:   ➜  Network: http://10.0.3.1:5173/
+2025-09-26T07:27:48:   ➜  Network: http://10.0.4.1:5173/
+2025-09-26T07:27:48:   ➜  Network: http://10.0.0.1:5173/
+2025-09-26T07:34:13: 7:34:13 AM [vite] hmr update /src/App.jsx, /src/styles.css
+2025-09-26T07:34:54: 7:34:54 AM [vite] vite.config.js changed, restarting server...
+2025-09-26T07:34:54: ✘ [ERROR] Missing "./api" specifier in "@keystatic/core" package [plugin externalize-deps]
+2025-09-26T07:34:54: 
+2025-09-26T07:34:54:     node_modules/esbuild/lib/main.js:1225:27:
+2025-09-26T07:34:54:       1225 │         let result = await callback({
+2025-09-26T07:34:54:            ╵                            ^
+2025-09-26T07:34:54: 
+2025-09-26T07:34:54:     at e (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:25)
+2025-09-26T07:34:54:     at n (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:627)
+2025-09-26T07:34:54:     at o (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:1297)
+2025-09-26T07:34:54:     at resolveExportsOrImports (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46663:18)
+2025-09-26T07:34:54:     at resolveDeepImport (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46686:25)
+2025-09-26T07:34:54:     at tryNodeResolve (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46451:16)
+2025-09-26T07:34:54:     at resolveByViteResolver (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66868:20)
+2025-09-26T07:34:54:     at file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66901:28
+2025-09-26T07:34:54:     at requestCallbacks.on-resolve (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1225:28)
+2025-09-26T07:34:54:     at handleRequest (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:647:17)
+2025-09-26T07:34:54:     at handleIncomingPacket (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:672:7)
+2025-09-26T07:34:54:     at Socket.readFromStdout (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:600:7)
+2025-09-26T07:34:54:     at Socket.emit (node:events:517:28)
+2025-09-26T07:34:54:     at addChunk (node:internal/streams/readable:368:12)
+2025-09-26T07:34:54:     at readableAddChunk (node:internal/streams/readable:341:9)
+2025-09-26T07:34:54:     at Readable.push (node:internal/streams/readable:278:10)
+2025-09-26T07:34:54:     at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+2025-09-26T07:34:54: 
+2025-09-26T07:34:54:   This error came from the "onResolve" callback registered here:
+2025-09-26T07:34:54: 
+2025-09-26T07:34:54:     node_modules/esbuild/lib/main.js:1150:20:
+2025-09-26T07:34:54:       1150 │       let promise = setup({
+2025-09-26T07:34:54:            ╵                     ^
+2025-09-26T07:34:54: 
+2025-09-26T07:34:54:     at setup (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66889:18)
+2025-09-26T07:34:54:     at handlePlugins (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1150:21)
+2025-09-26T07:34:54:     at buildOrContextImpl (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:873:5)
+2025-09-26T07:34:54:     at Object.buildOrContext (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:699:5)
+2025-09-26T07:34:54:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:2023:15
+2025-09-26T07:34:54:     at new Promise (<anonymous>)
+2025-09-26T07:34:54:     at Object.build (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:2022:25)
+2025-09-26T07:34:54:     at build (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1873:51)
+2025-09-26T07:34:54:     at bundleConfigFile (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66844:24)
+2025-09-26T07:34:54:     at loadConfigFromFile (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66814:27)
+2025-09-26T07:34:54:     at resolveConfig (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66415:30)
+2025-09-26T07:34:54:     at _createServer (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:63014:24)
+2025-09-26T07:34:54:     at restartServer (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:63540:25)
+2025-09-26T07:34:54:     at Object.restart (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:63216:34)
+2025-09-26T07:34:54:     at restartServerWithUrls (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:63579:16)
+2025-09-26T07:34:54:     at handleHMRUpdate (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:63681:13)
+2025-09-26T07:34:54:     at onHMRUpdate (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:63270:15)
+2025-09-26T07:34:54:     at FSWatcher.<anonymous> (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:63302:11)
+2025-09-26T07:34:54: 
+2025-09-26T07:34:54:   The plugin "externalize-deps" was triggered by this import
+2025-09-26T07:34:54: 
+2025-09-26T07:34:54:     vite.config.js:3:26:
+2025-09-26T07:34:54:       3 │ import { keystatic } from '@keystatic/core/api';
+2025-09-26T07:34:54:         ╵                           ~~~~~~~~~~~~~~~~~~~~~
+2025-09-26T07:34:54: 
+2025-09-26T07:34:54: failed to load config from /root/Projects/tootie-treats/vite.config.js
+2025-09-26T07:34:54: 7:34:54 AM [vite] Build failed with 1 error:
+2025-09-26T07:34:54: node_modules/esbuild/lib/main.js:1225:27: ERROR: [plugin: externalize-deps] Missing "./api" specifier in "@keystatic/core" package
+2025-09-26T07:34:54: 7:34:54 AM [vite] server restart failed
+2025-09-26T07:35:07: 7:35:07 AM [vite] ✨ new dependencies optimized: react-router-dom
+2025-09-26T07:35:07: 7:35:07 AM [vite] ✨ optimized dependencies changed. reloading
+2025-09-26T07:35:12: 7:35:12 AM [vite] hmr update /src/components/Footer.jsx, /src/styles.css
+2025-09-26T07:35:24: 
+2025-09-26T07:35:24: > tootie-treats@1.0.0 dev
+2025-09-26T07:35:24: > vite
+2025-09-26T07:35:24: 
+2025-09-26T07:35:25: ✘ [ERROR] Missing "./api" specifier in "@keystatic/core" package [plugin externalize-deps]
+2025-09-26T07:35:25: 
+2025-09-26T07:35:25:     node_modules/esbuild/lib/main.js:1225:27:
+2025-09-26T07:35:25:       1225 │         let result = await callback({
+2025-09-26T07:35:25:            ╵                            ^
+2025-09-26T07:35:25: 
+2025-09-26T07:35:25:     at e (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:25)
+2025-09-26T07:35:25:     at n (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:627)
+2025-09-26T07:35:25:     at o (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:1297)
+2025-09-26T07:35:25:     at resolveExportsOrImports (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46663:18)
+2025-09-26T07:35:25:     at resolveDeepImport (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46686:25)
+2025-09-26T07:35:25:     at tryNodeResolve (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46451:16)
+2025-09-26T07:35:25:     at resolveByViteResolver (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66868:20)
+2025-09-26T07:35:25:     at file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66901:28
+2025-09-26T07:35:25:     at requestCallbacks.on-resolve (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1225:28)
+2025-09-26T07:35:25:     at handleRequest (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:647:17)
+2025-09-26T07:35:25: 
+2025-09-26T07:35:25:   This error came from the "onResolve" callback registered here:
+2025-09-26T07:35:25: 
+2025-09-26T07:35:25:     node_modules/esbuild/lib/main.js:1150:20:
+2025-09-26T07:35:25:       1150 │       let promise = setup({
+2025-09-26T07:35:25:            ╵                     ^
+2025-09-26T07:35:25: 
+2025-09-26T07:35:25:     at setup (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66889:18)
+2025-09-26T07:35:25:     at handlePlugins (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1150:21)
+2025-09-26T07:35:25:     at buildOrContextImpl (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:873:5)
+2025-09-26T07:35:25:     at Object.buildOrContext (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:699:5)
+2025-09-26T07:35:25:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:2023:15
+2025-09-26T07:35:25:     at new Promise (<anonymous>)
+2025-09-26T07:35:25:     at Object.build (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:2022:25)
+2025-09-26T07:35:25:     at build (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1873:51)
+2025-09-26T07:35:25:     at bundleConfigFile (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66844:24)
+2025-09-26T07:35:25: 
+2025-09-26T07:35:25:   The plugin "externalize-deps" was triggered by this import
+2025-09-26T07:35:25: 
+2025-09-26T07:35:25:     vite.config.js:3:26:
+2025-09-26T07:35:25:       3 │ import { keystatic } from '@keystatic/core/api';
+2025-09-26T07:35:25:         ╵                           ~~~~~~~~~~~~~~~~~~~~~
+2025-09-26T07:35:25: 
+2025-09-26T07:35:25: failed to load config from /root/Projects/tootie-treats/vite.config.js
+2025-09-26T07:35:25: error when starting dev server:
+2025-09-26T07:35:25: Error: Build failed with 1 error:
+2025-09-26T07:35:25: node_modules/esbuild/lib/main.js:1225:27: ERROR: [plugin: externalize-deps] Missing "./api" specifier in "@keystatic/core" package
+2025-09-26T07:35:25:     at failureErrorWithLog (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1472:15)
+2025-09-26T07:35:25:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:945:25
+2025-09-26T07:35:25:     at runOnEndCallbacks (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1315:45)
+2025-09-26T07:35:25:     at buildResponseToResult (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:943:7)
+2025-09-26T07:35:25:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:970:16
+2025-09-26T07:35:25:     at responseCallbacks.<computed> (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:622:9)
+2025-09-26T07:35:25:     at handleIncomingPacket (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:677:12)
+2025-09-26T07:35:25:     at Socket.readFromStdout (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:600:7)
+2025-09-26T07:35:25:     at Socket.emit (node:events:517:28)
+2025-09-26T07:35:25:     at addChunk (node:internal/streams/readable:368:12)
+2025-09-26T07:35:26: 
+2025-09-26T07:35:26: > tootie-treats@1.0.0 dev
+2025-09-26T07:35:26: > vite
+2025-09-26T07:35:26: 
+2025-09-26T07:35:26: ✘ [ERROR] Missing "./api" specifier in "@keystatic/core" package [plugin externalize-deps]
+2025-09-26T07:35:26: 
+2025-09-26T07:35:26:     node_modules/esbuild/lib/main.js:1225:27:
+2025-09-26T07:35:26:       1225 │         let result = await callback({
+2025-09-26T07:35:26:            ╵                            ^
+2025-09-26T07:35:26: 
+2025-09-26T07:35:26:     at e (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:25)
+2025-09-26T07:35:26:     at n (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:627)
+2025-09-26T07:35:26:     at o (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:1297)
+2025-09-26T07:35:26:     at resolveExportsOrImports (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46663:18)
+2025-09-26T07:35:26:     at resolveDeepImport (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46686:25)
+2025-09-26T07:35:26:     at tryNodeResolve (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46451:16)
+2025-09-26T07:35:26:     at resolveByViteResolver (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66868:20)
+2025-09-26T07:35:26:     at file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66901:28
+2025-09-26T07:35:26:     at requestCallbacks.on-resolve (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1225:28)
+2025-09-26T07:35:26:     at handleRequest (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:647:17)
+2025-09-26T07:35:26: 
+2025-09-26T07:35:26:   This error came from the "onResolve" callback registered here:
+2025-09-26T07:35:26: 
+2025-09-26T07:35:26:     node_modules/esbuild/lib/main.js:1150:20:
+2025-09-26T07:35:26:       1150 │       let promise = setup({
+2025-09-26T07:35:26:            ╵                     ^
+2025-09-26T07:35:26: 
+2025-09-26T07:35:26:     at setup (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66889:18)
+2025-09-26T07:35:26:     at handlePlugins (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1150:21)
+2025-09-26T07:35:26:     at buildOrContextImpl (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:873:5)
+2025-09-26T07:35:26:     at Object.buildOrContext (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:699:5)
+2025-09-26T07:35:26:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:2023:15
+2025-09-26T07:35:26:     at new Promise (<anonymous>)
+2025-09-26T07:35:26:     at Object.build (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:2022:25)
+2025-09-26T07:35:26:     at build (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1873:51)
+2025-09-26T07:35:26:     at bundleConfigFile (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66844:24)
+2025-09-26T07:35:26: 
+2025-09-26T07:35:26:   The plugin "externalize-deps" was triggered by this import
+2025-09-26T07:35:26: 
+2025-09-26T07:35:26:     vite.config.js:3:26:
+2025-09-26T07:35:26:       3 │ import { keystatic } from '@keystatic/core/api';
+2025-09-26T07:35:26:         ╵                           ~~~~~~~~~~~~~~~~~~~~~
+2025-09-26T07:35:26: 
+2025-09-26T07:35:26: failed to load config from /root/Projects/tootie-treats/vite.config.js
+2025-09-26T07:35:26: error when starting dev server:
+2025-09-26T07:35:26: Error: Build failed with 1 error:
+2025-09-26T07:35:26: node_modules/esbuild/lib/main.js:1225:27: ERROR: [plugin: externalize-deps] Missing "./api" specifier in "@keystatic/core" package
+2025-09-26T07:35:26:     at failureErrorWithLog (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1472:15)
+2025-09-26T07:35:26:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:945:25
+2025-09-26T07:35:26:     at runOnEndCallbacks (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1315:45)
+2025-09-26T07:35:26:     at buildResponseToResult (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:943:7)
+2025-09-26T07:35:26:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:970:16
+2025-09-26T07:35:26:     at responseCallbacks.<computed> (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:622:9)
+2025-09-26T07:35:26:     at handleIncomingPacket (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:677:12)
+2025-09-26T07:35:26:     at Socket.readFromStdout (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:600:7)
+2025-09-26T07:35:26:     at Socket.emit (node:events:517:28)
+2025-09-26T07:35:26:     at addChunk (node:internal/streams/readable:368:12)
+2025-09-26T07:35:28: 
+2025-09-26T07:35:28: > tootie-treats@1.0.0 dev
+2025-09-26T07:35:28: > vite
+2025-09-26T07:35:28: 
+2025-09-26T07:35:28: ✘ [ERROR] Missing "./api" specifier in "@keystatic/core" package [plugin externalize-deps]
+2025-09-26T07:35:28: 
+2025-09-26T07:35:28:     node_modules/esbuild/lib/main.js:1225:27:
+2025-09-26T07:35:28:       1225 │         let result = await callback({
+2025-09-26T07:35:28:            ╵                            ^
+2025-09-26T07:35:28: 
+2025-09-26T07:35:28:     at e (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:25)
+2025-09-26T07:35:28:     at n (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:627)
+2025-09-26T07:35:28:     at o (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:1297)
+2025-09-26T07:35:28:     at resolveExportsOrImports (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46663:18)
+2025-09-26T07:35:28:     at resolveDeepImport (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46686:25)
+2025-09-26T07:35:28:     at tryNodeResolve (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46451:16)
+2025-09-26T07:35:28:     at resolveByViteResolver (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66868:20)
+2025-09-26T07:35:28:     at file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66901:28
+2025-09-26T07:35:28:     at requestCallbacks.on-resolve (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1225:28)
+2025-09-26T07:35:28:     at handleRequest (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:647:17)
+2025-09-26T07:35:28: 
+2025-09-26T07:35:28:   This error came from the "onResolve" callback registered here:
+2025-09-26T07:35:28: 
+2025-09-26T07:35:28:     node_modules/esbuild/lib/main.js:1150:20:
+2025-09-26T07:35:28:       1150 │       let promise = setup({
+2025-09-26T07:35:28:            ╵                     ^
+2025-09-26T07:35:28: 
+2025-09-26T07:35:28:     at setup (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66889:18)
+2025-09-26T07:35:28:     at handlePlugins (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1150:21)
+2025-09-26T07:35:28:     at buildOrContextImpl (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:873:5)
+2025-09-26T07:35:28:     at Object.buildOrContext (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:699:5)
+2025-09-26T07:35:28:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:2023:15
+2025-09-26T07:35:28:     at new Promise (<anonymous>)
+2025-09-26T07:35:28:     at Object.build (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:2022:25)
+2025-09-26T07:35:28:     at build (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1873:51)
+2025-09-26T07:35:28:     at bundleConfigFile (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66844:24)
+2025-09-26T07:35:28: 
+2025-09-26T07:35:28:   The plugin "externalize-deps" was triggered by this import
+2025-09-26T07:35:28: 
+2025-09-26T07:35:28:     vite.config.js:3:26:
+2025-09-26T07:35:28:       3 │ import { keystatic } from '@keystatic/core/api';
+2025-09-26T07:35:28:         ╵                           ~~~~~~~~~~~~~~~~~~~~~
+2025-09-26T07:35:28: 
+2025-09-26T07:35:28: failed to load config from /root/Projects/tootie-treats/vite.config.js
+2025-09-26T07:35:28: error when starting dev server:
+2025-09-26T07:35:28: Error: Build failed with 1 error:
+2025-09-26T07:35:28: node_modules/esbuild/lib/main.js:1225:27: ERROR: [plugin: externalize-deps] Missing "./api" specifier in "@keystatic/core" package
+2025-09-26T07:35:28:     at failureErrorWithLog (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1472:15)
+2025-09-26T07:35:28:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:945:25
+2025-09-26T07:35:28:     at runOnEndCallbacks (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1315:45)
+2025-09-26T07:35:28:     at buildResponseToResult (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:943:7)
+2025-09-26T07:35:28:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:970:16
+2025-09-26T07:35:28:     at responseCallbacks.<computed> (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:622:9)
+2025-09-26T07:35:28:     at handleIncomingPacket (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:677:12)
+2025-09-26T07:35:28:     at Socket.readFromStdout (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:600:7)
+2025-09-26T07:35:28:     at Socket.emit (node:events:517:28)
+2025-09-26T07:35:28:     at addChunk (node:internal/streams/readable:368:12)
+2025-09-26T07:35:30: 
+2025-09-26T07:35:30: > tootie-treats@1.0.0 dev
+2025-09-26T07:35:30: > vite
+2025-09-26T07:35:30: 
+2025-09-26T07:35:30: ✘ [ERROR] Missing "./api" specifier in "@keystatic/core" package [plugin externalize-deps]
+2025-09-26T07:35:30: 
+2025-09-26T07:35:30:     node_modules/esbuild/lib/main.js:1225:27:
+2025-09-26T07:35:30:       1225 │         let result = await callback({
+2025-09-26T07:35:30:            ╵                            ^
+2025-09-26T07:35:30: 
+2025-09-26T07:35:30:     at e (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:25)
+2025-09-26T07:35:30:     at n (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:627)
+2025-09-26T07:35:30:     at o (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:1297)
+2025-09-26T07:35:30:     at resolveExportsOrImports (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46663:18)
+2025-09-26T07:35:30:     at resolveDeepImport (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46686:25)
+2025-09-26T07:35:30:     at tryNodeResolve (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46451:16)
+2025-09-26T07:35:30:     at resolveByViteResolver (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66868:20)
+2025-09-26T07:35:30:     at file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66901:28
+2025-09-26T07:35:30:     at requestCallbacks.on-resolve (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1225:28)
+2025-09-26T07:35:30:     at handleRequest (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:647:17)
+2025-09-26T07:35:30: 
+2025-09-26T07:35:30:   This error came from the "onResolve" callback registered here:
+2025-09-26T07:35:30: 
+2025-09-26T07:35:30:     node_modules/esbuild/lib/main.js:1150:20:
+2025-09-26T07:35:30:       1150 │       let promise = setup({
+2025-09-26T07:35:30:            ╵                     ^
+2025-09-26T07:35:30: 
+2025-09-26T07:35:30:     at setup (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66889:18)
+2025-09-26T07:35:30:     at handlePlugins (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1150:21)
+2025-09-26T07:35:30:     at buildOrContextImpl (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:873:5)
+2025-09-26T07:35:30:     at Object.buildOrContext (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:699:5)
+2025-09-26T07:35:30:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:2023:15
+2025-09-26T07:35:30:     at new Promise (<anonymous>)
+2025-09-26T07:35:30:     at Object.build (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:2022:25)
+2025-09-26T07:35:30:     at build (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1873:51)
+2025-09-26T07:35:30:     at bundleConfigFile (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66844:24)
+2025-09-26T07:35:30: 
+2025-09-26T07:35:30:   The plugin "externalize-deps" was triggered by this import
+2025-09-26T07:35:30: 
+2025-09-26T07:35:30:     vite.config.js:3:26:
+2025-09-26T07:35:30:       3 │ import { keystatic } from '@keystatic/core/api';
+2025-09-26T07:35:30:         ╵                           ~~~~~~~~~~~~~~~~~~~~~
+2025-09-26T07:35:30: 
+2025-09-26T07:35:30: failed to load config from /root/Projects/tootie-treats/vite.config.js
+2025-09-26T07:35:30: error when starting dev server:
+2025-09-26T07:35:30: Error: Build failed with 1 error:
+2025-09-26T07:35:30: node_modules/esbuild/lib/main.js:1225:27: ERROR: [plugin: externalize-deps] Missing "./api" specifier in "@keystatic/core" package
+2025-09-26T07:35:30:     at failureErrorWithLog (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1472:15)
+2025-09-26T07:35:30:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:945:25
+2025-09-26T07:35:30:     at runOnEndCallbacks (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1315:45)
+2025-09-26T07:35:30:     at buildResponseToResult (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:943:7)
+2025-09-26T07:35:30:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:970:16
+2025-09-26T07:35:30:     at responseCallbacks.<computed> (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:622:9)
+2025-09-26T07:35:30:     at handleIncomingPacket (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:677:12)
+2025-09-26T07:35:30:     at Socket.readFromStdout (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:600:7)
+2025-09-26T07:35:30:     at Socket.emit (node:events:517:28)
+2025-09-26T07:35:30:     at addChunk (node:internal/streams/readable:368:12)
+2025-09-26T07:35:32: 
+2025-09-26T07:35:32: > tootie-treats@1.0.0 dev
+2025-09-26T07:35:32: > vite
+2025-09-26T07:35:32: 
+2025-09-26T07:35:32: ✘ [ERROR] Missing "./api" specifier in "@keystatic/core" package [plugin externalize-deps]
+2025-09-26T07:35:32: 
+2025-09-26T07:35:32:     node_modules/esbuild/lib/main.js:1225:27:
+2025-09-26T07:35:32:       1225 │         let result = await callback({
+2025-09-26T07:35:32:            ╵                            ^
+2025-09-26T07:35:32: 
+2025-09-26T07:35:32:     at e (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:25)
+2025-09-26T07:35:32:     at n (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:627)
+2025-09-26T07:35:32:     at o (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:1297)
+2025-09-26T07:35:32:     at resolveExportsOrImports (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46663:18)
+2025-09-26T07:35:32:     at resolveDeepImport (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46686:25)
+2025-09-26T07:35:32:     at tryNodeResolve (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46451:16)
+2025-09-26T07:35:32:     at resolveByViteResolver (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66868:20)
+2025-09-26T07:35:32:     at file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66901:28
+2025-09-26T07:35:32:     at requestCallbacks.on-resolve (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1225:28)
+2025-09-26T07:35:32:     at handleRequest (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:647:17)
+2025-09-26T07:35:32: 
+2025-09-26T07:35:32:   This error came from the "onResolve" callback registered here:
+2025-09-26T07:35:32: 
+2025-09-26T07:35:32:     node_modules/esbuild/lib/main.js:1150:20:
+2025-09-26T07:35:32:       1150 │       let promise = setup({
+2025-09-26T07:35:32:            ╵                     ^
+2025-09-26T07:35:32: 
+2025-09-26T07:35:32:     at setup (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66889:18)
+2025-09-26T07:35:32:     at handlePlugins (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1150:21)
+2025-09-26T07:35:32:     at buildOrContextImpl (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:873:5)
+2025-09-26T07:35:32:     at Object.buildOrContext (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:699:5)
+2025-09-26T07:35:32:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:2023:15
+2025-09-26T07:35:32:     at new Promise (<anonymous>)
+2025-09-26T07:35:32:     at Object.build (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:2022:25)
+2025-09-26T07:35:32:     at build (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1873:51)
+2025-09-26T07:35:32:     at bundleConfigFile (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66844:24)
+2025-09-26T07:35:32: 
+2025-09-26T07:35:32:   The plugin "externalize-deps" was triggered by this import
+2025-09-26T07:35:32: 
+2025-09-26T07:35:32:     vite.config.js:3:26:
+2025-09-26T07:35:32:       3 │ import { keystatic } from '@keystatic/core/api';
+2025-09-26T07:35:32:         ╵                           ~~~~~~~~~~~~~~~~~~~~~
+2025-09-26T07:35:32: 
+2025-09-26T07:35:32: failed to load config from /root/Projects/tootie-treats/vite.config.js
+2025-09-26T07:35:32: error when starting dev server:
+2025-09-26T07:35:32: Error: Build failed with 1 error:
+2025-09-26T07:35:32: node_modules/esbuild/lib/main.js:1225:27: ERROR: [plugin: externalize-deps] Missing "./api" specifier in "@keystatic/core" package
+2025-09-26T07:35:32:     at failureErrorWithLog (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1472:15)
+2025-09-26T07:35:32:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:945:25
+2025-09-26T07:35:32:     at runOnEndCallbacks (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1315:45)
+2025-09-26T07:35:32:     at buildResponseToResult (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:943:7)
+2025-09-26T07:35:32:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:970:16
+2025-09-26T07:35:32:     at responseCallbacks.<computed> (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:622:9)
+2025-09-26T07:35:32:     at handleIncomingPacket (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:677:12)
+2025-09-26T07:35:32:     at Socket.readFromStdout (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:600:7)
+2025-09-26T07:35:32:     at Socket.emit (node:events:517:28)
+2025-09-26T07:35:32:     at addChunk (node:internal/streams/readable:368:12)
+2025-09-26T07:35:33: 
+2025-09-26T07:35:33: > tootie-treats@1.0.0 dev
+2025-09-26T07:35:33: > vite
+2025-09-26T07:35:33: 
+2025-09-26T07:35:34: ✘ [ERROR] Missing "./api" specifier in "@keystatic/core" package [plugin externalize-deps]
+2025-09-26T07:35:34: 
+2025-09-26T07:35:34:     node_modules/esbuild/lib/main.js:1225:27:
+2025-09-26T07:35:34:       1225 │         let result = await callback({
+2025-09-26T07:35:34:            ╵                            ^
+2025-09-26T07:35:34: 
+2025-09-26T07:35:34:     at e (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:25)
+2025-09-26T07:35:34:     at n (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:627)
+2025-09-26T07:35:34:     at o (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:1297)
+2025-09-26T07:35:34:     at resolveExportsOrImports (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46663:18)
+2025-09-26T07:35:34:     at resolveDeepImport (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46686:25)
+2025-09-26T07:35:34:     at tryNodeResolve (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46451:16)
+2025-09-26T07:35:34:     at resolveByViteResolver (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66868:20)
+2025-09-26T07:35:34:     at file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66901:28
+2025-09-26T07:35:34:     at requestCallbacks.on-resolve (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1225:28)
+2025-09-26T07:35:34:     at handleRequest (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:647:17)
+2025-09-26T07:35:34: 
+2025-09-26T07:35:34:   This error came from the "onResolve" callback registered here:
+2025-09-26T07:35:34: 
+2025-09-26T07:35:34:     node_modules/esbuild/lib/main.js:1150:20:
+2025-09-26T07:35:34:       1150 │       let promise = setup({
+2025-09-26T07:35:34:            ╵                     ^
+2025-09-26T07:35:34: 
+2025-09-26T07:35:34:     at setup (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66889:18)
+2025-09-26T07:35:34:     at handlePlugins (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1150:21)
+2025-09-26T07:35:34:     at buildOrContextImpl (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:873:5)
+2025-09-26T07:35:34:     at Object.buildOrContext (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:699:5)
+2025-09-26T07:35:34:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:2023:15
+2025-09-26T07:35:34:     at new Promise (<anonymous>)
+2025-09-26T07:35:34:     at Object.build (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:2022:25)
+2025-09-26T07:35:34:     at build (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1873:51)
+2025-09-26T07:35:34:     at bundleConfigFile (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66844:24)
+2025-09-26T07:35:34: 
+2025-09-26T07:35:34:   The plugin "externalize-deps" was triggered by this import
+2025-09-26T07:35:34: 
+2025-09-26T07:35:34:     vite.config.js:3:26:
+2025-09-26T07:35:34:       3 │ import { keystatic } from '@keystatic/core/api';
+2025-09-26T07:35:34:         ╵                           ~~~~~~~~~~~~~~~~~~~~~
+2025-09-26T07:35:34: 
+2025-09-26T07:35:34: failed to load config from /root/Projects/tootie-treats/vite.config.js
+2025-09-26T07:35:34: error when starting dev server:
+2025-09-26T07:35:34: Error: Build failed with 1 error:
+2025-09-26T07:35:34: node_modules/esbuild/lib/main.js:1225:27: ERROR: [plugin: externalize-deps] Missing "./api" specifier in "@keystatic/core" package
+2025-09-26T07:35:34:     at failureErrorWithLog (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1472:15)
+2025-09-26T07:35:34:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:945:25
+2025-09-26T07:35:34:     at runOnEndCallbacks (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1315:45)
+2025-09-26T07:35:34:     at buildResponseToResult (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:943:7)
+2025-09-26T07:35:34:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:970:16
+2025-09-26T07:35:34:     at responseCallbacks.<computed> (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:622:9)
+2025-09-26T07:35:34:     at handleIncomingPacket (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:677:12)
+2025-09-26T07:35:34:     at Socket.readFromStdout (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:600:7)
+2025-09-26T07:35:34:     at Socket.emit (node:events:517:28)
+2025-09-26T07:35:34:     at addChunk (node:internal/streams/readable:368:12)
+2025-09-26T07:35:35: 
+2025-09-26T07:35:35: > tootie-treats@1.0.0 dev
+2025-09-26T07:35:35: > vite
+2025-09-26T07:35:35: 
+2025-09-26T07:35:36: ✘ [ERROR] Missing "./api" specifier in "@keystatic/core" package [plugin externalize-deps]
+2025-09-26T07:35:36: 
+2025-09-26T07:35:36:     node_modules/esbuild/lib/main.js:1225:27:
+2025-09-26T07:35:36:       1225 │         let result = await callback({
+2025-09-26T07:35:36:            ╵                            ^
+2025-09-26T07:35:36: 
+2025-09-26T07:35:36:     at e (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:25)
+2025-09-26T07:35:36:     at n (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:627)
+2025-09-26T07:35:36:     at o (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:1297)
+2025-09-26T07:35:36:     at resolveExportsOrImports (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46663:18)
+2025-09-26T07:35:36:     at resolveDeepImport (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46686:25)
+2025-09-26T07:35:36:     at tryNodeResolve (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46451:16)
+2025-09-26T07:35:36:     at resolveByViteResolver (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66868:20)
+2025-09-26T07:35:36:     at file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66901:28
+2025-09-26T07:35:36:     at requestCallbacks.on-resolve (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1225:28)
+2025-09-26T07:35:36:     at handleRequest (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:647:17)
+2025-09-26T07:35:36: 
+2025-09-26T07:35:36:   This error came from the "onResolve" callback registered here:
+2025-09-26T07:35:36: 
+2025-09-26T07:35:36:     node_modules/esbuild/lib/main.js:1150:20:
+2025-09-26T07:35:36:       1150 │       let promise = setup({
+2025-09-26T07:35:36:            ╵                     ^
+2025-09-26T07:35:36: 
+2025-09-26T07:35:36:     at setup (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66889:18)
+2025-09-26T07:35:36:     at handlePlugins (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1150:21)
+2025-09-26T07:35:36:     at buildOrContextImpl (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:873:5)
+2025-09-26T07:35:36:     at Object.buildOrContext (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:699:5)
+2025-09-26T07:35:36:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:2023:15
+2025-09-26T07:35:36:     at new Promise (<anonymous>)
+2025-09-26T07:35:36:     at Object.build (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:2022:25)
+2025-09-26T07:35:36:     at build (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1873:51)
+2025-09-26T07:35:36:     at bundleConfigFile (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66844:24)
+2025-09-26T07:35:36: 
+2025-09-26T07:35:36:   The plugin "externalize-deps" was triggered by this import
+2025-09-26T07:35:36: 
+2025-09-26T07:35:36:     vite.config.js:3:26:
+2025-09-26T07:35:36:       3 │ import { keystatic } from '@keystatic/core/api';
+2025-09-26T07:35:36:         ╵                           ~~~~~~~~~~~~~~~~~~~~~
+2025-09-26T07:35:36: 
+2025-09-26T07:35:36: failed to load config from /root/Projects/tootie-treats/vite.config.js
+2025-09-26T07:35:36: error when starting dev server:
+2025-09-26T07:35:36: Error: Build failed with 1 error:
+2025-09-26T07:35:36: node_modules/esbuild/lib/main.js:1225:27: ERROR: [plugin: externalize-deps] Missing "./api" specifier in "@keystatic/core" package
+2025-09-26T07:35:36:     at failureErrorWithLog (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1472:15)
+2025-09-26T07:35:36:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:945:25
+2025-09-26T07:35:36:     at runOnEndCallbacks (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1315:45)
+2025-09-26T07:35:36:     at buildResponseToResult (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:943:7)
+2025-09-26T07:35:36:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:970:16
+2025-09-26T07:35:36:     at responseCallbacks.<computed> (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:622:9)
+2025-09-26T07:35:36:     at handleIncomingPacket (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:677:12)
+2025-09-26T07:35:36:     at Socket.readFromStdout (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:600:7)
+2025-09-26T07:35:36:     at Socket.emit (node:events:517:28)
+2025-09-26T07:35:36:     at addChunk (node:internal/streams/readable:368:12)
+2025-09-26T07:35:37: 
+2025-09-26T07:35:37: > tootie-treats@1.0.0 dev
+2025-09-26T07:35:37: > vite
+2025-09-26T07:35:37: 
+2025-09-26T07:35:37: ✘ [ERROR] Missing "./api" specifier in "@keystatic/core" package [plugin externalize-deps]
+2025-09-26T07:35:37: 
+2025-09-26T07:35:37:     node_modules/esbuild/lib/main.js:1225:27:
+2025-09-26T07:35:37:       1225 │         let result = await callback({
+2025-09-26T07:35:37:            ╵                            ^
+2025-09-26T07:35:37: 
+2025-09-26T07:35:37:     at e (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:25)
+2025-09-26T07:35:37:     at n (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:627)
+2025-09-26T07:35:37:     at o (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:1297)
+2025-09-26T07:35:37:     at resolveExportsOrImports (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46663:18)
+2025-09-26T07:35:37:     at resolveDeepImport (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46686:25)
+2025-09-26T07:35:37:     at tryNodeResolve (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46451:16)
+2025-09-26T07:35:37:     at resolveByViteResolver (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66868:20)
+2025-09-26T07:35:37:     at file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66901:28
+2025-09-26T07:35:37:     at requestCallbacks.on-resolve (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1225:28)
+2025-09-26T07:35:37:     at handleRequest (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:647:17)
+2025-09-26T07:35:37: 
+2025-09-26T07:35:37:   This error came from the "onResolve" callback registered here:
+2025-09-26T07:35:37: 
+2025-09-26T07:35:37:     node_modules/esbuild/lib/main.js:1150:20:
+2025-09-26T07:35:37:       1150 │       let promise = setup({
+2025-09-26T07:35:37:            ╵                     ^
+2025-09-26T07:35:37: 
+2025-09-26T07:35:37:     at setup (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66889:18)
+2025-09-26T07:35:37:     at handlePlugins (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1150:21)
+2025-09-26T07:35:37:     at buildOrContextImpl (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:873:5)
+2025-09-26T07:35:37:     at Object.buildOrContext (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:699:5)
+2025-09-26T07:35:37:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:2023:15
+2025-09-26T07:35:37:     at new Promise (<anonymous>)
+2025-09-26T07:35:37:     at Object.build (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:2022:25)
+2025-09-26T07:35:37:     at build (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1873:51)
+2025-09-26T07:35:37:     at bundleConfigFile (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66844:24)
+2025-09-26T07:35:37: 
+2025-09-26T07:35:37:   The plugin "externalize-deps" was triggered by this import
+2025-09-26T07:35:37: 
+2025-09-26T07:35:37:     vite.config.js:3:26:
+2025-09-26T07:35:37:       3 │ import { keystatic } from '@keystatic/core/api';
+2025-09-26T07:35:37:         ╵                           ~~~~~~~~~~~~~~~~~~~~~
+2025-09-26T07:35:37: 
+2025-09-26T07:35:37: failed to load config from /root/Projects/tootie-treats/vite.config.js
+2025-09-26T07:35:37: error when starting dev server:
+2025-09-26T07:35:37: Error: Build failed with 1 error:
+2025-09-26T07:35:37: node_modules/esbuild/lib/main.js:1225:27: ERROR: [plugin: externalize-deps] Missing "./api" specifier in "@keystatic/core" package
+2025-09-26T07:35:37:     at failureErrorWithLog (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1472:15)
+2025-09-26T07:35:37:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:945:25
+2025-09-26T07:35:37:     at runOnEndCallbacks (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1315:45)
+2025-09-26T07:35:37:     at buildResponseToResult (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:943:7)
+2025-09-26T07:35:37:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:970:16
+2025-09-26T07:35:37:     at responseCallbacks.<computed> (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:622:9)
+2025-09-26T07:35:37:     at handleIncomingPacket (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:677:12)
+2025-09-26T07:35:37:     at Socket.readFromStdout (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:600:7)
+2025-09-26T07:35:37:     at Socket.emit (node:events:517:28)
+2025-09-26T07:35:37:     at addChunk (node:internal/streams/readable:368:12)
+2025-09-26T07:35:39: 
+2025-09-26T07:35:39: > tootie-treats@1.0.0 dev
+2025-09-26T07:35:39: > vite
+2025-09-26T07:35:39: 
+2025-09-26T07:35:39: ✘ [ERROR] Missing "./api" specifier in "@keystatic/core" package [plugin externalize-deps]
+2025-09-26T07:35:39: 
+2025-09-26T07:35:39:     node_modules/esbuild/lib/main.js:1225:27:
+2025-09-26T07:35:39:       1225 │         let result = await callback({
+2025-09-26T07:35:39:            ╵                            ^
+2025-09-26T07:35:39: 
+2025-09-26T07:35:39:     at e (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:25)
+2025-09-26T07:35:39:     at n (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:627)
+2025-09-26T07:35:39:     at o (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46042:1297)
+2025-09-26T07:35:39:     at resolveExportsOrImports (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46663:18)
+2025-09-26T07:35:39:     at resolveDeepImport (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46686:25)
+2025-09-26T07:35:39:     at tryNodeResolve (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46451:16)
+2025-09-26T07:35:39:     at resolveByViteResolver (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66868:20)
+2025-09-26T07:35:39:     at file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66901:28
+2025-09-26T07:35:39:     at requestCallbacks.on-resolve (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1225:28)
+2025-09-26T07:35:39:     at handleRequest (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:647:17)
+2025-09-26T07:35:39: 
+2025-09-26T07:35:39:   This error came from the "onResolve" callback registered here:
+2025-09-26T07:35:39: 
+2025-09-26T07:35:39:     node_modules/esbuild/lib/main.js:1150:20:
+2025-09-26T07:35:39:       1150 │       let promise = setup({
+2025-09-26T07:35:39:            ╵                     ^
+2025-09-26T07:35:39: 
+2025-09-26T07:35:39:     at setup (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66889:18)
+2025-09-26T07:35:39:     at handlePlugins (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1150:21)
+2025-09-26T07:35:39:     at buildOrContextImpl (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:873:5)
+2025-09-26T07:35:39:     at Object.buildOrContext (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:699:5)
+2025-09-26T07:35:39:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:2023:15
+2025-09-26T07:35:39:     at new Promise (<anonymous>)
+2025-09-26T07:35:39:     at Object.build (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:2022:25)
+2025-09-26T07:35:39:     at build (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1873:51)
+2025-09-26T07:35:39:     at bundleConfigFile (file:///root/Projects/tootie-treats/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:66844:24)
+2025-09-26T07:35:39: 
+2025-09-26T07:35:39:   The plugin "externalize-deps" was triggered by this import
+2025-09-26T07:35:39: 
+2025-09-26T07:35:39:     vite.config.js:3:26:
+2025-09-26T07:35:39:       3 │ import { keystatic } from '@keystatic/core/api';
+2025-09-26T07:35:39:         ╵                           ~~~~~~~~~~~~~~~~~~~~~
+2025-09-26T07:35:39: 
+2025-09-26T07:35:39: failed to load config from /root/Projects/tootie-treats/vite.config.js
+2025-09-26T07:35:39: error when starting dev server:
+2025-09-26T07:35:39: Error: Build failed with 1 error:
+2025-09-26T07:35:39: node_modules/esbuild/lib/main.js:1225:27: ERROR: [plugin: externalize-deps] Missing "./api" specifier in "@keystatic/core" package
+2025-09-26T07:35:39:     at failureErrorWithLog (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1472:15)
+2025-09-26T07:35:39:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:945:25
+2025-09-26T07:35:39:     at runOnEndCallbacks (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:1315:45)
+2025-09-26T07:35:39:     at buildResponseToResult (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:943:7)
+2025-09-26T07:35:39:     at /root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:970:16
+2025-09-26T07:35:39:     at responseCallbacks.<computed> (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:622:9)
+2025-09-26T07:35:39:     at handleIncomingPacket (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:677:12)
+2025-09-26T07:35:39:     at Socket.readFromStdout (/root/Projects/tootie-treats/node_modules/esbuild/lib/main.js:600:7)
+2025-09-26T07:35:39:     at Socket.emit (node:events:517:28)
+2025-09-26T07:35:39:     at addChunk (node:internal/streams/readable:368:12)
+2025-09-26T07:35:58: 
+2025-09-26T07:35:58: > tootie-treats@1.0.0 dev
+2025-09-26T07:35:58: > vite
+2025-09-26T07:35:58: 
+2025-09-26T07:35:59: 
+2025-09-26T07:35:59:   VITE v5.4.20  ready in 203 ms
+2025-09-26T07:35:59: 
+2025-09-26T07:35:59:   ➜  Local:   http://localhost:5173/
+2025-09-26T07:35:59:   ➜  Network: http://148.230.95.162:5173/
+2025-09-26T07:35:59:   ➜  Network: http://10.0.1.1:5173/
+2025-09-26T07:35:59:   ➜  Network: http://10.0.5.1:5173/
+2025-09-26T07:35:59:   ➜  Network: http://10.0.6.1:5173/
+2025-09-26T07:35:59:   ➜  Network: http://10.0.3.1:5173/
+2025-09-26T07:35:59:   ➜  Network: http://10.0.4.1:5173/
+2025-09-26T07:35:59:   ➜  Network: http://10.0.0.1:5173/
+2025-09-26T07:36:41: 7:36:41 AM [vite] ✨ new dependencies optimized: @keystatic/core/ui, @keystatic/core
+2025-09-26T07:36:41: 7:36:41 AM [vite] ✨ optimized dependencies changed. reloading
+2025-09-26T07:39:48: 7:39:48 AM [vite] hmr update /src/App.jsx, /src/styles.css
+2025-09-26T07:39:48: 7:39:48 AM [vite] hmr update /src/App.jsx, /src/styles.css
+2025-09-26T07:39:48: 7:39:48 AM [vite] hmr update /src/pages/HomePage.jsx, /src/styles.css
+2025-09-26T07:40:02: 7:40:02 AM [vite] hmr update /src/App.jsx, /src/styles.css
+2025-09-26T07:40:07: 7:40:07 AM [vite] hmr update /src/components/Footer.jsx, /src/styles.css
+2025-09-26T07:40:19: 
+2025-09-26T07:40:19: > tootie-treats@1.0.0 dev
+2025-09-26T07:40:19: > vite
+2025-09-26T07:40:19: 
+2025-09-26T07:40:19: Re-optimizing dependencies because lockfile has changed
+2025-09-26T07:40:20: 
+2025-09-26T07:40:20:   VITE v5.4.20  ready in 233 ms
+2025-09-26T07:40:20: 
+2025-09-26T07:40:20:   ➜  Local:   http://localhost:5173/
+2025-09-26T07:40:20:   ➜  Network: http://148.230.95.162:5173/
+2025-09-26T07:40:20:   ➜  Network: http://10.0.1.1:5173/
+2025-09-26T07:40:20:   ➜  Network: http://10.0.5.1:5173/
+2025-09-26T07:40:20:   ➜  Network: http://10.0.6.1:5173/
+2025-09-26T07:40:20:   ➜  Network: http://10.0.3.1:5173/
+2025-09-26T07:40:20:   ➜  Network: http://10.0.4.1:5173/
+2025-09-26T07:40:20:   ➜  Network: http://10.0.0.1:5173/
