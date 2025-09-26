@@ -27,7 +27,7 @@ export function Hero({ content }) {
   return (
     <section
       id="home"
-      className="relative overflow-hidden border-b-4 border-border bg-gradient-to-br from-accent-pink/40 via-secondary-background to-accent-teal/40 pb-20 pt-36"
+      className="relative overflow-hidden border-b-4 border-border bg-gradient-to-br from-accent-pink/40 via-secondary-background to-accent-teal/40 pb-12 pt-16 sm:pb-20 sm:pt-24"
     >
       <div
         className="pointer-events-none absolute inset-0 -z-10"
@@ -38,7 +38,7 @@ export function Hero({ content }) {
         }}
       />
 
-      {/* Floating Instagram Images */}
+      {/* Floating Instagram Images - Desktop */}
       <div className="pointer-events-none absolute left-10 top-32 hidden size-48 rotate-[-5deg] overflow-hidden rounded-base border-4 border-border shadow-shadow lg:block">
         <Image
           src={`/instagram-images/${heroImages[0]}`}
@@ -73,13 +73,45 @@ export function Hero({ content }) {
       </div>
       <div className="mx-auto w-container max-w-full px-4 sm:px-6">
         <div className="flex flex-col items-center gap-6 text-center">
-          <span className="inline-flex w-max items-center gap-2 rounded-base border-2 border-border bg-accent-teal px-6 py-3 font-heading text-sm uppercase tracking-[0.15em] text-foreground shadow-shadow">
-            {tagline}
-          </span>
+          <div className="relative w-full overflow-hidden rounded-base border-2 border-border bg-accent-teal shadow-shadow">
+            <div className="animate-scroll-left flex whitespace-nowrap py-3">
+              <span className="inline-flex items-center gap-2 px-6 font-heading text-sm uppercase tracking-[0.15em] text-foreground">
+                {tagline}
+              </span>
+              <span className="inline-flex items-center gap-2 px-6 font-heading text-sm uppercase tracking-[0.15em] text-foreground">
+                {tagline}
+              </span>
+              <span className="inline-flex items-center gap-2 px-6 font-heading text-sm uppercase tracking-[0.15em] text-foreground">
+                {tagline}
+              </span>
+            </div>
+          </div>
           <div className="space-y-6">
             <h1 className="font-heading text-[clamp(2.5rem,5vw,4.5rem)] leading-tight text-foreground">
               {title}
             </h1>
+
+            {/* Featured Image Grid - Mobile & Tablet */}
+            <div className="my-4 grid grid-cols-2 gap-2 sm:my-6 sm:grid-cols-4 sm:gap-3 lg:hidden">
+              {heroImages.map((image, index) => (
+                <div
+                  key={image}
+                  className="relative aspect-square overflow-hidden rounded-base border-4 border-border bg-white shadow-shadow"
+                  style={{
+                    transform: `rotate(${index % 2 === 0 ? '-3' : '3'}deg)`
+                  }}
+                >
+                  <Image
+                    src={`/instagram-images/${image}`}
+                    alt="Cake creation"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 50vw, 25vw"
+                  />
+                </div>
+              ))}
+            </div>
+
             <p className="mx-auto max-w-3xl text-xl font-semibold text-foreground/90 sm:text-2xl">
               {subtitle}
             </p>

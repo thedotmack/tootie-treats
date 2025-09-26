@@ -65,6 +65,7 @@ module.exports = {
         marquee: "var(--animate-marquee)",
         "marquee-vertical": "var(--animate-marquee-up)",
         "marquee-secondary": "var(--animate-marquee2)",
+        "scroll-left": "scroll-left 15s linear infinite",
       },
       backgroundImage: {
         "grid-70":

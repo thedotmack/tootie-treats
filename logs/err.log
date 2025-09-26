@@ -3070,3 +3070,109 @@
 2025-09-26T22:19:23: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
 2025-09-26T22:19:23:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
 2025-09-26T22:19:23: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:22:45:  ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+2025-09-26T22:22:45:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:22:45: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:22:45:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:22:45: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:22:51:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:22:51: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:22:51:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:22:51: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:23:47:  ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+2025-09-26T22:23:47:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:23:47: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:23:47:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:23:47: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:23:51:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:23:51: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:23:51:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:23:51: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:25:53:  ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+2025-09-26T22:25:53:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:25:53: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:25:53:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:25:53: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:26:00:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:26:00: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:26:00:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:26:00: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:26:02:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:26:02: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:26:02:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:26:02: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:46:57:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:46:57: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:46:57:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:46:57: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:49:31:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:49:31: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:49:31:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:49:31: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:49:38:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:49:38: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:49:38:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:49:38: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:56:42:  ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+2025-09-26T22:56:42:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:56:42: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T22:56:42:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T22:56:42: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T23:00:00:  ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+2025-09-26T23:00:00:  ⚠ Unsupported metadata viewport is configured in metadata export in /keystatic/[[...params]]. Please move it to viewport export instead.
+2025-09-26T23:00:00: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T23:00:00:  ⚠ Unsupported metadata themeColor is configured in metadata export in /keystatic/[[...params]]. Please move it to viewport export instead.
+2025-09-26T23:00:00: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T23:00:47:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T23:00:47: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T23:00:47:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-26T23:00:47: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T23:22:34:  ⨯ ./app/keystatic/[[...params]]/page.tsx
+2025-09-26T23:22:34: Error:   [31mx[0m You're importing a component that needs "next/headers". That only works in a Server Component but one of its parents is marked with "use client", so it's a Client Component.
+2025-09-26T23:22:34:   [31m|[0m Learn more: https://nextjs.org/docs/app/building-your-application/rendering
+2025-09-26T23:22:34:   [31m|[0m
+2025-09-26T23:22:34: 
+2025-09-26T23:22:34:    ,-[[36;1;4m/root/Projects/tootie-treats/app/keystatic/[[...params]]/page.tsx[0m:2:1]
+2025-09-26T23:22:34:  [2m1[0m | import { notFound } from 'next/navigation';
+2025-09-26T23:22:34:  [2m2[0m | import { headers } from 'next/headers';
+2025-09-26T23:22:34:    : [35;1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2025-09-26T23:22:34:  [2m3[0m | 
+2025-09-26T23:22:34:  [2m4[0m | export default function KeystaticPage() {
+2025-09-26T23:22:34:  [2m5[0m |   const headersList = headers();
+2025-09-26T23:22:34:    `----
+2025-09-26T23:22:34: 
+2025-09-26T23:22:34: Import trace for requested module:
+2025-09-26T23:22:34: ./app/keystatic/[[...params]]/page.tsx
+2025-09-26T23:22:42:  ⨯ ./app/keystatic/[[...params]]/page.tsx
+2025-09-26T23:22:42: Error:   [31mx[0m You're importing a component that needs "next/headers". That only works in a Server Component but one of its parents is marked with "use client", so it's a Client Component.
+2025-09-26T23:22:42:   [31m|[0m Learn more: https://nextjs.org/docs/app/building-your-application/rendering
+2025-09-26T23:22:42:   [31m|[0m
+2025-09-26T23:22:42: 
+2025-09-26T23:22:42:    ,-[[36;1;4m/root/Projects/tootie-treats/app/keystatic/[[...params]]/page.tsx[0m:2:1]
+2025-09-26T23:22:42:  [2m1[0m | import { notFound } from 'next/navigation';
+2025-09-26T23:22:42:  [2m2[0m | import { headers } from 'next/headers';
+2025-09-26T23:22:42:    : [35;1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2025-09-26T23:22:42:  [2m3[0m | 
+2025-09-26T23:22:42:  [2m4[0m | export default function KeystaticPage() {
+2025-09-26T23:22:42:  [2m5[0m |   const headersList = headers();
+2025-09-26T23:22:42:    `----
+2025-09-26T23:22:42: 
+2025-09-26T23:22:42: Import trace for requested module:
+2025-09-26T23:22:42: ./app/keystatic/[[...params]]/page.tsx
+2025-09-26T23:22:52: Error: Route "/keystatic/[[...params]]" used `headers().get('host')`. `headers()` should be awaited before using its value. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+2025-09-26T23:22:52:     at createHeadersAccessError (../../../src/server/request/headers.ts:484:10)
+2025-09-26T23:22:52:     at syncIODev (../../../src/server/request/headers.ts:472:3)
+2025-09-26T23:22:52:     at Promise.get (../../../src/server/request/headers.ts:314:9)
+2025-09-26T23:22:52:     at KeystaticPage (app/keystatic/[[...params]]/page.tsx:6:28)
+2025-09-26T23:22:52:   482 | ) {
+2025-09-26T23:22:52:   483 |   const prefix = route ? `Route "${route}" ` : 'This route '
+2025-09-26T23:22:52: > 484 |   return new Error(
+2025-09-26T23:22:52:       |          ^
+2025-09-26T23:22:52:   485 |     `${prefix}used ${expression}. ` +
+2025-09-26T23:22:52:   486 |       `\`headers()\` should be awaited before using its value. ` +
+2025-09-26T23:22:52:   487 |       `Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis`
+2025-09-26T23:22:52:  ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+2025-09-26T23:22:52:  ⚠ Unsupported metadata viewport is configured in metadata export in /keystatic/[[...params]]. Please move it to viewport export instead.
+2025-09-26T23:22:52: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-26T23:22:52:  ⚠ Unsupported metadata themeColor is configured in metadata export in /keystatic/[[...params]]. Please move it to viewport export instead.
+2025-09-26T23:22:52: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
