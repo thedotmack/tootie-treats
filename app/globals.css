@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&family=Manrope:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --border-radius: 26px;
+  --box-shadow-x: 8px;
+  --box-shadow-y: 10px;
+  --reverse-box-shadow-x: -8px;
+  --reverse-box-shadow-y: -10px;
+
+  --heading-font-weight: 400;
+  --base-font-weight: 500;
+
+  --background: #fff8f2;
+  --secondary-background: #ffffff;
+  --foreground: #17151f;
+  --main-foreground: #17151f;
+
+  --main: #ffe44d;
+  --accent-pink: #fbc4ff;
+  --accent-green: #cafd5a;
+  --accent-teal: #9ff7ff;
+  --accent-lavender: #d2d7ff;
+  --accent-coral: #ffb4c7;
+  --border: #17151f;
+  --ring: #17151f;
+  --overlay: rgba(23, 21, 31, 0.85);
+
+  --chart-1: #9ff7ff;
+  --chart-2: #ffb4c7;
+  --chart-3: #ffe44d;
+  --chart-4: #cafd5a;
+  --chart-5: #d2d7ff;
+  --chart-active-dot: #17151f;
+
+  --spacing-boxShadowX: var(--box-shadow-x);
+  --spacing-boxShadowY: var(--box-shadow-y);
+  --spacing-reverseBoxShadowX: var(--reverse-box-shadow-x);
+  --spacing-reverseBoxShadowY: var(--reverse-box-shadow-y);
+
+  --radius-base: var(--border-radius);
+  --shadow-shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px rgba(23, 21, 31, 0.7);
+  --shadow-nav: 8px 10px 0px 0px rgba(23, 21, 31, 0.7);
+  --shadow-darkNav: 8px 10px 0px 0px rgba(14, 13, 20, 0.85);
+
+  --font-weight-base: var(--base-font-weight);
+  --font-weight-heading: var(--heading-font-weight);
+
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-marquee-up: marquee-up 50s linear infinite;
+  --animate-marquee2: marquee2 40s linear infinite;
+
+  --spacing-container: 1280px;
+}
+
+.dark {
+  --background: #1a1725;
+  --secondary-background: #211d33;
+  --foreground: #f7f7fb;
+  --main-foreground: #17151f;
+
+  --main: #ffe44d;
+  --accent-pink: #e5a9ff;
+  --accent-green: #aee63f;
+  --accent-teal: #6ed8f0;
+  --accent-lavender: #aeb6ff;
+  --accent-coral: #ff90ab;
+  --border: #f7f7fb;
+  --ring: #f7f7fb;
+  --overlay: rgba(10, 8, 18, 0.85);
+
+  --chart-1: #6ed8f0;
+  --chart-2: #ff90ab;
+  --chart-3: #ffe44d;
+  --chart-4: #aee63f;
+  --chart-5: #aeb6ff;
+  --chart-active-dot: #f7f7fb;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-background text-foreground font-base m-0 min-h-screen antialiased;
+    background-image: radial-gradient(circle at 0% 0%, #ffe1f7 0, rgba(255, 225, 247, 0) 50%),
+      radial-gradient(circle at 100% 20%, #d2d7ff 0, rgba(210, 215, 255, 0) 45%),
+      radial-gradient(circle at 50% 100%, #9ff7ff 0, rgba(159, 247, 255, 0) 45%),
+      linear-gradient(180deg, #fff8f2 0%, #fff0df 100%);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee2 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes marquee-up {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}

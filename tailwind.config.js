@@ -1,10 +1,13 @@
-import { fontFamily } from "tailwindcss/defaultTheme"
-import typography from "@tailwindcss/typography"
+const { fontFamily } = require("tailwindcss/defaultTheme")
+const typography = require("@tailwindcss/typography")
 
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   darkMode: ["class"],
-  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+  content: [
+    "./app/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}"
+  ],
   theme: {
     container: {
       center: true,

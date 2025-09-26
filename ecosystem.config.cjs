@@ -6,7 +6,7 @@ module.exports = {
     cwd: '/root/Projects/tootie-treats',
     env: {
       NODE_ENV: 'development',
-      PORT: 5173
+      PORT: 3000
     },
     error_file: './logs/err.log',
     out_file: './logs/out.log',
