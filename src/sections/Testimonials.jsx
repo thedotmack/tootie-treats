@@ -1,6 +1,6 @@
 import { Quote, Star } from 'lucide-react'
 
-const testimonials = [
+const defaultTestimonials = [
   {
     content: "I literally cannot draw a stick figure and I made a cake that looked professional. I don't understand how this happened but I'm not questioning it. Already signed up for the next class!",
     author: 'Sarah M.',
@@ -29,7 +29,15 @@ const testimonials = [
 
 const colors = ['var(--accent-pink)', 'var(--accent-teal)', 'var(--accent-lavender)', 'var(--accent-green)']
 
-export function Testimonials() {
+export function Testimonials({ content }) {
+  // Use content from Keystatic or fallback to defaults
+  const {
+    title = "Don't Just Take Our Word For It",
+    subtitle = "Real Reviews from Real People (Who Were Really Nervous)",
+    testimonials = defaultTestimonials,
+    happyCreatorsCount = "7,900+",
+    happyCreatorsText = "Join thousands of Sacramento locals who discovered they're way more creative than they thought"
+  } = content || {}
   return (
     <section
       id="testimonials"
@@ -45,9 +53,9 @@ export function Testimonials() {
       />
       <div className="mx-auto w-container max-w-full">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl">Don't Just Take Our Word For It</h2>
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl">{title}</h2>
           <p className="mt-4 text-lg text-foreground/80 sm:text-xl">
-            Real Reviews from Real People (Who Were Really Nervous)
+            {subtitle}
           </p>
         </div>
 
@@ -80,9 +88,9 @@ export function Testimonials() {
         </div>
 
         <div className="mt-12 rounded-base border-4 border-border bg-secondary-background p-10 text-center shadow-shadow">
-          <p className="text-2xl font-heading text-foreground">7,900+ Happy Creators</p>
+          <p className="text-2xl font-heading text-foreground">{happyCreatorsCount} Happy Creators</p>
           <p className="mt-3 text-foreground/80">
-            Join thousands of Sacramento locals who discovered they're way more creative than they thought
+            {happyCreatorsText}
           </p>
           <a
             href="#classes"

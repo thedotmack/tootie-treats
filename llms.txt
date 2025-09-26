@@ -1,0 +1,292 @@
+================
+CODE SNIPPETS
+================
+TITLE: Keystatic Environment Variables
+DESCRIPTION: Required environment variables for running the Keystatic development app locally. These include secrets and client IDs necessary for authentication and operation.
+
+SOURCE: https://github.com/thinkmill/keystatic/blob/main/dev-projects/next-app/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+KEYSTATIC_SECRET=...
+KEYSTATIC_GITHUB_CLIENT_ID=...
+KEYSTATIC_GITHUB_CLIENT_SECRET=...
+```
+
+--------------------------------
+
+TITLE: Run Keystatic Development Server with npm
+DESCRIPTION: Starts the development server for the Astro project with Keystatic integrated. This command allows you to view and interact with your site locally during development.
+
+SOURCE: https://github.com/thinkmill/keystatic/blob/main/templates/astro/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+npm run dev
+```
+
+--------------------------------
+
+TITLE: Heading Text Variant Configuration
+DESCRIPTION: Shows an example of configuring text variants, such as headings, using semantic names instead of t-shirt sizes. This approach bundles all necessary font properties like color, family, size, and weight.
+
+SOURCE: https://github.com/thinkmill/keystatic/blob/main/design-system/primitives/README.md#_snippet_2
+
+LANGUAGE: json
+CODE:
+```
+{
+  "color": "{some.value}",
+  "fontFamily": "{some.value}",
+  "fontSize": "{some.value}",
+  "fontWeight": "{some.value}",
+  "lineHeight": "{some.value}",
+  "textTransform": "{some.value}"
+}
+```
+
+--------------------------------
+
+TITLE: Run Keystatic Create Locally
+DESCRIPTION: Command to run the Keystatic create package locally for development and testing purposes.
+
+SOURCE: https://github.com/thinkmill/keystatic/blob/main/packages/create/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+pnpm dev:create
+```
+
+--------------------------------
+
+TITLE: Run Keystatic Development App
+DESCRIPTION: Command to start the Keystatic development application. After execution, the Admin UI can be accessed via the `/keystatic` route.
+
+SOURCE: https://github.com/thinkmill/keystatic/blob/main/dev-projects/next-app/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+pnpm run dev
+```
+
+--------------------------------
+
+TITLE: Figma Color Collection JSON Structure
+DESCRIPTION: Defines the structure of a Figma color collection file, including modes, variable IDs, and detailed variable definitions with resolved values by mode. This format is used to represent design tokens.
+
+SOURCE: https://github.com/thinkmill/keystatic/blob/main/design-system/primitives/README.md#_snippet_0
+
+LANGUAGE: json
+CODE:
+```
+{
+  "id": "collection-id",
+  "name": "colors",
+  "modes": {
+    "1:0": "Light",
+    "1:1": "Dark"
+  },
+  "variableIds": ["loads-of-ids"],
+  "variables": [
+    {
+      "id": "token-id",
+      "name": "alias/backgroundPressed",
+      "type": "COLOR",
+      "scopes": ["FRAME_FILL", "SHAPE_FILL"],
+      "valuesByMode": {
+        "1:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "id-of-token"
+        },
+        "1:1": {
+          "type": "VARIABLE_ALIAS",
+          "id": "id-of-token"
+        }
+      },
+      "resolvedValuesByMode": {
+        "1:0": {
+          "resolvedValue": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.114
+          },
+          "alias": "id-of-token",
+          "aliasName": "scales/black"
+        },
+        "1:1": {
+          "resolvedValue": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.124
+          },
+          "alias": "id-of-token",
+          "aliasName": "scales/white"
+        }
+      }
+    }
+  ]
+}
+```
+
+--------------------------------
+
+TITLE: Start Next.js Development Server
+DESCRIPTION: Commands to start the Next.js development server using various package managers. Requires Node.js and a package manager (npm, yarn, pnpm, or bun) to be installed.
+
+SOURCE: https://github.com/thinkmill/keystatic/blob/main/dev-projects/next-blocks-builder/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+npm run dev
+```
+
+LANGUAGE: bash
+CODE:
+```
+yarn dev
+```
+
+LANGUAGE: bash
+CODE:
+```
+pnpm dev
+```
+
+LANGUAGE: bash
+CODE:
+```
+bun dev
+```
+
+--------------------------------
+
+TITLE: Install and Run Keystatic Dev Project
+DESCRIPTION: Instructions to install dependencies using pnpm, navigate to a specific example project directory, and run the development server for Keystatic. This setup is intended for local development within the monorepo.
+
+SOURCE: https://github.com/thinkmill/keystatic/blob/main/README.md#_snippet_0
+
+LANGUAGE: shell
+CODE:
+```
+pnpm install
+cd dev-projects/{example}
+pnpm run dev
+```
+
+--------------------------------
+
+TITLE: Create Keystatic Project
+DESCRIPTION: Use this command to initiate the creation of a new Keystatic project via the command line interface.
+
+SOURCE: https://github.com/thinkmill/keystatic/blob/main/packages/create/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+npx create @keystatic
+```
+
+--------------------------------
+
+TITLE: Install Keystatic Dependencies with npm
+DESCRIPTION: Installs the necessary project dependencies using npm. This command should be run in the project's root directory after cloning or setting up the project.
+
+SOURCE: https://github.com/thinkmill/keystatic/blob/main/templates/astro/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+npm install
+```
+
+--------------------------------
+
+TITLE: Update Size Scale Naming Convention
+DESCRIPTION: Illustrates a change in defining size scale tokens, shifting from descriptive keys to using pixel values directly. This aims to simplify the abstraction and improve consistency.
+
+SOURCE: https://github.com/thinkmill/keystatic/blob/main/design-system/primitives/README.md#_snippet_1
+
+LANGUAGE: diff
+CODE:
+```
+- '200': {
+-   $value: '16px',
+-   $type: 'dimension',
+- }
++ '16': {
++   $value: '16px',
++   $type: 'dimension',
++ }
+```
+
+--------------------------------
+
+TITLE: Start Remix App in Development Mode
+DESCRIPTION: Starts the Remix application in development mode. The server automatically rebuilds assets when files change, providing a live development experience.
+
+SOURCE: https://github.com/thinkmill/keystatic/blob/main/templates/remix/README.md#_snippet_0
+
+LANGUAGE: shell
+CODE:
+```
+npm run dev
+```
+
+--------------------------------
+
+TITLE: Install Keystatic Dependencies
+DESCRIPTION: Installs the necessary Node.js packages for the project, including Keystatic and its dependencies. This command should be run in the project's root directory.
+
+SOURCE: https://github.com/thinkmill/keystatic/blob/main/templates/nextjs/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+npm install
+```
+
+--------------------------------
+
+TITLE: Run Keystatic Next.js Development Server
+DESCRIPTION: Starts the development server for the Next.js application, enabling hot-reloading and providing access to the Keystatic Admin UI. This command is used during development.
+
+SOURCE: https://github.com/thinkmill/keystatic/blob/main/templates/nextjs/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+npm run dev
+```
+
+--------------------------------
+
+TITLE: Build Remix App for Production
+DESCRIPTION: Builds the Remix application for production deployment. This command optimizes assets and creates a production-ready bundle.
+
+SOURCE: https://github.com/thinkmill/keystatic/blob/main/templates/remix/README.md#_snippet_1
+
+LANGUAGE: shell
+CODE:
+```
+npm run build
+```
+
+--------------------------------
+
+TITLE: Run Remix App in Production Mode
+DESCRIPTION: Runs the production-ready build of the Remix application. This command is used after building the app for deployment.
+
+SOURCE: https://github.com/thinkmill/keystatic/blob/main/templates/remix/README.md#_snippet_2
+
+LANGUAGE: shell
+CODE:
+```
+npm start
+```

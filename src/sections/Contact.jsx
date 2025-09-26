@@ -1,6 +1,19 @@
 import { Instagram, Link as LinkIcon, MapPin, Mail, ArrowRight } from 'lucide-react'
 
-export function Contact() {
+export function Contact({ content }) {
+  // Use content from Keystatic or fallback to defaults
+  const {
+    title = "Your Cake Adventure Starts Here",
+    subtitle = "Three Ways to Join the Fun:",
+    instagram = "@tootietreats",
+    instagramUrl = "https://instagram.com/tootietreats",
+    linktreeUrl = "https://linktr.ee/tootietreats",
+    privateEventFormUrl = "https://www.jotform.com/form/243365823386161",
+    mainLocation = "Sierra 2 Center - 2791 24th Street, Sacramento\nMost regular classes held here in the Learney Room",
+    popupLocation = "Various Sacramento venues - Check Instagram for special event locations",
+    studioArea = "Curtis Park area, Sacramento 95818"
+  } = content || {}
+
   return (
     <section
       id="contact"
@@ -16,9 +29,9 @@ export function Contact() {
       />
       <div className="mx-auto w-container max-w-full">
         <div className="text-center">
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl">Your Cake Adventure Starts Here</h2>
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl">{title}</h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-foreground/80 sm:text-xl">
-            Three Ways to Join the Fun:
+            {subtitle}
           </p>
         </div>
 
@@ -28,7 +41,7 @@ export function Contact() {
             <p className="mt-3 text-foreground/85">$95 per person • 2 hours • All supplies included</p>
             <p className="mt-2 text-sm text-foreground/75">Perfect for trying something new or bringing a friend</p>
             <a
-              href="https://linktr.ee/tootietreats"
+              href={linktreeUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-base border-2 border-border bg-gradient-to-r from-accent-coral to-main px-6 py-3 font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
@@ -43,7 +56,7 @@ export function Contact() {
             <p className="mt-3 text-foreground/85">Your group, your schedule, your theme</p>
             <p className="mt-2 text-sm text-foreground/75">Starting at $95 per person for groups of 3+</p>
             <a
-              href="https://www.jotform.com/form/243365823386161"
+              href={privateEventFormUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-base border-2 border-border bg-gradient-to-r from-accent-teal to-accent-green px-6 py-3 font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
@@ -58,7 +71,7 @@ export function Contact() {
             <p className="mt-3 text-foreground/85">Let Alexa create edible art for your special occasion</p>
             <p className="mt-2 text-sm text-foreground/75">DM @tootietreats on Instagram to start</p>
             <a
-              href="https://instagram.com/tootietreats"
+              href={instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-base border-2 border-border bg-gradient-to-r from-accent-pink to-accent-lavender px-6 py-3 font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"

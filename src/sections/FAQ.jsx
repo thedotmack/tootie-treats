@@ -3,7 +3,7 @@
 import { ChevronDown } from 'lucide-react'
 import { useState } from 'react'
 
-const faqs = [
+const defaultFaqs = [
   {
     question: "But I'm REALLY not creative...",
     answer: "Neither were most of our students when they walked in. Creativity isn't required - just willingness to try. You'll walk out surprised at what you created."
@@ -38,8 +38,14 @@ const faqs = [
   }
 ]
 
-export function FAQ() {
+export function FAQ({ content }) {
   const [openIndex, setOpenIndex] = useState(null)
+
+  // Use content from Keystatic or fallback to defaults
+  const {
+    title = "All Your Questions Answered (Even the Ones You're Shy About)",
+    faqs = defaultFaqs
+  } = content || {}
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index)
@@ -59,7 +65,7 @@ export function FAQ() {
         <div className="mx-auto max-w-3xl">
           <div className="mb-12 text-center">
             <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl">
-              All Your Questions Answered (Even the Ones You're Shy About)
+              {title}
             </h2>
           </div>
 

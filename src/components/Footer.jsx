@@ -43,6 +43,12 @@ export function Footer() {
               linktr.ee/tootietreats
             </a>
           </p>
+
+          <p className="text-xs text-foreground/40 mt-4">
+            <a href="/keystatic" className="hover:text-foreground/60 transition-colors">
+              Admin
+            </a>
+          </p>
         </div>
       </div>
     </footer>

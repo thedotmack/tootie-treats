@@ -1,6 +1,6 @@
 import { Cake, Gem, Candy, TreePine, Ghost, Check } from 'lucide-react'
 
-const classes = [
+const defaultClasses = [
   {
     icon: Cake,
     title: 'Vintage Cake Class',
@@ -38,7 +38,7 @@ const classes = [
   }
 ]
 
-const included = [
+const defaultIncluded = [
   'All supplies, tools, and materials (seriously, everything)',
   'Step-by-step guidance (we promise you won\'t mess up)',
   'Refreshments to keep your energy up',
@@ -47,7 +47,19 @@ const included = [
   'Bragging rights forever'
 ]
 
-export function Classes() {
+export function Classes({ content }) {
+  // Use content from Keystatic or fallback to defaults
+  const {
+    title = "Pick Your Adventure (Seriously, They're All Fun)",
+    subtitle = "Everything's Included. Just Show Up Ready to Play.",
+    price = "$95",
+    includesTitle = "What Your $95 Includes:",
+    classes = defaultClasses,
+    included = defaultIncluded,
+    regularClassAge = "15+",
+    cakeBuddiesAge = "3-17 with an adult companion",
+    bookingUrl = "https://linktr.ee/tootietreats"
+  } = content || {}
   return (
     <section
       id="classes"
@@ -64,10 +76,10 @@ export function Classes() {
       <div className="mx-auto w-container max-w-full">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl">
-            Pick Your Adventure (Seriously, They're All Fun)
+            {title}
           </h2>
           <p className="mt-4 text-lg text-foreground/80 sm:text-xl">
-            Everything's Included. Just Show Up Ready to Play.
+            {subtitle}
           </p>
         </div>
 
@@ -96,7 +108,7 @@ export function Classes() {
         </div>
 
         <div className="mt-12 rounded-base border-4 border-border bg-secondary-background p-8 shadow-shadow">
-          <h3 className="font-heading text-2xl text-foreground">What Your $95 Includes:</h3>
+          <h3 className="font-heading text-2xl text-foreground">{includesTitle}</h3>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2">
             {included.map((item) => (
               <li key={item} className="flex items-start gap-3">
@@ -108,14 +120,14 @@ export function Classes() {
           <div className="mt-8 rounded-base border-2 border-border bg-accent-lavender/30 p-6">
             <p className="font-semibold text-foreground">Classes for Everyone:</p>
             <ul className="mt-3 space-y-2 text-foreground/85">
-              <li>• Regular Classes: Ages 15+</li>
-              <li>• Cake Buddies: Ages 3-17 with an adult companion</li>
+              <li>• Regular Classes: Ages {regularClassAge}</li>
+              <li>• Cake Buddies: Ages {cakeBuddiesAge}</li>
               <li>• All skill levels welcome (especially "I can't even draw a stick figure" level)</li>
             </ul>
           </div>
           <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:justify-center">
             <a
-              href="https://linktr.ee/tootietreats"
+              href={bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-base border-2 border-border bg-gradient-to-r from-accent-coral via-main to-accent-pink px-6 py-3 font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"

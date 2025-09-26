@@ -33,3 +33,14 @@ npm run deploy:cf
 ```
 
 Wrangler uses the configuration in `wrangler.toml` to build the Vite site and upload the contents of the `dist` directory as Worker assets. You can override the Worker name or other deployment fields with CLI flags or environment variables when needed.
+
+## Keystatic admin access
+
+Protect the Keystatic dashboard with HTTP basic authentication by setting secrets in `.env.local`:
+
+```bash
+KEYSTATIC_ADMIN_USERNAME=admin
+KEYSTATIC_ADMIN_PASSWORD=change-me
+```
+
+`KEYSTATIC_ADMIN_USERNAME` defaults to `admin` when omitted. If `KEYSTATIC_ADMIN_PASSWORD` is not defined, the middleware skips authentication (useful for local prototyping).
