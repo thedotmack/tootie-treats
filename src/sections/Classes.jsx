@@ -1,4 +1,7 @@
+'use client'
+
 import { Cake, Gem, Candy, TreePine, Ghost, Check } from 'lucide-react'
+import { useEffect } from 'react'
 
 const defaultClasses = [
   {
@@ -60,6 +63,22 @@ export function Classes({ content }) {
     cakeBuddiesAge = "3-17 with an adult companion",
     bookingUrl = "https://linktr.ee/tootietreats"
   } = content || {}
+
+  // Load Acuity's resize script for better iframe responsiveness
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.src = 'https://embed.acuityscheduling.com/js/embed.js'
+    script.async = true
+    document.body.appendChild(script)
+
+    return () => {
+      // Cleanup script on unmount
+      if (script.parentNode) {
+        script.parentNode.removeChild(script)
+      }
+    }
+  }, [])
+
   return (
     <section
       id="classes"
@@ -125,18 +144,36 @@ export function Classes({ content }) {
               <li>• All skill levels welcome (especially "I can't even draw a stick figure" level)</li>
             </ul>
           </div>
+        </div>
+
+        {/* Embedded Acuity Scheduling with Enhanced Integration */}
+        <div className="mt-12 rounded-base border-4 border-border bg-gradient-to-br from-accent-pink/20 via-white to-accent-lavender/20 p-8 shadow-shadow">
+          <h3 className="mb-2 text-center font-heading text-3xl text-foreground">🎂 Book Your Class Right Here! 🎂</h3>
+          <p className="mb-6 text-center text-foreground/80">Pick your date, pay online, and get ready to create something amazing!</p>
+          <div className="relative w-full overflow-hidden rounded-base border-4 border-border bg-white shadow-shadow">
+            <iframe
+              src="https://tootietreatsclasses.as.me/schedule.php?appointmentType=83772956&embed=1&noHeader=1"
+              width="100%"
+              height="800"
+              frameBorder="0"
+              className="acuity-scheduling-iframe min-h-[800px] w-full sm:min-h-[900px]"
+              style={{ border: 'none' }}
+              title="Schedule Your Cake Class"
+              loading="lazy"
+            />
+          </div>
           <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:justify-center">
             <a
               href={bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-base border-2 border-border bg-gradient-to-r from-accent-coral via-main to-accent-pink px-6 py-3 font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
+              className="inline-flex items-center justify-center gap-2 rounded-base border-2 border-border bg-secondary-background px-6 py-3 text-sm font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:bg-accent-lavender hover:shadow-none"
             >
-              View Full Schedule & Book
+              Having trouble? Book on Linktree →
             </a>
             <a
               href="#private-events"
-              className="inline-flex items-center justify-center gap-2 rounded-base border-2 border-border bg-secondary-background px-6 py-3 font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:bg-accent-teal hover:text-foreground hover:shadow-none"
+              className="inline-flex items-center justify-center gap-2 rounded-base border-2 border-border bg-gradient-to-r from-accent-coral via-main to-accent-pink px-6 py-3 font-semibold text-foreground shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
             >
               Book a Private Class
             </a>
