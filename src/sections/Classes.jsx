@@ -10,7 +10,7 @@ const defaultClasses = [
     description: 'Create a retro-fabulous cake complete with vintage piping techniques and craft your own edible friendship bracelet for the top. It\'s like the 70s and 80s had a delicious baby.',
     perfectFor: 'First-timers, birthday parties, anyone who loves retro vibes',
     color: 'var(--accent-pink)',
-    glow: '0 0 30px rgba(255, 20, 147, 0.6)'
+    glow: 'var(--glow-pink)'
   },
   {
     icon: Gem,
@@ -18,7 +18,7 @@ const defaultClasses = [
     description: 'Turn sugar into edible gemstones that sparkle like the real thing. Your Instagram will thank you. Your friends won\'t believe you made it.',
     perfectFor: 'Date nights, creative souls, geology enthusiasts with a sweet tooth',
     color: 'var(--accent-teal)',
-    glow: '0 0 30px rgba(0, 255, 255, 0.6)'
+    glow: 'var(--glow-cyan)'
   },
   {
     icon: Candy,
@@ -26,7 +26,7 @@ const defaultClasses = [
     description: 'Remember being a kid in a candy store? Now imagine decorating a cake with ALL THE CANDY. Dreams do come true.',
     perfectFor: 'The young at heart, birthday celebrations, sugar enthusiasts',
     color: 'var(--accent-lavender)',
-    glow: '0 0 30px rgba(157, 78, 221, 0.6)'
+    glow: 'var(--glow-purple)'
   },
   {
     icon: TreePine,
@@ -34,7 +34,7 @@ const defaultClasses = [
     description: 'Whimsical forest vibes meet buttercream brilliance. No actual mushrooms involved, just pure imagination and lots of color.',
     perfectFor: 'Creative types, anyone who loved fairy tales, unique gift-givers',
     color: 'var(--accent-green)',
-    glow: '0 0 30px rgba(0, 255, 136, 0.6)'
+    glow: 'var(--glow-green)'
   },
   {
     icon: Ghost,
@@ -42,7 +42,7 @@ const defaultClasses = [
     description: 'Bold colors, monster details, and creative techniques that change with the seasons. October brings Halloween magic, December brings holiday cheer!',
     perfectFor: 'Holiday celebrations, themed parties, seasonal fun',
     color: 'var(--accent-coral)',
-    glow: '0 0 30px rgba(255, 107, 53, 0.6)'
+    glow: '0 0 20px #ff5c6c, 0 0 40px #ff5c6c33'
   }
 ]
 
@@ -87,14 +87,14 @@ export function Classes({ content }) {
   return (
     <section
       id="classes"
-      className="relative border-b-4 border-accent-teal bg-gradient-to-br from-accent-lavender/20 via-background to-accent-pink/20 overflow-hidden px-4 py-20 sm:px-6"
+      className="relative border-b-2 border-accent-teal/50 bg-gradient-to-br from-background via-secondary-background/30 to-background overflow-hidden px-4 py-20 sm:px-6"
     >
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10"
         style={{
           background:
-            'radial-gradient(ellipse at 15% 80%, rgba(255, 0, 255, 0.3), transparent 55%), radial-gradient(ellipse at 85% 20%, rgba(0, 255, 255, 0.3), transparent 50%), repeating-conic-gradient(from 45deg at 50% 50%, transparent 0deg, rgba(157, 78, 221, 0.05) 10deg, transparent 20deg)'
+            'radial-gradient(ellipse at 15% 80%, rgba(255, 0, 229, 0.15), transparent 55%), radial-gradient(ellipse at 85% 20%, rgba(0, 229, 255, 0.15), transparent 50%), repeating-conic-gradient(from 45deg at 50% 50%, transparent 0deg, rgba(179, 102, 255, 0.03) 10deg, transparent 20deg)'
         }}
       />
       <div className="mx-auto w-container max-w-full">
@@ -111,15 +111,15 @@ export function Classes({ content }) {
           {classes.map(({ icon: Icon, title, description, perfectFor, color, glow }) => (
             <article
               key={title}
-              className="group relative flex flex-col gap-4 rounded-[20%_80%_70%_30%_/_30%_70%_80%_20%] border-4 border-main/80 p-6 transition-all hover:scale-105 animate-float-random backdrop-blur-md"
+              className="group relative flex flex-col gap-4 rounded-[20%_80%_70%_30%_/_30%_70%_80%_20%] border-2 border-accent-pink/40 p-6 transition-all duration-500 hover:scale-105 hover:border-main/60 animate-float-random backdrop-blur-md holographic"
               style={{
-                background: `linear-gradient(135deg, ${color}33, ${color}66)`,
+                background: `linear-gradient(135deg, ${color}20, ${color}40)`,
                 boxShadow: glow,
                 animationDelay: `${Math.random() * 5}s`
               }}
             >
               <div className="flex items-start gap-4">
-                <div className="flex size-12 shrink-0 items-center justify-center rounded-full border-2 border-main bg-gradient-to-br from-main to-accent-pink text-main-foreground shadow-[0_0_20px_rgba(255,0,255,0.5)] animate-glow-pulse">
+                <div className="flex size-12 shrink-0 items-center justify-center rounded-full border border-main/60 iridescent text-main-foreground shadow-[var(--glow-main)] group-hover:scale-110 transition-transform duration-300">
                   <Icon className="h-6 w-6" />
                 </div>
                 <div className="flex-1">
@@ -135,7 +135,7 @@ export function Classes({ content }) {
           ))}
         </div>
 
-        <div className="mt-12 rounded-[30%_70%_70%_30%_/_60%_40%_60%_40%] border-4 border-accent-pink bg-gradient-to-br from-secondary-background/80 to-accent-lavender/20 p-8 shadow-[0_0_40px_rgba(255,20,147,0.5)] animate-liquid-morph backdrop-blur-md">
+        <div className="mt-12 rounded-[30%_70%_70%_30%_/_60%_40%_60%_40%] border-2 border-accent-pink/50 bg-gradient-to-br from-secondary-background/60 to-accent-lavender/10 p-8 shadow-[var(--glow-pink)] animate-liquid-morph backdrop-blur-md holographic">
           <h3 className="font-heading text-2xl text-foreground">{includesTitle}</h3>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2">
             {included.map((item) => (
@@ -145,7 +145,7 @@ export function Classes({ content }) {
               </li>
             ))}
           </ul>
-          <div className="mt-8 rounded-full border-2 border-accent-teal bg-gradient-to-r from-accent-teal/20 to-accent-green/20 p-6 shadow-[0_0_25px_rgba(0,255,255,0.4)] backdrop-blur-md">
+          <div className="mt-8 rounded-full border border-accent-teal/50 bg-gradient-to-r from-accent-teal/10 to-accent-green/10 p-6 shadow-[var(--glow-cyan)] backdrop-blur-md holographic">
             <p className="font-semibold text-foreground">Classes for Everyone:</p>
             <ul className="mt-3 space-y-2 text-foreground/85">
               <li>• Regular Classes: Ages {regularClassAge}</li>
