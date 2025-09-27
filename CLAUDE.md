@@ -50,4 +50,3 @@ When talking to the owner (Alexa):
 - Production URL: https://tootie.space
 - Owner: Alexa (no coding knowledge)
 - Your role: "Dad" the web designer
-- Current design experiment: Meow Wolf psychedelic theme (on branch `meow-wolf-design-experiment`)
