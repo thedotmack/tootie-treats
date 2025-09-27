@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&family=Manrope:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700&family=Righteous&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -14,20 +14,25 @@
   --heading-font-weight: 400;
   --base-font-weight: 500;
 
-  --background: #fff8f2;
-  --secondary-background: #ffffff;
-  --foreground: #17151f;
-  --main-foreground: #17151f;
+  --background: #0a0014;
+  --secondary-background: #1a0f2e;
+  --foreground: #f0e6ff;
+  --main-foreground: #0a0014;
 
-  --main: #ffe44d;
-  --accent-pink: #fbc4ff;
-  --accent-green: #cafd5a;
-  --accent-teal: #9ff7ff;
-  --accent-lavender: #d2d7ff;
-  --accent-coral: #ffb4c7;
-  --border: #17151f;
-  --ring: #17151f;
-  --overlay: rgba(23, 21, 31, 0.85);
+  --main: #ff00ff;
+  --accent-pink: #ff1493;
+  --accent-green: #00ff88;
+  --accent-teal: #00ffff;
+  --accent-lavender: #9d4edd;
+  --accent-coral: #ff6b35;
+  --border: #ff00ff;
+  --ring: #00ffff;
+  --overlay: rgba(10, 0, 20, 0.95);
+
+  --glow-pink: 0 0 30px #ff1493;
+  --glow-cyan: 0 0 30px #00ffff;
+  --glow-purple: 0 0 30px #9d4edd;
+  --glow-green: 0 0 30px #00ff88;
 
   --chart-1: #9ff7ff;
   --chart-2: #ffb4c7;
@@ -42,9 +47,9 @@
   --spacing-reverseBoxShadowY: var(--reverse-box-shadow-y);
 
   --radius-base: var(--border-radius);
-  --shadow-shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px rgba(23, 21, 31, 0.7);
-  --shadow-nav: 8px 10px 0px 0px rgba(23, 21, 31, 0.7);
-  --shadow-darkNav: 8px 10px 0px 0px rgba(14, 13, 20, 0.85);
+  --shadow-shadow: 0 0 20px rgba(255, 0, 255, 0.6), 5px 5px 0px 0px rgba(0, 255, 255, 0.4);
+  --shadow-nav: 0 0 25px rgba(157, 78, 221, 0.8), 5px 5px 0px 0px rgba(255, 20, 147, 0.6);
+  --shadow-darkNav: 0 0 30px rgba(0, 255, 255, 0.9), 5px 5px 0px 0px rgba(255, 0, 255, 0.7);
 
   --font-weight-base: var(--base-font-weight);
   --font-weight-heading: var(--heading-font-weight);
@@ -87,10 +92,40 @@
 
   body {
     @apply bg-background text-foreground font-base m-0 min-h-screen antialiased;
-    background-image: radial-gradient(circle at 0% 0%, #ffe1f7 0, rgba(255, 225, 247, 0) 50%),
-      radial-gradient(circle at 100% 20%, #d2d7ff 0, rgba(210, 215, 255, 0) 45%),
-      radial-gradient(circle at 50% 100%, #9ff7ff 0, rgba(159, 247, 255, 0) 45%),
-      linear-gradient(180deg, #fff8f2 0%, #fff0df 100%);
+    background:
+      radial-gradient(ellipse at top left, rgba(255, 0, 255, 0.3) 0%, transparent 50%),
+      radial-gradient(ellipse at top right, rgba(0, 255, 255, 0.3) 0%, transparent 50%),
+      radial-gradient(ellipse at bottom left, rgba(157, 78, 221, 0.3) 0%, transparent 50%),
+      radial-gradient(ellipse at bottom right, rgba(0, 255, 136, 0.3) 0%, transparent 50%),
+      linear-gradient(180deg, #0a0014 0%, #1a0f2e 50%, #2d1b69 100%);
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 2px,
+        rgba(255, 0, 255, 0.03) 2px,
+        rgba(255, 0, 255, 0.03) 4px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 255, 255, 0.03) 2px,
+        rgba(0, 255, 255, 0.03) 4px
+      );
+    pointer-events: none;
+    z-index: 1;
   }
 
   h1,
@@ -109,36 +144,118 @@
 
 @keyframes marquee {
   0% {
-    transform: translateX(0%);
+    transform: translateX(0%) scale(1) rotate(0deg);
+  }
+  25% {
+    transform: translateX(-25%) scale(1.1) rotate(2deg);
+  }
+  50% {
+    transform: translateX(-50%) scale(0.9) rotate(-2deg);
+  }
+  75% {
+    transform: translateX(-75%) scale(1.05) rotate(1deg);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-100%) scale(1) rotate(0deg);
   }
 }
 
 @keyframes marquee2 {
   0% {
-    transform: translateX(100%);
+    transform: translateX(100%) scale(1) rotate(0deg);
+  }
+  25% {
+    transform: translateX(75%) scale(1.1) rotate(-2deg);
+  }
+  50% {
+    transform: translateX(50%) scale(0.9) rotate(2deg);
+  }
+  75% {
+    transform: translateX(25%) scale(1.05) rotate(-1deg);
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(0%) scale(1) rotate(0deg);
   }
 }
 
 @keyframes marquee-up {
   0% {
-    transform: translateY(0%);
+    transform: translateY(0%) scale(1);
+  }
+  50% {
+    transform: translateY(-50%) scale(1.2);
   }
   100% {
-    transform: translateY(-100%);
+    transform: translateY(-100%) scale(1);
   }
 }
 
 @keyframes scroll-left {
   0% {
-    transform: translateX(0);
+    transform: translateX(0) rotate(0deg);
   }
   100% {
-    transform: translateX(-33.33%);
+    transform: translateX(-33.33%) rotate(360deg);
   }
+}
+
+@keyframes liquid-morph {
+  0%, 100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    opacity: 0.8;
+    filter: brightness(1) hue-rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    filter: brightness(1.5) hue-rotate(20deg);
+  }
+}
+
+@keyframes float-random {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  33% {
+    transform: translate(30px, -30px) rotate(120deg) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) rotate(240deg) scale(0.9);
+  }
+}
+
+@keyframes chromatic-aberration {
+  0%, 100% {
+    text-shadow:
+      0.025em 0 0 rgba(255, 0, 255, 0.5),
+      -0.025em 0 0 rgba(0, 255, 255, 0.5);
+  }
+  50% {
+    text-shadow:
+      -0.025em 0 0 rgba(255, 0, 255, 0.5),
+      0.025em 0 0 rgba(0, 255, 255, 0.5);
+  }
+}
+
+.psychedelic-text {
+  animation: chromatic-aberration 2s ease-in-out infinite;
+}
+
+.liquid-shape {
+  animation: liquid-morph 8s ease-in-out infinite;
+}
+
+.glow-effect {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+
+.float-element {
+  animation: float-random 10s ease-in-out infinite;
 }

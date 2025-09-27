@@ -37,8 +37,9 @@ module.exports = {
         },
       },
       fontFamily: {
-        heading: ["DM Serif Display", ...fontFamily.serif],
-        base: ["Manrope", ...fontFamily.sans],
+        heading: ["Righteous", ...fontFamily.sans],
+        base: ["Space Grotesk", ...fontFamily.sans],
+        display: ["Bebas Neue", ...fontFamily.sans],
       },
       fontWeight: {
         heading: "var(--font-weight-heading)",
@@ -66,10 +67,22 @@ module.exports = {
         "marquee-vertical": "var(--animate-marquee-up)",
         "marquee-secondary": "var(--animate-marquee2)",
         "scroll-left": "scroll-left 15s linear infinite",
+        "liquid-morph": "liquid-morph 8s ease-in-out infinite",
+        "glow-pulse": "glow-pulse 3s ease-in-out infinite",
+        "float-random": "float-random 10s ease-in-out infinite",
+        "chromatic": "chromatic-aberration 2s ease-in-out infinite",
       },
       backgroundImage: {
         "grid-70":
           "linear-gradient(to_right,#80808033_1px,transparent_1px), linear-gradient(to_bottom,#80808033_1px,transparent_1px)",
+        "psychedelic-gradient":
+          "linear-gradient(45deg, #ff00ff, #00ffff, #ff1493, #00ff88, #9d4edd, #ff6b35)",
+        "wavy-gradient":
+          "radial-gradient(circle at 20% 50%, rgba(255,0,255,0.3) 0%, transparent 50%), radial-gradient(circle at 80% 50%, rgba(0,255,255,0.3) 0%, transparent 50%), radial-gradient(circle at 50% 20%, rgba(157,78,221,0.3) 0%, transparent 50%)",
+      },
+      backdropFilter: {
+        'blur-xl': 'blur(20px)',
+        'blur-2xl': 'blur(40px)',
       },
     },
   },

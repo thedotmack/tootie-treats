@@ -9,35 +9,40 @@ const defaultClasses = [
     title: 'Vintage Cake Class',
     description: 'Create a retro-fabulous cake complete with vintage piping techniques and craft your own edible friendship bracelet for the top. It\'s like the 70s and 80s had a delicious baby.',
     perfectFor: 'First-timers, birthday parties, anyone who loves retro vibes',
-    color: 'var(--accent-pink)'
+    color: 'var(--accent-pink)',
+    glow: '0 0 30px rgba(255, 20, 147, 0.6)'
   },
   {
     icon: Gem,
     title: 'Crystal Geode Cake',
     description: 'Turn sugar into edible gemstones that sparkle like the real thing. Your Instagram will thank you. Your friends won\'t believe you made it.',
     perfectFor: 'Date nights, creative souls, geology enthusiasts with a sweet tooth',
-    color: 'var(--accent-teal)'
+    color: 'var(--accent-teal)',
+    glow: '0 0 30px rgba(0, 255, 255, 0.6)'
   },
   {
     icon: Candy,
     title: 'Candy Explosion',
     description: 'Remember being a kid in a candy store? Now imagine decorating a cake with ALL THE CANDY. Dreams do come true.',
     perfectFor: 'The young at heart, birthday celebrations, sugar enthusiasts',
-    color: 'var(--accent-lavender)'
+    color: 'var(--accent-lavender)',
+    glow: '0 0 30px rgba(157, 78, 221, 0.6)'
   },
   {
     icon: TreePine,
     title: 'Magic Mushroom Cake',
     description: 'Whimsical forest vibes meet buttercream brilliance. No actual mushrooms involved, just pure imagination and lots of color.',
     perfectFor: 'Creative types, anyone who loved fairy tales, unique gift-givers',
-    color: 'var(--accent-green)'
+    color: 'var(--accent-green)',
+    glow: '0 0 30px rgba(0, 255, 136, 0.6)'
   },
   {
     icon: Ghost,
     title: 'Monster Mash & Seasonal Specials',
     description: 'Bold colors, monster details, and creative techniques that change with the seasons. October brings Halloween magic, December brings holiday cheer!',
     perfectFor: 'Holiday celebrations, themed parties, seasonal fun',
-    color: 'var(--accent-coral)'
+    color: 'var(--accent-coral)',
+    glow: '0 0 30px rgba(255, 107, 53, 0.6)'
   }
 ]
 
@@ -82,19 +87,19 @@ export function Classes({ content }) {
   return (
     <section
       id="classes"
-      className="relative border-b-4 border-border bg-gradient-to-r from-accent-green/30 via-secondary-background to-accent-lavender/40 overflow-hidden px-4 py-20 sm:px-6"
+      className="relative border-b-4 border-accent-teal bg-gradient-to-br from-accent-lavender/20 via-background to-accent-pink/20 overflow-hidden px-4 py-20 sm:px-6"
     >
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10"
         style={{
           background:
-            'radial-gradient(circle at 15% 80%, rgba(255, 228, 77, 0.45), transparent 55%), radial-gradient(circle at 85% 20%, rgba(210, 215, 255, 0.35), transparent 50%)'
+            'radial-gradient(ellipse at 15% 80%, rgba(255, 0, 255, 0.3), transparent 55%), radial-gradient(ellipse at 85% 20%, rgba(0, 255, 255, 0.3), transparent 50%), repeating-conic-gradient(from 45deg at 50% 50%, transparent 0deg, rgba(157, 78, 221, 0.05) 10deg, transparent 20deg)'
         }}
       />
       <div className="mx-auto w-container max-w-full">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl">
+          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl uppercase text-transparent bg-clip-text bg-gradient-to-r from-accent-pink via-accent-teal to-accent-lavender psychedelic-text">
             {title}
           </h2>
           <p className="mt-4 text-lg text-foreground/80 sm:text-xl">
@@ -103,18 +108,22 @@ export function Classes({ content }) {
         </div>
 
         <div className="mt-12 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
-          {classes.map(({ icon: Icon, title, description, perfectFor, color }) => (
+          {classes.map(({ icon: Icon, title, description, perfectFor, color, glow }) => (
             <article
               key={title}
-              className="group relative flex flex-col gap-4 rounded-base border-4 border-border p-6 shadow-shadow transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none"
-              style={{ backgroundColor: color }}
+              className="group relative flex flex-col gap-4 rounded-[20%_80%_70%_30%_/_30%_70%_80%_20%] border-4 border-main/80 p-6 transition-all hover:scale-105 animate-float-random backdrop-blur-md"
+              style={{
+                background: `linear-gradient(135deg, ${color}33, ${color}66)`,
+                boxShadow: glow,
+                animationDelay: `${Math.random() * 5}s`
+              }}
             >
               <div className="flex items-start gap-4">
-                <div className="flex size-12 shrink-0 items-center justify-center rounded-base border-2 border-border bg-main text-main-foreground shadow-shadow">
+                <div className="flex size-12 shrink-0 items-center justify-center rounded-full border-2 border-main bg-gradient-to-br from-main to-accent-pink text-main-foreground shadow-[0_0_20px_rgba(255,0,255,0.5)] animate-glow-pulse">
                   <Icon className="h-6 w-6" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-heading text-xl text-foreground">{title}</h3>
+                  <h3 className="font-heading text-xl text-foreground uppercase tracking-wide">{title}</h3>
                 </div>
               </div>
               <p className="text-sm leading-relaxed text-foreground/85">{description}</p>
@@ -126,7 +135,7 @@ export function Classes({ content }) {
           ))}
         </div>
 
-        <div className="mt-12 rounded-base border-4 border-border bg-secondary-background p-8 shadow-shadow">
+        <div className="mt-12 rounded-[30%_70%_70%_30%_/_60%_40%_60%_40%] border-4 border-accent-pink bg-gradient-to-br from-secondary-background/80 to-accent-lavender/20 p-8 shadow-[0_0_40px_rgba(255,20,147,0.5)] animate-liquid-morph backdrop-blur-md">
           <h3 className="font-heading text-2xl text-foreground">{includesTitle}</h3>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2">
             {included.map((item) => (
@@ -136,7 +145,7 @@ export function Classes({ content }) {
               </li>
             ))}
           </ul>
-          <div className="mt-8 rounded-base border-2 border-border bg-accent-lavender/30 p-6">
+          <div className="mt-8 rounded-full border-2 border-accent-teal bg-gradient-to-r from-accent-teal/20 to-accent-green/20 p-6 shadow-[0_0_25px_rgba(0,255,255,0.4)] backdrop-blur-md">
             <p className="font-semibold text-foreground">Classes for Everyone:</p>
             <ul className="mt-3 space-y-2 text-foreground/85">
               <li>• Regular Classes: Ages {regularClassAge}</li>

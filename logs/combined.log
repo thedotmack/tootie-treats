@@ -4200,3 +4200,50 @@
 2025-09-27T00:49:20: 
 2025-09-27T00:49:20:  ✓ Starting...
 2025-09-27T00:49:22:  ✓ Ready in 2.8s
+2025-09-27T00:54:58:  ○ Compiling / ...
+2025-09-27T00:55:03:  ✓ Compiled / in 6.2s (702 modules)
+2025-09-27T00:55:03:  ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+2025-09-27T00:55:04:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-27T00:55:04: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-27T00:55:04:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-27T00:55:04: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-27T01:55:46:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-27T01:55:46: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-27T01:55:46:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-27T01:55:46: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-27T01:55:46:  GET / 200 in 523ms
+2025-09-27T03:17:44:  ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-27T03:17:44: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-27T03:17:44:  ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+2025-09-27T03:17:44: Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+2025-09-27T03:17:45:  GET / 200 in 1038ms
+2025-09-27T03:17:58:  ⚠ Cross origin request detected from preview.tootie.space to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+2025-09-27T03:17:58: Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+2025-09-27T05:05:30:  ✓ Compiled in 3.6s (702 modules)
+2025-09-27T05:05:46:  ✓ Compiled in 620ms (270 modules)
+2025-09-27T05:06:21:  ⨯ ./app/page.js
+2025-09-27T05:06:21: Error:   [31mx[0m Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+2025-09-27T05:06:21:     ,-[[36;1;4m/root/Projects/tootie-treats/app/page.js[0m:50:1]
+2025-09-27T05:06:21:  [2m47[0m |       <Footer />
+2025-09-27T05:06:21:  [2m48[0m |     </div>
+2025-09-27T05:06:21:  [2m49[0m |   )
+2025-09-27T05:06:21:  [2m50[0m | }
+2025-09-27T05:06:21:     : [35;1m^[0m
+2025-09-27T05:06:21:     `----
+2025-09-27T05:06:21:   [31mx[0m Unexpected eof
+2025-09-27T05:06:21:     ,-[[36;1;4m/root/Projects/tootie-treats/app/page.js[0m:50:1]
+2025-09-27T05:06:21:  [2m47[0m |       <Footer />
+2025-09-27T05:06:21:  [2m48[0m |     </div>
+2025-09-27T05:06:21:  [2m49[0m |   )
+2025-09-27T05:06:21:  [2m50[0m | }
+2025-09-27T05:06:21:     `----
+2025-09-27T05:06:21: 
+2025-09-27T05:06:21: Caused by:
+2025-09-27T05:06:21:     Syntax Error
+2025-09-27T05:06:21: 
+2025-09-27T05:06:21: Import trace for requested module:
+2025-09-27T05:06:21: ./app/page.js
+2025-09-27T05:06:27:  ✓ Compiled in 802ms (702 modules)
+2025-09-27T05:07:15:  ✓ Compiled in 1502ms (702 modules)
+2025-09-27T05:08:36:  ✓ Compiled in 878ms (702 modules)
+2025-09-27T05:09:18:  ✓ Compiled in 803ms (702 modules)

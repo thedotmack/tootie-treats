@@ -27,19 +27,19 @@ export function Hero({ content }) {
   return (
     <section
       id="home"
-      className="relative overflow-hidden border-b-4 border-border bg-gradient-to-br from-accent-pink/40 via-secondary-background to-accent-teal/40 pb-12 pt-16 sm:pb-20 sm:pt-24"
+      className="relative overflow-hidden border-b-4 border-accent-pink bg-gradient-to-br from-accent-pink/20 via-accent-lavender/20 to-accent-teal/20 pb-12 pt-16 sm:pb-20 sm:pt-24 liquid-shape"
     >
       <div
         className="pointer-events-none absolute inset-0 -z-10"
         aria-hidden
         style={{
           background:
-            'radial-gradient(circle at 0% 0%, rgba(251, 196, 255, 0.55), transparent 55%), radial-gradient(circle at 85% 15%, rgba(159, 247, 255, 0.55), transparent 50%), radial-gradient(circle at 50% 100%, rgba(202, 253, 90, 0.45), transparent 55%)'
+            'radial-gradient(ellipse at 0% 0%, rgba(255, 0, 255, 0.4), transparent 55%), radial-gradient(ellipse at 85% 15%, rgba(0, 255, 255, 0.4), transparent 50%), radial-gradient(ellipse at 50% 100%, rgba(0, 255, 136, 0.4), transparent 55%), radial-gradient(circle at center, rgba(157, 78, 221, 0.2), transparent 70%)'
         }}
       />
 
       {/* Floating Instagram Images - Desktop */}
-      <div className="pointer-events-none absolute left-10 top-32 hidden size-48 rotate-[-5deg] overflow-hidden rounded-base border-4 border-border shadow-shadow lg:block">
+      <div className="pointer-events-none absolute left-10 top-32 hidden size-48 rotate-[-5deg] overflow-hidden rounded-[30%_70%_70%_30%_/_60%_40%_60%_40%] border-4 border-accent-pink shadow-[0_0_30px_rgba(255,20,147,0.6)] animate-liquid-morph lg:block">
         <Image
           src={`/instagram-images/${heroImages[0]}`}
           alt="Beautiful cake"
@@ -47,7 +47,7 @@ export function Hero({ content }) {
           className="object-cover"
         />
       </div>
-      <div className="pointer-events-none absolute right-10 top-48 hidden size-56 rotate-[8deg] overflow-hidden rounded-base border-4 border-border shadow-shadow lg:block">
+      <div className="pointer-events-none absolute right-10 top-48 hidden size-56 rotate-[8deg] overflow-hidden rounded-[70%_30%_30%_70%_/_40%_60%_40%_60%] border-4 border-accent-teal shadow-[0_0_30px_rgba(0,255,255,0.6)] animate-liquid-morph lg:block" style={{animationDelay: '2s'}}>
         <Image
           src={`/instagram-images/${heroImages[1]}`}
           alt="Custom cake design"
@@ -55,7 +55,7 @@ export function Hero({ content }) {
           className="object-cover"
         />
       </div>
-      <div className="pointer-events-none absolute bottom-20 left-20 hidden size-52 rotate-[-8deg] overflow-hidden rounded-base border-4 border-border shadow-shadow lg:block">
+      <div className="pointer-events-none absolute bottom-20 left-20 hidden size-52 rotate-[-8deg] overflow-hidden rounded-[50%_50%_70%_30%_/_60%_60%_40%_40%] border-4 border-accent-lavender shadow-[0_0_30px_rgba(157,78,221,0.6)] animate-liquid-morph lg:block" style={{animationDelay: '4s'}}>
         <Image
           src={`/instagram-images/${heroImages[2]}`}
           alt="Cake decoration"
@@ -63,7 +63,7 @@ export function Hero({ content }) {
           className="object-cover"
         />
       </div>
-      <div className="pointer-events-none absolute bottom-32 right-32 hidden size-44 rotate-[5deg] overflow-hidden rounded-base border-4 border-border shadow-shadow lg:block">
+      <div className="pointer-events-none absolute bottom-32 right-32 hidden size-44 rotate-[5deg] overflow-hidden rounded-[30%_70%_50%_50%_/_30%_70%_70%_30%] border-4 border-accent-green shadow-[0_0_30px_rgba(0,255,136,0.6)] animate-liquid-morph lg:block" style={{animationDelay: '6s'}}>
         <Image
           src={`/instagram-images/${heroImages[3]}`}
           alt="Cake class creation"
@@ -73,21 +73,21 @@ export function Hero({ content }) {
       </div>
       <div className="mx-auto w-container max-w-full px-4 sm:px-6">
         <div className="flex flex-col items-center gap-6 text-center">
-          <div className="relative w-full overflow-hidden rounded-base border-2 border-border bg-accent-teal shadow-shadow">
+          <div className="relative w-full overflow-hidden rounded-full border-2 border-main bg-gradient-to-r from-main via-accent-pink to-accent-teal shadow-[0_0_40px_rgba(255,0,255,0.7)] animate-glow-pulse">
             <div className="animate-scroll-left flex whitespace-nowrap py-3">
-              <span className="inline-flex items-center gap-2 px-6 font-heading text-sm uppercase tracking-[0.15em] text-foreground">
+              <span className="inline-flex items-center gap-2 px-6 font-display text-sm uppercase tracking-[0.2em] text-main-foreground">
                 {tagline}
               </span>
-              <span className="inline-flex items-center gap-2 px-6 font-heading text-sm uppercase tracking-[0.15em] text-foreground">
+              <span className="inline-flex items-center gap-2 px-6 font-display text-sm uppercase tracking-[0.2em] text-main-foreground">
                 {tagline}
               </span>
-              <span className="inline-flex items-center gap-2 px-6 font-heading text-sm uppercase tracking-[0.15em] text-foreground">
+              <span className="inline-flex items-center gap-2 px-6 font-display text-sm uppercase tracking-[0.2em] text-main-foreground">
                 {tagline}
               </span>
             </div>
           </div>
           <div className="space-y-6">
-            <h1 className="font-heading text-[clamp(2.5rem,5vw,4.5rem)] leading-tight text-foreground">
+            <h1 className="font-display text-[clamp(3rem,6vw,5rem)] leading-none text-transparent bg-clip-text bg-gradient-to-r from-accent-pink via-main to-accent-teal uppercase tracking-tight psychedelic-text">
               {title}
             </h1>
 
@@ -96,7 +96,7 @@ export function Hero({ content }) {
               {heroImages.map((image, index) => (
                 <div
                   key={image}
-                  className="relative aspect-square overflow-hidden rounded-base border-4 border-border bg-white shadow-shadow"
+                  className="relative aspect-square overflow-hidden rounded-[40%_60%_60%_40%_/_60%_30%_70%_40%] border-4 border-accent-pink bg-gradient-to-br from-accent-lavender/20 to-accent-teal/20 shadow-[0_0_20px_rgba(255,20,147,0.5)] animate-float-random"
                   style={{
                     transform: `rotate(${index % 2 === 0 ? '-3' : '3'}deg)`
                   }}

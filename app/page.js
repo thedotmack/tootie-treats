@@ -25,7 +25,11 @@ export default async function HomePage() {
   ])
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground relative">
+      <div className="fixed inset-0 bg-wavy-gradient opacity-30 pointer-events-none animate-glow-pulse z-0" />
+      <div className="fixed top-0 left-0 w-96 h-96 bg-accent-pink rounded-full blur-3xl opacity-20 animate-float-random" />
+      <div className="fixed bottom-0 right-0 w-96 h-96 bg-accent-teal rounded-full blur-3xl opacity-20 animate-float-random" style={{animationDelay: '2s'}} />
+      <div className="relative z-10">
       <Header />
       <main className="pt-24">
         <Hero content={heroContent} />
@@ -41,6 +45,7 @@ export default async function HomePage() {
         <Contact content={contactContent} />
       </main>
       <Footer />
+      </div>
     </div>
   )
 }
