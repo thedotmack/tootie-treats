@@ -7,8 +7,7 @@
   - Logs: `pm2 logs 0`
   - Restart: `pm2 restart 0`
   - Port 3001 → preview.tootie.space via Caddy reverse proxy
-- **Preview Branch**: Push to `preview` branch to update preview site instantly
-  - Command: `git push origin [branch]:preview --force`
+  - To update preview: `git push origin [any-branch]:preview --force`
 - **Production**: https://tootie.space
   - `main` branch auto-deploys via Cloudflare Workers
   - ~2 minute build time after push
@@ -24,10 +23,10 @@
 ## CRITICAL WORKFLOWS
 
 ### Making Changes Visible:
-1. Work on any branch (e.g., `meow-wolf-design-experiment`)
-2. To preview: `git push origin [current-branch]:preview --force`
+1. Work on any branch
+2. To preview: `git push origin HEAD:preview --force`
 3. Changes appear at preview.tootie.space immediately
-4. To deploy production: merge to `main` (requires owner approval)
+4. To deploy production: push/merge to `main` (requires owner approval)
 
 ### PM2 Management:
 ```bash
