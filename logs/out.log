@@ -982,3 +982,10 @@
 2025-09-27T00:45:23:  ✓ Compiled in 82ms (209 modules)
 2025-09-27T00:45:28:  ✓ Compiled in 70ms (209 modules)
 2025-09-27T00:45:59:  ✓ Compiled in 64ms (209 modules)
+2025-09-27T00:49:20:    ▲ Next.js 15.5.4
+2025-09-27T00:49:20:    - Local:        http://localhost:3000
+2025-09-27T00:49:20:    - Network:      http://148.230.95.162:3000
+2025-09-27T00:49:20:    - Environments: .env
+2025-09-27T00:49:20: 
+2025-09-27T00:49:20:  ✓ Starting...
+2025-09-27T00:49:22:  ✓ Ready in 2.8s

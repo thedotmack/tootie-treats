@@ -3208,3 +3208,4 @@
 2025-09-27T00:36:02:   path: '/root/Projects/tootie-treats/.next/cache/webpack/client-development/15.pack.gz'
 2025-09-27T00:36:02: }
 2025-09-27T00:36:02: <w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, stat '/root/Projects/tootie-treats/.next/cache/webpack/client-development/15.pack.gz'
+2025-09-27T00:49:19:  ⚠ Found a change in next.config.js. Restarting the server to apply the changes...
